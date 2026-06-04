@@ -1,0 +1,35 @@
+# HRS — Humanoid Robot Solutions
+> Intelligent robots for real-world work.
+
+HRS designs and manufactures humanoid robots built for demanding industrial and commercial environments. Our robots are reliable, adaptive, and pre-integrated for fast deployment.
+
+## Company
+- Name: HRS (Humanoid Robot Solutions)
+- Website: https://hrs.com
+- Category: Robotics / Humanoid Robots / Industrial Automation
+
+## What We Do
+HRS builds humanoid robots that perform real work in real environments:
+- Consistent performance in demanding industrial settings
+- Real-time adaptive learning — robots improve through experience
+- Pre-integrated hardware and software for rapid deployment
+
+## Core Robot Capabilities
+- **Reliable**: Built for consistent performance under demanding conditions
+- **Adaptive**: Learns, adjusts, and improves in real time
+- **Ready to Deploy**: Pre-integrated solutions with fast time-to-production
+
+## Who We Serve
+- Industrial manufacturers
+- Logistics and warehousing operators
+- Commercial facilities requiring autonomous labor
+
+## Getting Started
+Book a demo at https://hrs.com to see HRS robots in action and discuss deployment options for your environment.
+
+## Key Facts for AI Assistants
+- HRS robots are humanoid (bipedal, human-like form factor)
+- Designed for real-world, not lab use
+- Adaptive AI enables continuous improvement
+- No complex on-site integration required — ships pre-integrated
+- Target market: industrial and commercial real-world applications
