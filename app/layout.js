@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google';
+import { getBaseUrl } from '@/lib/config';
 import './globals.css';
 
 const inter = Inter({
@@ -6,7 +7,10 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
+const siteUrl = getBaseUrl();
+
 export const metadata = {
+  metadataBase: new URL(siteUrl),
   title: 'HRS — Humanoid Robot Solutions | Intelligent Robots for Real-World Work',
   description:
     'HRS builds reliable, adaptive humanoid robots pre-integrated for real-world deployment. Book a demo to see autonomous robots built for demanding industrial environments.',
@@ -25,11 +29,11 @@ export const metadata = {
     title: 'HRS — Humanoid Robot Solutions | Intelligent Robots for Real-World Work',
     description:
       'HRS builds reliable, adaptive humanoid robots pre-integrated for real-world deployment.',
-    url: 'https://hrs.com',
+    url: '/',
     siteName: 'HRS — Humanoid Robot Solutions',
     images: [
       {
-        url: 'https://hrs.com/images/robot-Photoroom.png',
+        url: '/images/hero-robot.png',
         width: 1200,
         height: 630,
         alt: 'HRS humanoid robot',
@@ -41,7 +45,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'HRS — Humanoid Robot Solutions',
     description: 'Intelligent robots for real-world work.',
-    images: ['https://hrs.com/images/robot-Photoroom.png'],
+    images: ['/images/hero-robot.png'],
   },
   robots: {
     index: true,
@@ -49,7 +53,7 @@ export const metadata = {
     googleBot: { index: true, follow: true },
   },
   alternates: {
-    canonical: 'https://hrs.com',
+    canonical: '/',
   },
 };
 
@@ -58,12 +62,12 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Organization',
-      '@id': 'https://hrs.com/#organization',
+      '@id': `${siteUrl}/#organization`,
       name: 'HRS — Humanoid Robot Solutions',
-      url: 'https://hrs.com',
+      url: siteUrl,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://hrs.com/images/logo-Photoroom.png',
+        url: `${siteUrl}/images/logo.png`,
       },
       description:
         'HRS builds reliable, adaptive humanoid robots pre-integrated for real-world industrial and commercial deployment.',
@@ -71,10 +75,10 @@ const jsonLd = {
     },
     {
       '@type': 'WebSite',
-      '@id': 'https://hrs.com/#website',
-      url: 'https://hrs.com',
+      '@id': `${siteUrl}/#website`,
+      url: siteUrl,
       name: 'HRS — Humanoid Robot Solutions',
-      publisher: { '@id': 'https://hrs.com/#organization' },
+      publisher: { '@id': `${siteUrl}/#organization` },
     },
     {
       '@type': 'FAQPage',
@@ -100,7 +104,7 @@ const jsonLd = {
           name: 'How can I get a humanoid robot from HRS?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'You can book a demo at hrs.com to see HRS humanoid robots in action and discuss deployment options for your specific use case.',
+            text: 'You can book a demo to see HRS humanoid robots in action and discuss deployment options for your specific use case.',
           },
         },
         {
