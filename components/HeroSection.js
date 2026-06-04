@@ -97,7 +97,7 @@ export default function HeroSection() {
           ─────────────────────────────────────────────────────────────
         */}
         <div className="relative z-10 flex sm:items-center min-h-screen px-6 md:px-16">
-          <div className="w-full sm:max-w-[480px] lg:max-w-[520px] pt-42 sm:pt-0 sm:pb-30 md:pb-36 lg:pb-44">
+          <div className="w-full sm:max-w-[480px] lg:max-w-[720px] pt-[30%] sm:pt-20 sm:pb-30 md:pb-36 lg:pb-44">
             <h1 className="text-[44px] leading-[1.1] sm:text-[56px] lg:text-[80px] lg:leading-[1.05] font-bold tracking-tight text-gray-900">
               Humanoid<br />Robot Solutions
             </h1>
