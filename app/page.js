@@ -6,7 +6,6 @@ import Team from '@/components/Team';
 import WhatWeDo from '@/components/WhatWeDo';
 import FirstTargets from '@/components/FirstTargets';
 import TechApproach from '@/components/TechApproach';
-import HowItWorks from '@/components/HowItWorks';
 import VisionCTA from '@/components/VisionCTA';
 
 export const metadata = {
@@ -26,8 +25,7 @@ export default function Home() {
       <WhatWeDo />      {/* 04 — Deployment Route    → bg-gray-50 */}
       <FirstTargets />  {/* 05 — Use Cases           → bg-white   */}
       <TechApproach />  {/* 06 — Tech Approach       → bg-gray-50 */}
-      <HowItWorks />    {/* 07 — Commercial Model    → bg-white   */}
-      <VisionCTA />     {/* 08 — Vision + CTA        → bg-gray-50 */}
+      <VisionCTA />     {/* 07 — Vision + CTA        → bg-white   */}
     </main>
   );
 }

@@ -2,43 +2,43 @@ const steps = [
   {
     num: '01',
     title: 'Select',
-    body: 'Identify high-fit tasks where humanoid capability matches the work and the unit economics make commercial sense.',
+    body: 'Identify high-fit tasks where humanoid capability matches the work and unit economics make commercial sense. We match robot platform to requirements.',
   },
   {
     num: '02',
-    title: 'Trial',
-    body: 'Prove performance in a real environment before any capital commitment. Evidence first, purchase decision second.',
+    title: 'Trial & Prove',
+    body: 'Real demonstrations in a factory environment before any capital commitment. Evidence first, purchase decision second.',
   },
   {
     num: '03',
     title: 'Integrate',
-    body: 'Workflow design, safety systems, tooling and operator interfaces — built specifically for your site and processes.',
+    body: 'Workflow design, tooling, safety systems and operator interfaces built specifically for your site — with the right humanoid platform selected and fitted.',
   },
   {
     num: '04',
     title: 'Measure',
-    body: 'Track cycle time, uptime, intervention rate and ROI continuously with live performance dashboards.',
+    body: 'Vision, AI monitoring and live dashboards tracking cycle time, uptime, intervention rate and ROI — continuously.',
   },
   {
     num: '05',
-    title: 'Support',
-    body: 'Ongoing operator training and robot optimisation to protect performance and ROI long after go-live.',
+    title: 'Support & Scale',
+    body: 'Operator training and continuous optimisation long after go-live. The commercial pathway from a single trial to sustained deployment.',
   },
 ];
 
 export default function WhatWeDo() {
   return (
-    <section id="what-we-do" aria-label="What We Do" className="bg-gray-50 py-24 md:py-32">
+    <section id="solutions" aria-label="What We Do" className="bg-gray-50 py-24 md:py-32">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
           {/* Left — intro, sticky on desktop */}
           <div className="lg:sticky lg:top-32">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400">
-              What We Do
+              Our Process
             </p>
             <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-gray-900 leading-tight tracking-tight">
-              Not just robot sales.<br />A repeatable deployment route.
+              Not just robot sales.<br />A complete deployment pathway.
             </h2>
             <p className="mt-5 text-lg text-gray-500 leading-relaxed">
               We identify the right task, prove value before any capital commitment, then handle integration, performance tracking and long-term support.

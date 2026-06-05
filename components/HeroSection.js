@@ -27,7 +27,7 @@ export default function HeroSection() {
 
       {/* Background */}
       <Image
-        src="/images/background.png"
+        src="/images/hero-background.png"
         alt=""
         fill
         sizes="100vw"
@@ -106,13 +106,15 @@ export default function HeroSection() {
             </p>
             <div className="mt-8 md:mt-10 flex flex-wrap items-center gap-3 md:gap-4">
               <a
-                href="#demo"
+                href="https://calendar.app.google/VHugirFzZa4sGwxi7"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-black text-white px-7 md:px-8 py-3.5 md:py-4 rounded-full text-sm font-semibold hover:bg-gray-900 transition-colors"
               >
                 Book Demo
               </a>
               <a
-                href="#learn"
+                href="mailto:lel@hrs.ai"
                 className="inline-flex items-center justify-center bg-white text-gray-900 border border-gray-300 px-7 md:px-8 py-3.5 md:py-4 rounded-full text-sm font-semibold hover:bg-gray-50 transition-colors"
               >
                 Learn More
