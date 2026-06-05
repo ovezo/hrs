@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -8,13 +8,22 @@ const navLinks = ['Solutions', 'Robots', 'About', 'Contact'];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const closeMenu = () => setMenuOpen(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
     <>
       {/* ── Top bar ── */}
-      <header className="fixed top-0 left-0 right-0 z-50">
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${
+        scrolled ? 'bg-white shadow-sm' : 'bg-transparent'
+      }`}>
         <nav
           aria-label="Main navigation"
           className="flex items-center justify-between px-6 md:px-16 py-5 md:py-6 max-w-[1440px] mx-auto"
@@ -37,7 +46,7 @@ export default function Navbar() {
               <li key={link}>
                 <Link
                   href={`#${link.toLowerCase()}`}
-                  className="text-gray-800 text-sm font-medium hover:text-gray-500 transition-colors"
+                  className="text-sm font-medium text-gray-800 hover:text-gray-500 transition-colors duration-300"
                 >
                   {link}
                 </Link>
@@ -55,15 +64,9 @@ export default function Navbar() {
             onClick={() => setMenuOpen((prev) => !prev)}
           >
             <span className="relative block w-6 h-[14px]">
-              <span className={`absolute left-0 h-[2px] w-6 bg-gray-800 rounded-full transition-all duration-300 ease-in-out ${
-                menuOpen ? 'top-[6px] rotate-45' : 'top-0'
-              }`} />
-              <span className={`absolute left-0 top-[6px] h-[2px] w-6 bg-gray-800 rounded-full transition-all duration-300 ease-in-out ${
-                menuOpen ? 'opacity-0' : 'opacity-100'
-              }`} />
-              <span className={`absolute left-0 h-[2px] bg-gray-800 rounded-full transition-all duration-300 ease-in-out ${
-                menuOpen ? 'w-6 top-[6px] -rotate-45' : 'w-4 top-[12px]'
-              }`} />
+              <span className={`absolute left-0 h-[2px] w-6 rounded-full bg-gray-800 transition-all duration-300 ease-in-out ${menuOpen ? 'top-[6px] rotate-45' : 'top-0'}`} />
+              <span className={`absolute left-0 top-[6px] h-[2px] w-6 rounded-full bg-gray-800 transition-all duration-300 ease-in-out ${menuOpen ? 'opacity-0' : 'opacity-100'}`} />
+              <span className={`absolute left-0 h-[2px] rounded-full bg-gray-800 transition-all duration-300 ease-in-out ${menuOpen ? 'w-6 top-[6px] -rotate-45' : 'w-4 top-[12px]'}`} />
             </span>
           </button>
         </nav>
