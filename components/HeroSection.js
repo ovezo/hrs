@@ -2,6 +2,7 @@ import Image from 'next/image';
 import ShieldIcon from '@/icons/ShieldIcon';
 import NetworkIcon from '@/icons/NetworkIcon';
 import RocketIcon from '@/icons/RocketIcon';
+import { getContactEmail } from '@/lib/config';
 
 const features = [
   {
@@ -22,6 +23,7 @@ const features = [
 ];
 
 export default function HeroSection() {
+  const contactEmail = getContactEmail();
   return (
     <section aria-label="Hero" className="relative min-h-screen overflow-hidden">
 
@@ -114,7 +116,7 @@ export default function HeroSection() {
                 Book Demo
               </a>
               <a
-                href="mailto:lel@hrs.ai"
+                href={`mailto:${contactEmail}`}
                 className="inline-flex items-center justify-center bg-white text-gray-900 border border-gray-300 px-7 md:px-8 py-3.5 md:py-4 rounded-full text-sm font-semibold hover:bg-gray-50 transition-colors"
               >
                 Learn More

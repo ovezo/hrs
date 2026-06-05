@@ -8,11 +8,7 @@ import FirstTargets from '@/components/FirstTargets';
 import TechApproach from '@/components/TechApproach';
 import VisionCTA from '@/components/VisionCTA';
 
-export const metadata = {
-  title: 'HRS — Humanoid Robot Solutions | Intelligent Robots for Real-World Work',
-  description:
-    'HRS builds reliable, adaptive humanoid robots pre-integrated for real-world deployment. Book a demo to see autonomous robots built for demanding industrial environments.',
-};
+// Metadata for this route lives in app/layout.js (single source of truth).
 
 export default function Home() {
   return (

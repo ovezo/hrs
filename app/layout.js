@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google';
-import { getBaseUrl } from '@/lib/config';
+import { getBaseUrl, getContactEmail } from '@/lib/config';
 import './globals.css';
 
 const inter = Inter({
@@ -8,55 +8,67 @@ const inter = Inter({
 });
 
 const siteUrl = getBaseUrl();
+const contactEmail = getContactEmail();
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: 'HRS — Humanoid Robot Solutions | Intelligent Robots for Real-World Work',
   description:
-    'HRS builds reliable, adaptive humanoid robots pre-integrated for real-world deployment. Book a demo to see autonomous robots built for demanding industrial environments.',
+    'HRS helps UK manufacturers deploy humanoid robots — the right task, real factory trials, proven ROI, plus full integration and long-term support. Book a demo.',
+  applicationName: 'HRS — Humanoid Robot Solutions',
   keywords: [
-    'humanoid robot',
-    'robotics solutions',
-    'autonomous robots',
-    'industrial robots',
-    'adaptive robots',
+    'humanoid robots',
+    'humanoid robot deployment',
+    'industrial humanoid robots',
+    'UK manufacturing automation',
+    'factory automation',
+    'machine tending',
+    'robot integration',
     'HRS',
-    'humanoid robot solutions',
-    'robot deployment',
+    'Humanoid Robot Solutions',
   ],
   authors: [{ name: 'HRS — Humanoid Robot Solutions' }],
+  creator: 'HRS — Humanoid Robot Solutions',
+  publisher: 'HRS — Humanoid Robot Solutions',
+  // og:image / twitter:image are supplied by app/opengraph-image.js and
+  // app/twitter-image.js (the file-based Metadata API), so they are not
+  // listed here — the file convention takes precedence and stays in sync.
   openGraph: {
     title: 'HRS — Humanoid Robot Solutions | Intelligent Robots for Real-World Work',
     description:
-      'HRS builds reliable, adaptive humanoid robots pre-integrated for real-world deployment.',
+      'HRS helps UK manufacturers deploy humanoid robots — the right task, real factory trials, proven ROI, plus full integration and long-term support.',
     url: '/',
     siteName: 'HRS — Humanoid Robot Solutions',
-    images: [
-      {
-        url: '/images/hero-robot.png',
-        width: 1200,
-        height: 630,
-        alt: 'HRS humanoid robot',
-      },
-    ],
+    locale: 'en_GB',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'HRS — Humanoid Robot Solutions',
-    description: 'Intelligent robots for real-world work.',
-    images: ['/images/hero-robot.png'],
+    description:
+      'Intelligent humanoid robots for real-world work — deployed for UK manufacturing.',
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true },
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
   },
   alternates: {
     canonical: '/',
   },
 };
 
+// Structured data is kept in sync with what is actually visible on the page:
+// the two named founders (Team section), the contact email (CTAs), the UK
+// focus (throughout), and the real positioning. No FAQ markup — those Q&As
+// are not shown on the page, and Google requires FAQ structured data to match
+// visible content.
 const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -64,66 +76,68 @@ const jsonLd = {
       '@type': 'Organization',
       '@id': `${siteUrl}/#organization`,
       name: 'HRS — Humanoid Robot Solutions',
+      alternateName: 'HRS',
       url: siteUrl,
       logo: {
         '@type': 'ImageObject',
+        '@id': `${siteUrl}/#logo`,
         url: `${siteUrl}/images/logo.png`,
+        contentUrl: `${siteUrl}/images/logo.png`,
+        width: 851,
+        height: 284,
+        caption: 'HRS — Humanoid Robot Solutions',
       },
+      image: { '@id': `${siteUrl}/#logo` },
       description:
-        'HRS builds reliable, adaptive humanoid robots pre-integrated for real-world industrial and commercial deployment.',
-      sameAs: [],
+        'HRS helps UK manufacturers deploy humanoid robots — selecting high-fit tasks, proving ROI through real factory trials, and delivering integration, safety and long-term support.',
+      email: contactEmail,
+      areaServed: {
+        '@type': 'Country',
+        name: 'United Kingdom',
+      },
+      knowsAbout: [
+        'Humanoid robots',
+        'Industrial automation',
+        'Computer vision',
+        'Robot integration',
+        'Manufacturing',
+      ],
+      founder: [
+        { '@type': 'Person', name: 'Lel Rees', jobTitle: 'Automation Lead' },
+        {
+          '@type': 'Person',
+          name: 'Dr Agajan Torayev',
+          jobTitle: 'AI & Robotics Lead',
+        },
+      ],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        email: contactEmail,
+        areaServed: 'GB',
+        availableLanguage: 'English',
+      },
     },
     {
       '@type': 'WebSite',
       '@id': `${siteUrl}/#website`,
       url: siteUrl,
       name: 'HRS — Humanoid Robot Solutions',
+      description: 'Intelligent robots for real-world work.',
       publisher: { '@id': `${siteUrl}/#organization` },
+      inLanguage: 'en-GB',
     },
     {
-      '@type': 'FAQPage',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'What is HRS?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'HRS (Humanoid Robot Solutions) is a robotics company that builds reliable, adaptive humanoid robots for real-world industrial and commercial work environments.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'What kind of robots does HRS make?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'HRS makes humanoid robots designed for consistent performance in demanding environments. They are adaptive — capable of learning and improving in real time — and come pre-integrated for rapid deployment.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'How can I get a humanoid robot from HRS?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'You can book a demo to see HRS humanoid robots in action and discuss deployment options for your specific use case.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Are HRS robots reliable for industrial use?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Yes. HRS robots are built specifically for consistent performance in demanding real-world environments, making them well-suited for industrial and commercial applications.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'How quickly can HRS robots be deployed?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'HRS robots are pre-integrated solutions, meaning they are designed to get you up and running fast with minimal setup required.',
-          },
-        },
-      ],
+      '@type': 'WebPage',
+      '@id': `${siteUrl}/#webpage`,
+      url: siteUrl,
+      name: 'HRS — Humanoid Robot Solutions | Intelligent Robots for Real-World Work',
+      description:
+        'HRS helps UK manufacturers deploy humanoid robots — the right task, real factory trials, proven ROI, plus full integration and long-term support.',
+      isPartOf: { '@id': `${siteUrl}/#website` },
+      about: { '@id': `${siteUrl}/#organization` },
+      primaryImageOfPage: { '@id': `${siteUrl}/#logo` },
+      inLanguage: 'en-GB',
     },
   ],
 };

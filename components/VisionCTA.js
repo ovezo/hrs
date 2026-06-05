@@ -1,4 +1,7 @@
+import { getContactEmail } from '@/lib/config';
+
 export default function VisionCTA() {
+  const contactEmail = getContactEmail();
   return (
     <section id="contact" aria-label="Vision and Contact" className="bg-white py-24 pb-8! md:py-36">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
@@ -27,7 +30,7 @@ export default function VisionCTA() {
               Book a Demo
             </a>
             <a
-              href="mailto:lel@hrs.ai"
+              href={`mailto:${contactEmail}`}
               className="inline-flex items-center justify-center border border-gray-300 text-gray-900 px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-100 hover:border-gray-400 transition-colors"
             >
               Get in Touch
