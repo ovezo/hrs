@@ -28,7 +28,7 @@ const steps = [
 
 export default function WhatWeDo() {
   return (
-    <section id="what-we-do" aria-label="What We Do" className="relative overflow-hidden py-24 md:py-32 bg-center md:bg-right" style={{
+    <section id="solutions" aria-label="What We Do" className="relative overflow-hidden py-24 md:py-32 bg-center md:bg-right" style={{
         backgroundImage: 'url(/images/what_we_do.png)',
         backgroundSize: 'auto 100%',
         backgroundRepeat: 'no-repeat',

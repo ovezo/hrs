@@ -28,7 +28,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="solutions" aria-label="How It Works" className="bg-white py-24 md:py-32">
+    <section id="how-it-works" aria-label="How It Works" className="bg-white py-24 md:py-32">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
 
         {/* Header */}
