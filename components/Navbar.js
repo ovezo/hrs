@@ -4,13 +4,19 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const navLinks = ['Solutions', 'Robots', 'About', 'Contact'];
+const navLinks = ['Robots', 'About', 'Solutions', 'Contact'];
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   const closeMenu = () => setMenuOpen(false);
+
+  const scrollTo = (e, id) => {
+    e.preventDefault();
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    closeMenu();
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -29,7 +35,7 @@ export default function Navbar() {
           className="flex items-center justify-between px-6 md:px-16 py-5 md:py-6 max-w-[1440px] mx-auto"
         >
           {/* Logo */}
-          <Link href="/" aria-label="HRS — Home" onClick={closeMenu}>
+          <Link href="/" aria-label="HRS — Home" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); closeMenu(); }}>
             <Image
               src="/images/logo.png"
               alt="HRS"
@@ -44,12 +50,13 @@ export default function Navbar() {
           <ul className="hidden md:flex items-center gap-10" role="list">
             {navLinks.map((link) => (
               <li key={link}>
-                <Link
+                <a
                   href={`#${link.toLowerCase()}`}
+                  onClick={(e) => scrollTo(e, link.toLowerCase())}
                   className="text-sm font-medium text-gray-800 hover:text-gray-500 transition-colors duration-300"
                 >
                   {link}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -95,15 +102,15 @@ export default function Navbar() {
           <ul role="list">
             {navLinks.map((link, i) => (
               <li key={link}>
-                <Link
+                <a
                   href={`#${link.toLowerCase()}`}
-                  onClick={closeMenu}
+                  onClick={(e) => scrollTo(e, link.toLowerCase())}
                   className={`flex items-center py-5 text-lg font-medium text-gray-900 hover:text-gray-500 transition-colors ${
                     i < navLinks.length - 1 ? 'border-b border-gray-100' : ''
                   }`}
                 >
                   {link}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

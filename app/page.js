@@ -6,14 +6,9 @@ import Team from '@/components/Team';
 import WhatWeDo from '@/components/WhatWeDo';
 import FirstTargets from '@/components/FirstTargets';
 import TechApproach from '@/components/TechApproach';
-import HowItWorks from '@/components/HowItWorks';
 import VisionCTA from '@/components/VisionCTA';
 
-export const metadata = {
-  title: 'HRS — Humanoid Robot Solutions | Intelligent Robots for Real-World Work',
-  description:
-    'HRS builds reliable, adaptive humanoid robots pre-integrated for real-world deployment. Book a demo to see autonomous robots built for demanding industrial environments.',
-};
+// Metadata for this route lives in app/layout.js (single source of truth).
 
 export default function Home() {
   return (
@@ -26,8 +21,7 @@ export default function Home() {
       <WhatWeDo />      {/* 04 — Deployment Route    → bg-gray-50 */}
       <FirstTargets />  {/* 05 — Use Cases           → bg-white   */}
       <TechApproach />  {/* 06 — Tech Approach       → bg-gray-50 */}
-      <HowItWorks />    {/* 07 — Commercial Model    → bg-white   */}
-      <VisionCTA />     {/* 08 — Vision + CTA        → bg-gray-50 */}
+      <VisionCTA />     {/* 07 — Vision + CTA        → bg-white   */}
     </main>
   );
 }

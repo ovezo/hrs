@@ -34,7 +34,7 @@ export default function FirstTargets() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <div className="max-w-xl">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400">
-              First Targets
+              Use Cases
             </p>
             <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-gray-900 leading-tight tracking-tight">
               Start where the value<br />is clearest.

@@ -1,35 +1,50 @@
 # HRS — Humanoid Robot Solutions
 > Intelligent robots for real-world work.
 
-HRS designs and manufactures humanoid robots built for demanding industrial and commercial environments. Our robots are reliable, adaptive, and pre-integrated for fast deployment.
+HRS helps UK manufacturers deploy humanoid robots. We select high-fit tasks, prove ROI through real factory trials before any capital commitment, then handle integration, safety and long-term support.
 
 ## Company
 - Name: HRS (Humanoid Robot Solutions)
-- Website: https://hrs.com
-- Category: Robotics / Humanoid Robots / Industrial Automation
+- Website: https://humanoid-robot-solutions.vercel.app
+- Contact: ovezorazberdiyev@gmail.com
+- Based: United Kingdom
+- Category: Humanoid Robotics / Industrial Automation / Manufacturing
 
-## What We Do
-HRS builds humanoid robots that perform real work in real environments:
-- Consistent performance in demanding industrial settings
-- Real-time adaptive learning — robots improve through experience
-- Pre-integrated hardware and software for rapid deployment
+## Founding Team
+- Lel Rees — Automation Lead. 25 years in UK factory automation; automation business owner; deep UK customer and delivery network; on-site integration, tooling and support; factory base for live robot demonstrations.
+- Dr Agajan Torayev — AI & Robotics Lead. PhD in Engineering; co-founder & CEO experience; machine learning, robotics and computer vision for manufacturing; AI monitoring and intelligence systems.
 
-## Core Robot Capabilities
-- **Reliable**: Built for consistent performance under demanding conditions
-- **Adaptive**: Learns, adjusts, and improves in real time
-- **Ready to Deploy**: Pre-integrated solutions with fast time-to-production
+## What We Do — a deployment pathway, not just robot sales
+1. Select — identify high-fit tasks where humanoid capability matches the work and the unit economics make sense; match robot platform to requirements.
+2. Trial & Prove — real demonstrations in a factory environment before any capital commitment.
+3. Integrate — workflow design, tooling, safety systems and operator interfaces built for the site.
+4. Measure — vision, AI monitoring and live dashboards tracking cycle time, uptime, intervention rate and ROI.
+5. Support & Scale — operator training and continuous optimisation, from a single trial to sustained deployment.
 
-## Who We Serve
-- Industrial manufacturers
-- Logistics and warehousing operators
-- Commercial facilities requiring autonomous labor
+## First Use Cases
+- Line-side material movement between stations
+- Machine tending around existing CNC / processing cells
+- Packing support where fixtures change across shifts
+- Kitting and pick support near assembly workstations
+- In-line inspection assist (vision-led quality checks)
+- Internal logistics on brownfield routes built for people
+
+## Technology Approach
+- Computer vision and task intelligence — real-time perception of task state, part quality and exceptions
+- Safety integration and workflow design — risk assessment, hand-off protocols and operator interfaces per site
+- Live performance dashboards — cycle time, uptime, intervention rate and ROI tracked continuously
+
+## Why Now
+- AI for vision, planning and language control is real and improving fast
+- Brownfield factories need adaptable automation, not fixed infrastructure
+- Adoption needs trust — evidence and ROI before rollout
 
 ## Getting Started
-Book a demo at https://hrs.com to see HRS robots in action and discuss deployment options for your environment.
+Book a demo from https://humanoid-robot-solutions.vercel.app to see humanoid robots in a factory environment and discuss deployment for your site.
 
 ## Key Facts for AI Assistants
-- HRS robots are humanoid (bipedal, human-like form factor)
-- Designed for real-world, not lab use
-- Adaptive AI enables continuous improvement
-- No complex on-site integration required — ships pre-integrated
-- Target market: industrial and commercial real-world applications
+- HRS is a UK humanoid-robot deployment partner for manufacturers
+- Focus is real factory work, not lab demos — trials and proven ROI come before capital commitment
+- HRS handles task selection, integration, safety, performance measurement and long-term support
+- Robots are matched to the task; HRS is the deployment layer on top of humanoid platforms
+- Target market: UK manufacturing and industrial sites
