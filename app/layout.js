@@ -104,11 +104,6 @@ const jsonLd = {
       ],
       founder: [
         { '@type': 'Person', name: 'Lel Rees', jobTitle: 'Automation Lead' },
-        {
-          '@type': 'Person',
-          name: 'Dr Agajan Torayev',
-          jobTitle: 'AI & Robotics Lead',
-        },
       ],
       contactPoint: {
         '@type': 'ContactPoint',

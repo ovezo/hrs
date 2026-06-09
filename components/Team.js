@@ -15,20 +15,6 @@ const team = [
       'Factory base for live robot demonstrations',
     ],
   },
-  {
-    initials: 'AT',
-    role: 'AI & Robotics Lead',
-    name: 'Dr Agajan Torayev',
-    gradient: 'from-slate-600 to-slate-950',
-    bio: 'The intelligence layer behind HRS. Agajan brings a PhD in Engineering, hands-on experience building machine learning systems and computer vision for manufacturing environments, and the commercial instincts of a CEO and co-founder.',
-    points: [
-      'PhD in Engineering',
-      'Co-founder & CEO experience',
-      'Machine learning and robotics',
-      'Computer vision for manufacturing',
-      'AI monitoring and intelligence systems',
-    ],
-  },
 ];
 
 export default function Team() {

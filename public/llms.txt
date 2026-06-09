@@ -12,7 +12,6 @@ HRS helps UK manufacturers deploy humanoid robots. We select high-fit tasks, pro
 
 ## Founding Team
 - Lel Rees — Automation Lead. 25 years in UK factory automation; automation business owner; deep UK customer and delivery network; on-site integration, tooling and support; factory base for live robot demonstrations.
-- Dr Agajan Torayev — AI & Robotics Lead. PhD in Engineering; co-founder & CEO experience; machine learning, robotics and computer vision for manufacturing; AI monitoring and intelligence systems.
 
 ## What We Do — a deployment pathway, not just robot sales
 1. Select — identify high-fit tasks where humanoid capability matches the work and the unit economics make sense; match robot platform to requirements.
