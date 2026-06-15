@@ -3,10 +3,11 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FlagChip } from '@/components/UnionJack';
 
 const navLinks = ['Robots', 'About', 'Solutions', 'Contact'];
 
-export default function Navbar() {
+export default function Navbar({ showFlag = false }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -34,17 +35,25 @@ export default function Navbar() {
           aria-label="Main navigation"
           className="flex items-center justify-between px-6 md:px-16 py-5 md:py-6 max-w-[1440px] mx-auto"
         >
-          {/* Logo */}
-          <Link href="/" aria-label="HRS — Home" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); closeMenu(); }}>
-            <Image
-              src="/images/logo.png"
-              alt="HRS"
-              width={120}
-              height={40}
-              style={{ height: '20px', width: 'auto' }}
-              priority
-            />
-          </Link>
+          {/* Logo (+ optional UK flag pill) */}
+          <div className="flex items-center gap-3">
+            <Link href="/" aria-label="HRS — Home" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); closeMenu(); }}>
+              <Image
+                src="/images/logo.png"
+                alt="HRS"
+                width={120}
+                height={40}
+                style={{ height: '20px', width: 'auto' }}
+                priority
+              />
+            </Link>
+            {showFlag && (
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-white/60 ring-1 ring-black/10 backdrop-blur-sm px-2 py-1">
+                <FlagChip className="h-3.5 w-[21px]" />
+                <span className="text-[11px] font-semibold tracking-wide text-gray-700">UK</span>
+              </span>
+            )}
+          </div>
 
           {/* Desktop links */}
           <ul className="hidden md:flex items-center gap-10" role="list">

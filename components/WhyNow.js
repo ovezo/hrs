@@ -40,8 +40,8 @@ export default function WhyNow() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400 mb-4">
             Why Now
           </p>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight max-w-3xl">
-            Humanoid robotics is<br className="hidden sm:block" /> moving into factory trials.
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight tracking-tight max-w-4xl">
+            Humanoid robotics changing<br className="hidden sm:block" /> the future of automation.
           </h2>
         </div>
 

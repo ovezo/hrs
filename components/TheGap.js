@@ -1,24 +1,29 @@
 const barriers = [
   {
     number: '01',
-    title: 'Wrong task, wrong economics',
-    body: 'Use cases must genuinely fit humanoid strengths. Not every task justifies the cost — selecting the wrong one kills adoption before it starts.',
+    title: 'Demos & Procurement',
+    body: 'We provide practical capability demos and handle the acquisition of the right humanoid hardware for your specific real-world needs.'
   },
   {
     number: '02',
-    title: 'Integration and safety complexity',
-    body: 'Humanoid robots need workflow design, risk assessment and operator interfaces before they can run safely on a live factory floor.',
+    title: 'Active Deployment',
+    body: 'We move beyond testing to full integration, safely deploying robots directly into your current workflows and production lines.',
   },
   {
     number: '03',
-    title: 'No evidence, no budget approval',
-    body: 'Capital decisions require proof. ROI data and trial results must come before commitment — not be promised after it.',
+    title: 'Advanced AI Training',
+    body: 'We capture real-world <b>ergocentric data</b> from the workspace to train foundational models. By applying <b>neurosymbolic AI</b>, we ensure your robots not only learn physical tasks quickly but operate with reliable, built-in logic and safety rules.'
   },
+  {
+    number: '04',
+    title: 'Built for Any Industry',
+    body: 'We design automation solutions that adapt safely to human environments across manufacturing, defense, pharmaceuticals, and hospitality.'
+  }
 ];
 
 export default function TheGap() {
   return (
-    <section id="the-gap" aria-label="The Adoption Gap" className="relative overflow-hidden py-24 md:py-32 bg-center md:bg-right"
+    <section id="the-gap" aria-label="The Adoption Gap" className="relative py-24 md:py-32 bg-center md:bg-right"
       style={{
         backgroundImage: 'url(/images/manufacturers_are_interested.png)',
         backgroundSize: 'auto 100%',
@@ -43,19 +48,21 @@ export default function TheGap() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
           {/* Left — problem statement */}
-          <div className="lg:sticky lg:top-32 z-10">
+          <div className="lg:sticky lg:top-32 lg:self-start z-10">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400">
-              The Adoption Gap
+              End-to-End Adoption
             </p>
             <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-gray-900 leading-tight tracking-tight">
-            Manufacturers are interested. <br />Adoption is the hard part.
+            How HRS can help your business
             </h2>
             <p className="mt-6 text-lg text-gray-500 leading-relaxed">
-              Interest in humanoid robotics is high across UK manufacturing. But without the right task selection, a safety framework and measurable ROI, adoption stalls before it starts.
+            HRS makes adopting humanoid robots straightforward. We help you transition from
+            early interest to active deployment, automating repetitive tasks effectively. Our key
+            services include:
             </p>
-            <p className="mt-4 text-lg text-gray-900 font-medium">
+            {/* <p className="mt-4 text-lg text-gray-900 font-medium">
               HRS bridges that gap — making humanoid robot deployment credible, safe and commercially viable.
-            </p>
+            </p> */}
 
             {/* Divider line accent */}
             <div className="mt-10 w-16 h-1 bg-gray-900 rounded-full" />
@@ -79,7 +86,7 @@ export default function TheGap() {
                   </span>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
-                    <p className="mt-2 text-sm text-gray-500 leading-relaxed">{body}</p>
+                    <div className="mt-2 text-sm text-gray-500 leading-relaxed" dangerouslySetInnerHTML={{ __html: body }} />
                   </div>
                 </div>
               </div>

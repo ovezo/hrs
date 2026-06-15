@@ -28,7 +28,7 @@ const steps = [
 
 export default function WhatWeDo() {
   return (
-    <section id="solutions" aria-label="What We Do" className="relative overflow-hidden py-24 md:py-32 bg-center md:bg-right" style={{
+    <section id="solutions" aria-label="What We Do" className="relative py-24 md:py-32 bg-center md:bg-right" style={{
         backgroundImage: 'url(/images/what_we_do.png)',
         backgroundSize: 'auto 100%',
         backgroundRepeat: 'no-repeat',
@@ -52,7 +52,7 @@ export default function WhatWeDo() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
 
           {/* Left — intro, sticky on desktop */}
-          <div className="lg:sticky lg:top-32 z-10">
+          <div className="lg:sticky lg:top-32 lg:self-start z-10">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400">
               Our Process
             </p>

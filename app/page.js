@@ -7,13 +7,14 @@ import WhatWeDo from '@/components/WhatWeDo';
 import FirstTargets from '@/components/FirstTargets';
 import TechApproach from '@/components/TechApproach';
 import VisionCTA from '@/components/VisionCTA';
+import Footer from '@/components/Footer';
 
 // Metadata for this route lives in app/layout.js (single source of truth).
 
 export default function Home() {
   return (
     <main>
-      <Navbar />
+      <Navbar showFlag />
       <HeroSection />
       <WhyNow />        {/* 01 — Market Timing      → bg-white   */}
       <TheGap />        {/* 02 — Adoption Gap        → bg-gray-50 */}
