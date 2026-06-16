@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FlagChip } from '@/components/UnionJack';
 
-const navLinks = ['Robots', 'About', 'Solutions', 'Contact'];
+const navLinks = ['Robots', 'About', 'Solutions', 'Demos', 'Contact'];
 
 export default function Navbar({ showFlag = false }) {
   const [menuOpen, setMenuOpen] = useState(false);

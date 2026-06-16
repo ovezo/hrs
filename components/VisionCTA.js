@@ -3,7 +3,7 @@ import { getContactEmail } from '@/lib/config';
 export default function VisionCTA() {
   const contactEmail = getContactEmail();
   return (
-    <section id="contact" aria-label="Vision and Contact" className="bg-white py-24 pb-8! md:py-36">
+    <section id="contact" aria-label="Vision and Contact" className="bg-gray-50 py-24 pb-8! md:py-36">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
         <div className="max-w-4xl mx-auto text-center">
 
