@@ -5,7 +5,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FlagChip } from '@/components/UnionJack';
 
-const navLinks = ['Robots', 'About', 'Solutions', 'Demos', 'Contact'];
+const navLinks = [
+  { label: 'Robots', id: 'robots' },
+  { label: 'About', id: 'about' },
+  { label: 'Solutions', id: 'solutions' },
+  { label: 'Demos', id: 'demos' },
+  { label: 'How it works', id: 'how-it-works' },
+  { label: 'Contact', id: 'contact' },
+];
 
 export default function Navbar({ showFlag = false }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,15 +63,15 @@ export default function Navbar({ showFlag = false }) {
           </div>
 
           {/* Desktop links */}
-          <ul className="hidden md:flex items-center gap-10" role="list">
-            {navLinks.map((link) => (
-              <li key={link}>
+          <ul className="hidden md:flex items-center gap-8 lg:gap-10" role="list">
+            {navLinks.map(({ label, id }) => (
+              <li key={id}>
                 <a
-                  href={`#${link.toLowerCase()}`}
-                  onClick={(e) => scrollTo(e, link.toLowerCase())}
-                  className="text-sm font-medium text-gray-800 hover:text-gray-500 transition-colors duration-300"
+                  href={`#${id}`}
+                  onClick={(e) => scrollTo(e, id)}
+                  className="text-sm font-medium text-gray-800 hover:text-gray-500 transition-colors duration-300 whitespace-nowrap"
                 >
-                  {link}
+                  {label}
                 </a>
               </li>
             ))}
@@ -109,16 +116,16 @@ export default function Navbar({ showFlag = false }) {
       >
         <nav className="px-6 pt-[72px] pb-4 max-w-[1440px] mx-auto">
           <ul role="list">
-            {navLinks.map((link, i) => (
-              <li key={link}>
+            {navLinks.map(({ label, id }, i) => (
+              <li key={id}>
                 <a
-                  href={`#${link.toLowerCase()}`}
-                  onClick={(e) => scrollTo(e, link.toLowerCase())}
+                  href={`#${id}`}
+                  onClick={(e) => scrollTo(e, id)}
                   className={`flex items-center py-5 text-lg font-medium text-gray-900 hover:text-gray-500 transition-colors ${
                     i < navLinks.length - 1 ? 'border-b border-gray-100' : ''
                   }`}
                 >
-                  {link}
+                  {label}
                 </a>
               </li>
             ))}

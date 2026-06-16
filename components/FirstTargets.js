@@ -27,7 +27,7 @@ const useCases = [
 
 export default function FirstTargets() {
   return (
-    <section id="use-cases" aria-label="First Targets" className="bg-white py-24 md:py-32">
+    <section id="use-cases" aria-label="First Targets" className="bg-gray-50 py-24 md:py-32">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
 
         {/* Header */}
@@ -50,7 +50,7 @@ export default function FirstTargets() {
           {useCases.map(({ title, body }) => (
             <div
               key={title}
-              className="bg-gray-50 p-7 flex flex-col gap-3 hover:bg-white transition-colors duration-150"
+              className="bg-white p-7 flex flex-col gap-3 hover:bg-gray-50 transition-colors duration-150"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-amber-500 self-start mt-1" />
               <h3 className="text-base font-semibold text-gray-900 leading-snug">{title}</h3>

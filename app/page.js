@@ -6,6 +6,7 @@ import Team from '@/components/Team';
 import WhatWeDo from '@/components/WhatWeDo';
 import Demonstrations from '@/components/Demonstrations';
 import TechApproach from '@/components/TechApproach';
+import PhysicalAI from '@/components/PhysicalAI';
 import FirstTargets from '@/components/FirstTargets';
 import VisionCTA from '@/components/VisionCTA';
 import Footer from '@/components/Footer';
@@ -23,8 +24,9 @@ export default function Home() {
       <WhatWeDo />        {/* 04 — Deployment Route        → bg-gray-50 */}
       <Demonstrations />  {/* 05 — Live Demonstrations     → bg-white   */}
       <TechApproach />    {/* 06 — Bringing AI to Life     → bg-gray-50 */}
-      <FirstTargets />    {/* 07 — Use Cases               → bg-white   */}
-      <VisionCTA />       {/* 08 — Vision + CTA            → bg-white   */}
+      <PhysicalAI />      {/* 07 — How It Works (diagrams) → bg-white   */}
+      <FirstTargets />    {/* 08 — Use Cases               → bg-gray-50 */}
+      <VisionCTA />       {/* 09 — Vision + CTA            → bg-white   */}
     </main>
   );
 }
