@@ -26,7 +26,7 @@ export default function Demonstrations() {
               className="object-cover"
             />
             <span className="absolute bottom-5 left-5 right-5 text-sm font-semibold text-white drop-shadow">
-              AGIBOT X2 — built to engage an audience
+              AGIBOT X2 — interactive bipedal humanoid
             </span>
           </div>
 

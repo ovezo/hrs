@@ -39,6 +39,33 @@ const robots = [
   },
 ];
 
+const partners = [
+  {
+    name: 'Keenon',
+    sublabel: 'Service & commercial robotics',
+    brand: 'KEENON',
+    img: '/images/keenon-humanoid-robots.jpg',
+    imgAlt: 'Keenon humanoid and service robots',
+    objectPosition: '50% 58%',
+  },
+  {
+    name: 'Unitree G1',
+    sublabel: 'Humanoid platform',
+    brand: 'UNITREE',
+    img: '/images/unitree-g1.webp',
+    imgAlt: 'Unitree G1 humanoid robot',
+    objectPosition: 'center',
+  },
+  {
+    name: 'Figure 02',
+    sublabel: 'Humanoid platform',
+    brand: 'FIGURE',
+    img: '/images/figureai-robot.jpg',
+    imgAlt: 'Figure 02 humanoid robot',
+    objectPosition: 'center',
+  },
+];
+
 export default function WhyNow() {
   return (
     <section id="robots" aria-label="Our Robots" className="bg-white py-24 md:py-32">
@@ -107,6 +134,39 @@ export default function WhyNow() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Other platform partners */}
+        <div className="mt-20 md:mt-28">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400 mb-6">
+            Other platform partners
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4">
+            {partners.map(({ name, sublabel, brand, img, imgAlt, objectPosition }) => (
+              <div key={name} className="relative overflow-hidden rounded-2xl aspect-5/3">
+                <Image
+                  src={img}
+                  alt={imgAlt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                  className="object-cover"
+                  style={{ objectPosition }}
+                />
+                {/* Gradient overlay — dark at bottom, transparent at top */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                {/* Bottom labels */}
+                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between p-5">
+                  <div>
+                    <p className="text-white text-sm font-semibold leading-snug">{name}</p>
+                    <p className="text-white/55 text-xs mt-0.5">{sublabel}</p>
+                  </div>
+                  <span className="text-white/40 text-[10px] font-bold tracking-[0.18em] uppercase self-end">
+                    {brand}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>
