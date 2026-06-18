@@ -42,7 +42,7 @@ export default function VisionCTA() {
         {/* Bottom footer strip */}
         <div className="mt-24 pt-8 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
           <span>© {new Date().getFullYear()} HRS — Humanoid Robot Solutions UK</span>
-          <span>Human + Robot Collaboration</span>
+          <span>Humanoid robot deployment for UK industry</span>
         </div>
 
       </div>

@@ -12,18 +12,18 @@ const barriers = [
   {
     number: '03',
     title: 'Advanced AI Training',
-    body: 'We capture real-world <b>ergocentric data</b> from the workspace to train foundational models. By applying <b>neurosymbolic AI</b>, we ensure your robots not only learn physical tasks quickly but operate with reliable, built-in logic and safety rules.'
+    body: 'We capture real-world <b>egocentric data</b> from the workspace to train foundational models. By applying <b>neuro-symbolic AI</b>, we ensure your robots not only learn physical tasks quickly but operate with reliable, built-in logic and safety rules.'
   },
   {
     number: '04',
     title: 'Built for Any Industry',
-    body: 'We design automation solutions that adapt safely to human environments across manufacturing, defense, pharmaceuticals, and hospitality.'
+    body: 'We design automation solutions that adapt safely to human environments across manufacturing, defence, pharmaceuticals, and hospitality.'
   }
 ];
 
 export default function TheGap() {
   return (
-    <section id="the-gap" aria-label="The Adoption Gap" className="relative py-24 md:py-32 bg-center md:bg-right"
+    <section id="solutions" aria-label="End-to-End Adoption" className="relative py-24 md:py-32 bg-center md:bg-right"
       style={{
         backgroundImage: 'url(/images/manufacturers_are_interested.png)',
         backgroundSize: 'auto 100%',

@@ -39,10 +39,9 @@ export default function Demonstrations() {
               See humanoid AI in your environment.
             </h2>
             <p className="mt-6 text-lg text-gray-500 leading-relaxed">
-              All of this technology means nothing unless it works in the real world. HRS deploys
-              humanoid robots directly into live UK environments and runs hands-on demonstrations —
-              giving businesses the chance to see, interact with and experience humanoid AI
-              first-hand. Our showcases run on AGIBOT robots, featuring the eye-catching X2.
+              HRS runs hands-on humanoid demonstrations in live UK environments — so you can see,
+              interact with and evaluate humanoid AI on your own site before you commit. Our
+              showcases run on AGIBOT robots, featuring the interactive X2.
             </p>
 
             {/* Sectors */}
@@ -60,7 +59,6 @@ export default function Demonstrations() {
                 </li>
               ))}
             </ul>
-            <p className="mt-3 text-sm text-gray-400">…and beyond.</p>
 
             {/* CTA */}
             <div className="mt-10">
@@ -70,7 +68,7 @@ export default function Demonstrations() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-black text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-900 transition-colors"
               >
-                Book a Demonstration
+                Book a Demo
               </a>
             </div>
           </div>

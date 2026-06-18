@@ -189,8 +189,11 @@ export default function PhysicalAI() {
             From what it sees<br className="hidden sm:block" /> to what it does.
           </h2>
           <p className="mt-5 text-lg text-gray-500 leading-relaxed">
-            Two ideas sit behind every HRS robot: a model that turns perception into action, and a
-            way of learning that keeps it reliable when the real world changes.
+            Physical AI is what makes a humanoid useful on a real floor. Every HRS robot runs on a
+            Vision-Language-Action model — it interprets what it sees and hears and turns that into
+            precise movement, instead of following scripted routines. Two ideas sit behind it: a
+            model that turns perception into action, and a way of learning that stays reliable when
+            the real world changes.
           </p>
         </div>
 

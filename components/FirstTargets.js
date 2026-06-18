@@ -27,7 +27,7 @@ const useCases = [
 
 export default function FirstTargets() {
   return (
-    <section id="use-cases" aria-label="First Targets" className="bg-gray-50 py-24 md:py-32">
+    <section id="use-cases" aria-label="First Targets" className="bg-white py-24 md:py-32">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
 
         {/* Header */}

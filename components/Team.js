@@ -61,7 +61,7 @@ export default function Team() {
               Now, as humanoid robots emerge as the next frontier, Lel is launching Humanoid Robot
               Solutions to bring this technology to British manufacturers — drawing on the same
               entrepreneurial drive and deep technical expertise that built Reeco to help businesses
-              unlock entirely new possibilities in automation.
+              automate work that fixed machinery never could.
             </p>
 
             {/* Stat strip */}

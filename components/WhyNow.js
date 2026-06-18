@@ -80,9 +80,9 @@ export default function WhyNow() {
             The humanoids we deploy.
           </h2>
           <p className="mt-5 text-lg text-gray-500 leading-relaxed">
-            We are platform-agnostic — we select the right humanoid for each task. AGIBOT is our
-            primary platform partner today, and the robots behind our showcases and live
-            demonstrations.
+            HRS is platform-agnostic: we select the right humanoid for each task rather than
+            reselling a single brand. AGIBOT is our primary platform partner today — the robots
+            behind our showcases and live demonstrations across the UK.
           </p>
         </div>
 

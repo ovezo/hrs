@@ -60,7 +60,9 @@ export default function WhatWeDo() {
               Not just robot sales.<br />A complete deployment pathway.
             </h2>
             <p className="mt-5 text-lg text-gray-500 leading-relaxed">
-              We identify the right task, prove value before any capital commitment, then handle integration, performance tracking and long-term support.
+              HRS deploys humanoid robots through a five-step pathway — not a one-off hardware sale.
+              We identify a high-fit task, prove value before any capital commitment, then handle
+              integration, performance tracking and long-term support across UK sites.
             </p>
             <div className="mt-8 w-16 h-1 bg-gray-900 rounded-full" />
           </div>

@@ -66,9 +66,9 @@ export default function HeroSection() {
               Humanoid<br />Robot Solutions
             </h1>
             <p className="mt-4 text-lg md:text-xl text-gray-500 leading-relaxed">
-              We take humanoid robots from demo to deployment — proven on your floor
-              before you commit, then integrated and trained to work safely alongside
-              your team.
+              HRS is a UK company that takes humanoid robots from demonstration to
+              deployment — proven on your factory floor before you commit, then
+              integrated and trained to work safely alongside your team.
             </p>
             <div className="mt-8 md:mt-10 flex flex-wrap items-center gap-3 md:gap-4">
               <a
@@ -77,7 +77,7 @@ export default function HeroSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-black text-white px-7 md:px-8 py-3.5 md:py-4 rounded-full text-sm font-semibold hover:bg-gray-900 transition-colors"
               >
-                Book Demo
+                Book a Demo
               </a>
               <a
                 href={`mailto:${contactEmail}`}
