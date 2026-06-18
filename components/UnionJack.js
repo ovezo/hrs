@@ -25,7 +25,7 @@ export default function UnionJack({ className = '' }) {
 }
 
 /** Union Jack in a small rounded, ringed chip — the reusable flag accent. */
-export function FlagChip({ className = 'h-4 w-[26px]' }) {
+export function FlagChip({ className = 'h-auto w-[50px]' }) {
   return (
     <span className={`inline-flex overflow-hidden rounded-[3px] ring-1 ring-black/10 shadow-sm ${className}`}>
       <UnionJack className="h-full w-full" />

@@ -58,11 +58,11 @@ export default function HeroSection() {
             {/* Eyebrow: restrained "British" signal — a small Union Jack chip + label. */}
             <div className="mb-4 inline-flex items-center gap-2.5">
               <FlagChip />
-              <span className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-gray-600">
+              <span className="text-xs sm:text-base font-semibold uppercase tracking-[0.18em] text-gray-600">
                 British Robotics Company
               </span>
             </div>
-            <h1 className="text-[44px] leading-[1.1] sm:text-[56px] lg:text-[80px] lg:leading-[1.05] font-bold tracking-tight text-gray-900">
+            <h1 className="text-[44px] leading-[1.1] sm:text-[56px] lg:text-[90px] lg:leading-[1.05] font-bold tracking-tight text-gray-900">
               Humanoid<br />Robot Solutions
             </h1>
             <p className="mt-4 text-lg md:text-xl text-gray-500 leading-relaxed">
