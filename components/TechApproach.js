@@ -40,8 +40,32 @@ const pillars = [
 
 export default function TechApproach() {
   return (
-    <section id="how-it-works" aria-label="Bringing AI to Life" className="bg-gray-50 py-24 md:py-32">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-16">
+    <section
+      id="how-it-works"
+      aria-label="Bringing AI to Life"
+      className="relative py-24 md:py-32 bg-center"
+      style={{
+        backgroundImage: 'url(/images/robot-ai-vision.png)',
+        backgroundSize: 'auto 100%',
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: 'rgb(249,250,251)',
+      }}
+    >
+      <div
+        className="absolute inset-0 md:hidden"
+        style={{
+          background:
+            'linear-gradient(to right, rgb(249,250,251) 65%, rgba(249,250,251,0.9) 78%, rgba(249,250,251,0.5) 90%, transparent 100%)',
+        }}
+      />
+      <div
+        className="absolute inset-0 hidden md:block"
+        style={{
+          background:
+            'linear-gradient(to right, rgb(249,250,251) 40%, rgba(249,250,251,0.9) 55%, rgba(249,250,251,0.5) 72%, rgba(249,250,251,0.15) 88%, transparent 100%)',
+        }}
+      />
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-16">
 
         {/* Title + description */}
         <div className="max-w-3xl mb-12 md:mb-16">
