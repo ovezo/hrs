@@ -11,7 +11,7 @@ const sectors = [
 
 export default function Demonstrations() {
   return (
-    <section id="demos" aria-label="Live Demonstrations" className="bg-white py-24 md:py-32">
+    <section id="demos" aria-label="Live Demonstrations" className="bg-gray-50 py-24 md:py-32">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -52,7 +52,7 @@ export default function Demonstrations() {
               {sectors.map((sector) => (
                 <li
                   key={sector}
-                  className="flex items-center gap-2.5 rounded-xl bg-gray-50 ring-1 ring-gray-200 px-4 py-3 text-sm font-medium text-gray-800"
+                  className="flex items-center gap-2.5 rounded-xl bg-white ring-1 ring-gray-200 px-4 py-3 text-sm font-medium text-gray-800"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0" />
                   {sector}

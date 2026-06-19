@@ -43,29 +43,9 @@ export default function TechApproach() {
     <section
       id="how-it-works"
       aria-label="Bringing AI to Life"
-      className="relative py-24 md:py-32 bg-center"
-      style={{
-        backgroundImage: 'url(/images/robot-ai-vision.png)',
-        backgroundSize: 'auto 100%',
-        backgroundRepeat: 'no-repeat',
-        backgroundColor: 'rgb(249,250,251)',
-      }}
+      className="bg-white py-24 md:py-32"
     >
-      <div
-        className="absolute inset-0 md:hidden"
-        style={{
-          background:
-            'linear-gradient(to right, rgb(249,250,251) 65%, rgba(249,250,251,0.9) 78%, rgba(249,250,251,0.5) 90%, transparent 100%)',
-        }}
-      />
-      <div
-        className="absolute inset-0 hidden md:block"
-        style={{
-          background:
-            'linear-gradient(to right, rgb(249,250,251) 40%, rgba(249,250,251,0.9) 55%, rgba(249,250,251,0.5) 72%, rgba(249,250,251,0.15) 88%, transparent 100%)',
-        }}
-      />
-      <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-16">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-16">
 
         {/* Title + description */}
         <div className="max-w-3xl mb-12 md:mb-16">
@@ -76,10 +56,10 @@ export default function TechApproach() {
             The age of physical AI is here.
           </h2>
           <p className="mt-5 text-lg text-gray-500 leading-relaxed">
-            And it is moving faster than most people realise. At the heart of the shift are
-            Vision-Language-Action models that let robots interpret what they see and hear and turn
-            it into action — robots that understand intent, not just instructions. Five capabilities
-            sit behind every HRS deployment.
+            Physical AI lets robots sense, reason about and act in the real world — and it is
+            advancing fast. At the heart of the shift are Vision-Language-Action models that let
+            robots interpret what they see and hear and turn it into action, understanding intent
+            rather than following scripts. Five capabilities sit behind every HRS deployment.
           </p>
         </div>
 

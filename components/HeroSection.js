@@ -66,8 +66,9 @@ export default function HeroSection() {
               Humanoid<br />Robot Solutions
             </h1>
             <p className="mt-4 text-lg md:text-xl text-gray-500 leading-relaxed">
-              HRS is a UK company that takes humanoid robots from demonstration to
-              deployment — proven on your factory floor before you commit, then
+              HRS (Humanoid Robot Solutions) is a UK humanoid robot integrator. We take
+              humanoid robots from demonstration to deployment across manufacturing,
+              warehousing and logistics — proven on your floor before you commit, then
               integrated and trained to work safely alongside your team.
             </p>
             <div className="mt-8 md:mt-10 flex flex-wrap items-center gap-3 md:gap-4">

@@ -3,7 +3,7 @@ import { getContactEmail } from '@/lib/config';
 export default function VisionCTA() {
   const contactEmail = getContactEmail();
   return (
-    <section id="contact" aria-label="Vision and Contact" className="bg-gray-50 py-24 pb-8! md:py-36">
+    <section id="contact" aria-label="Vision and Contact" className="bg-white py-24 pb-8! md:py-36">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
         <div className="max-w-4xl mx-auto text-center">
 
@@ -12,7 +12,7 @@ export default function VisionCTA() {
           </p>
 
           <h2 className="mt-6 text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-[1.05] tracking-tight">
-            Build the UK pathway. Early.
+            Build the UK pathway early.
           </h2>
 
           <p className="mt-8 text-lg md:text-xl text-gray-500 leading-relaxed max-w-2xl mx-auto">

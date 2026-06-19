@@ -1,8 +1,8 @@
 const barriers = [
   {
     number: '01',
-    title: 'Demos & Procurement',
-    body: 'We provide practical capability demos and handle the acquisition of the right humanoid hardware for your specific real-world needs.'
+    title: 'Trials & procurement',
+    body: 'We run practical capability trials, then source and procure the right humanoid robot platform for your specific real-world tasks.'
   },
   {
     number: '02',
@@ -17,7 +17,7 @@ const barriers = [
   {
     number: '04',
     title: 'Built for Any Industry',
-    body: 'We design automation solutions that adapt safely to human environments across manufacturing, defence, pharmaceuticals, and hospitality.'
+    body: 'We design humanoid automation solutions that adapt safely to human environments across manufacturing, warehousing and logistics, defence, pharmaceuticals and hospitality.'
   }
 ];
 
@@ -53,12 +53,12 @@ export default function TheGap() {
               End-to-End Adoption
             </p>
             <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-gray-900 leading-tight tracking-tight">
-            How HRS can help your business
+            Humanoid robot integration, end to end
             </h2>
             <p className="mt-6 text-lg text-gray-500 leading-relaxed">
-            HRS makes adopting humanoid robots straightforward. We help you transition from
-            early interest to active deployment, automating repetitive tasks effectively. Our key
-            services include:
+            HRS makes adopting humanoid robots straightforward — we take you from a first trial to
+            a deployed, working robot, automating repetitive manual tasks on your floor. Our core
+            services:
             </p>
             {/* <p className="mt-4 text-lg text-gray-900 font-medium">
               HRS bridges that gap — making humanoid robot deployment credible, safe and commercially viable.
