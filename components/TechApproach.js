@@ -56,8 +56,10 @@ export default function TechApproach() {
             The age of physical AI is here.
           </h2>
           <p className="mt-5 text-lg text-gray-500 leading-relaxed">
-            Physical AI lets robots sense, reason about and act in the real world — and it is
-            advancing fast. At the heart of the shift are Vision-Language-Action models that let
+            Physical AI — also called embodied AI — lets robots sense, reason about and act in the
+            real world, and it is advancing fast. Pioneers like Boston Dynamics, Tesla Optimus,
+            Figure AI and 1X Robotics have pushed the field forward globally — HRS brings that
+            progress to UK factory floors. At the heart of the shift are Vision-Language-Action models that let
             robots interpret what they see and hear and turn it into action, understanding intent
             rather than following scripts. Five capabilities sit behind every HRS deployment.
           </p>

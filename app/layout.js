@@ -17,13 +17,17 @@ export const metadata = {
     'HRS helps UK manufacturers deploy humanoid robots — the right task, real factory trials, proven ROI, plus full integration and long-term support. Book a demo.',
   applicationName: 'HRS — Humanoid Robot Solutions',
   keywords: [
-    'humanoid robots',
-    'humanoid robot deployment',
-    'industrial humanoid robots',
-    'UK manufacturing automation',
-    'factory automation',
-    'machine tending',
-    'robot integration',
+    'humanoid robots UK',
+    'humanoid robot integration',
+    'physical AI',
+    'vision-language-action models',
+    'embodied AI',
+    'factory automation humanoid',
+    'humanoid manufacturing',
+    'cobot solutions',
+    'AGIBOT',
+    'Unitree humanoid',
+    'Figure AI',
     'HRS',
     'Humanoid Robot Solutions',
   ],
@@ -65,8 +69,8 @@ export const metadata = {
 };
 
 // Structured data is kept in sync with what is actually visible on the page:
-// the two named founders (Team section), the contact email (CTAs), the UK
-// focus (throughout), and the real positioning. No FAQ markup — those Q&As
+// the named founder (Team section — Lel Rees, Founder & CEO), the contact email
+// (CTAs), the UK focus (throughout), and the real positioning. No FAQ markup — those Q&As
 // are not shown on the page, and Google requires FAQ structured data to match
 // visible content.
 const jsonLd = {
@@ -97,13 +101,16 @@ const jsonLd = {
       },
       knowsAbout: [
         'Humanoid robots',
-        'Industrial automation',
-        'Computer vision',
-        'Robot integration',
+        'Physical AI',
+        'Embodied AI',
+        'Vision-language-action models',
+        'Humanoid robot integration',
+        'Factory automation',
+        'Cobot solutions',
         'Manufacturing',
       ],
       founder: [
-        { '@type': 'Person', name: 'Lel Rees', jobTitle: 'Automation Lead' },
+        { '@type': 'Person', name: 'Lel Rees', jobTitle: 'Founder & CEO' },
       ],
       contactPoint: {
         '@type': 'ContactPoint',

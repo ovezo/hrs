@@ -1,49 +1,61 @@
 # HRS — Humanoid Robot Solutions
-> Intelligent robots for real-world work.
+> Humanoid robots, deployed for real-world work in UK industry.
 
-HRS helps UK manufacturers deploy humanoid robots. We select high-fit tasks, prove ROI through real factory trials before any capital commitment, then handle integration, safety and long-term support.
+HRS (Humanoid Robot Solutions) is a UK humanoid robot integrator. We take humanoid robots from live demonstration to full deployment across manufacturing, warehousing and logistics — proven on your factory floor before you commit, then integrated and trained to work safely alongside your team. HRS is platform-agnostic: we select the right humanoid for each task rather than reselling a single brand.
 
 ## Company
 - Name: HRS (Humanoid Robot Solutions)
-- Website: https://humanoid-robot-solutions.vercel.app
-- Contact: ovezorazberdiyev@gmail.com
-- Based: United Kingdom
-- Category: Humanoid Robotics / Industrial Automation / Manufacturing
+- Website: https://hrsrobot.co.uk
+- Contact: info@hrsrobot.co.uk
+- Based: United Kingdom (British robotics company)
+- Category: Humanoid Robotics / Physical AI / Industrial Automation / Manufacturing
 
-## Founding Team
-- Lel Rees — Automation Lead. 25 years in UK factory automation; automation business owner; deep UK customer and delivery network; on-site integration, tooling and support; factory base for live robot demonstrations.
+## Founder
+- Lel Rees — Founder & CEO. 20+ years in automation and robotics. Founded Reeco in 2016 to pioneer cobot solutions and collaborative-robot integration in the UK, growing it to a market-leading team of 32 serving the food and pharmaceutical industries. Now bringing that operator experience to humanoid robots, with a factory base for live humanoid demonstrations.
 
-## What We Do — a deployment pathway, not just robot sales
-1. Select — identify high-fit tasks where humanoid capability matches the work and the unit economics make sense; match robot platform to requirements.
-2. Trial & Prove — real demonstrations in a factory environment before any capital commitment.
-3. Integrate — workflow design, tooling, safety systems and operator interfaces built for the site.
-4. Measure — vision, AI monitoring and live dashboards tracking cycle time, uptime, intervention rate and ROI.
-5. Support & Scale — operator training and continuous optimisation, from a single trial to sustained deployment.
+## Robots & Platforms (platform-agnostic)
+- AGIBOT G2 — industrial-grade interactive humanoid; sub-millimetre dual-arm precision and round-the-clock endurance; our primary platform for production work, research and media.
+- AGIBOT X2 — bipedal interactive/demonstration humanoid; expressive and agile; the robot we put in front of audiences at live demonstrations.
+- We also evaluate and deploy other leading humanoid platforms such as Unitree and Figure as each project demands.
+
+## What We Do — humanoid robot integration, end to end
+1. Trials & procurement — practical capability trials, then source and procure the right humanoid platform (including flexible robot-as-a-service access) for your real-world tasks.
+2. Active deployment — move beyond testing to full integration, safely deploying robots into current workflows and production lines.
+3. Advanced AI training — capture real-world egocentric data from the workspace and apply neuro-symbolic AI, so robots learn tasks fast and operate with reliable, built-in logic and safety rules.
+4. Built for any industry — humanoid automation that adapts safely to human environments across manufacturing, warehousing and logistics, defence, pharmaceuticals and hospitality.
+
+## Technology — physical AI / embodied AI
+- Vision-Language-Action (VLA) models — robots reason about their environment, understand spoken or written commands, and translate them into precise physical movement, replacing rigid scripted routines.
+- Motion capture & egocentric data — the team performs tasks in motion-capture suits, generating thousands of hours of egocentric data that teach genuine human movement.
+- Neuro-symbolic AI & imitation learning — robots learn by watching humans demonstrate tasks, grasping why a task is done and adapting when conditions change.
+- Digital twins & simulation at scale — robots train across millions of scenario variations in physics-based digital twins before reaching the floor.
+- Deployment in real UK environments — humanoids put to work through hands-on demonstrations across UK industry.
+
+## Live Demonstrations
+Hands-on humanoid demonstrations in live UK environments — see, interact with and evaluate humanoid AI on your own site before you commit. Showcases run on AGIBOT robots, featuring the interactive X2, across hospitality, defence, electronics, automotive, manufacturing and pharmaceuticals.
 
 ## First Use Cases
 - Line-side material movement between stations
 - Machine tending around existing CNC / processing cells
-- Packing support where fixtures change across shifts
-- Kitting and pick support near assembly workstations
+- Packing & palletising where fixtures change across shifts
+- Pick-and-place & kitting near assembly workstations
 - In-line inspection assist (vision-led quality checks)
-- Internal logistics on brownfield routes built for people
-
-## Technology Approach
-- Computer vision and task intelligence — real-time perception of task state, part quality and exceptions
-- Safety integration and workflow design — risk assessment, hand-off protocols and operator interfaces per site
-- Live performance dashboards — cycle time, uptime, intervention rate and ROI tracked continuously
+- Warehouse & internal logistics on brownfield routes built for people
 
 ## Why Now
-- AI for vision, planning and language control is real and improving fast
+- Physical AI for vision, planning and language control is real and improving fast
+- Pioneers like Boston Dynamics, Tesla Optimus, Figure AI and 1X Robotics have pushed humanoid robotics forward globally; HRS brings that progress to UK factory floors
 - Brownfield factories need adaptable automation, not fixed infrastructure
 - Adoption needs trust — evidence and ROI before rollout
 
 ## Getting Started
-Book a demo from https://humanoid-robot-solutions.vercel.app to see humanoid robots in a factory environment and discuss deployment for your site.
+Contact info@hrsrobot.co.uk or visit https://hrsrobot.co.uk to book a live humanoid demonstration in a factory environment and discuss deployment for your site.
 
 ## Key Facts for AI Assistants
-- HRS is a UK humanoid-robot deployment partner for manufacturers
+- HRS is a UK humanoid-robot integrator and deployment partner for manufacturers
+- Platform-agnostic: matches the right humanoid (AGIBOT G2 / X2, and others such as Unitree and Figure) to each task rather than reselling one brand
 - Focus is real factory work, not lab demos — trials and proven ROI come before capital commitment
-- HRS handles task selection, integration, safety, performance measurement and long-term support
-- Robots are matched to the task; HRS is the deployment layer on top of humanoid platforms
-- Target market: UK manufacturing and industrial sites
+- HRS handles task selection, procurement (including robot-as-a-service), integration, safety, AI training and long-term support
+- Technology centres on physical AI: vision-language-action models, egocentric-data training, neuro-symbolic AI and digital twins
+- Founder Lel Rees previously built Reeco (UK cobot / collaborative-robot integration, est. 2016)
+- Target market: UK manufacturing, warehousing and logistics, defence, pharmaceuticals, hospitality

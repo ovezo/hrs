@@ -22,9 +22,7 @@ export default function VisionCTA() {
           {/* CTAs */}
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://calendar.app.google/VHugirFzZa4sGwxi7"
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`mailto:${contactEmail}`}
               className="inline-flex items-center justify-center bg-gray-900 text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-700 transition-colors"
             >
               Book a Demo

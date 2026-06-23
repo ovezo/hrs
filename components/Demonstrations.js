@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { getContactEmail } from '@/lib/config';
 
 const sectors = [
   'Hospitality',
@@ -10,6 +11,7 @@ const sectors = [
 ];
 
 export default function Demonstrations() {
+  const contactEmail = getContactEmail();
   return (
     <section id="demos" aria-label="Live Demonstrations" className="bg-gray-50 py-24 md:py-32">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
@@ -63,9 +65,7 @@ export default function Demonstrations() {
             {/* CTA */}
             <div className="mt-10">
               <a
-                href="https://calendar.app.google/VHugirFzZa4sGwxi7"
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`mailto:${contactEmail}`}
                 className="inline-flex items-center justify-center bg-black text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-900 transition-colors"
               >
                 Book a Demo

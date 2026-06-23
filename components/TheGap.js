@@ -2,7 +2,7 @@ const barriers = [
   {
     number: '01',
     title: 'Trials & procurement',
-    body: 'We run practical capability trials, then source and procure the right humanoid robot platform for your specific real-world tasks.'
+    body: 'We run practical capability trials, then source and procure the right humanoid robot platform — including flexible robot-as-a-service access — for your specific real-world tasks.'
   },
   {
     number: '02',
@@ -56,9 +56,9 @@ export default function TheGap() {
             Humanoid robot integration, end to end
             </h2>
             <p className="mt-6 text-lg text-gray-500 leading-relaxed">
-            HRS makes adopting humanoid robots straightforward — we take you from a first trial to
-            a deployed, working robot, automating repetitive manual tasks on your floor. Our core
-            services:
+            HRS makes adopting humanoid robots for manufacturing straightforward — we take you from
+            a first trial to a deployed, working robot, bringing humanoid factory automation to your
+            floor and taking over repetitive manual tasks. Our core services:
             </p>
             {/* <p className="mt-4 text-lg text-gray-900 font-medium">
               HRS bridges that gap — making humanoid robot deployment credible, safe and commercially viable.

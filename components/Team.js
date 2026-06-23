@@ -2,7 +2,7 @@ import CheckIcon from '@/icons/CheckIcon';
 
 const credentials = [
   '20+ years in automation & robotics',
-  'Founded Reeco in 2016 — UK collaborative-robot integration',
+  'Founded Reeco in 2016 — UK cobot solutions & collaborative-robot integration',
   'Grown to a market-leading team of 32',
   'Serving the food & pharmaceutical industries',
   'Deep UK customer trust and delivery network',
@@ -53,7 +53,7 @@ export default function Team() {
 
             <p className="text-base text-gray-600 leading-relaxed">
               With over twenty years in automation and robotics, Lel founded Reeco in 2016 to
-              pioneer collaborative-robot integration in the UK. What began as a vision to transform
+              pioneer cobot solutions and collaborative-robot integration across the UK. What began as a vision to transform
               manufacturing has grown into a market-leading company of thirty-two people, serving the
               food and pharmaceutical industries.
             </p>

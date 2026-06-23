@@ -82,7 +82,8 @@ export default function WhyNow() {
           <p className="mt-5 text-lg text-gray-500 leading-relaxed">
             HRS is platform-agnostic: we select the right humanoid for each task rather than
             reselling a single brand. AGIBOT is our primary platform partner today — the robots
-            behind our showcases and live demonstrations across the UK.
+            behind our showcases and live demonstrations across the UK — and we evaluate and deploy
+            other leading humanoid platforms such as Unitree and Figure as each project demands.
           </p>
         </div>
 
