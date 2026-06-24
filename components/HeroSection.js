@@ -37,8 +37,8 @@ export default function HeroSection() {
         <div
           className="
             absolute pointer-events-none select-none
-            top-[38%] right-0 left-0 bottom-30
-            sm:top-[10%] sm:left-[40%] sm:right-0 sm:-bottom-10
+            top-[65%] right-0 left-0 -bottom-30
+            sm:top-[10%] sm:left-[40%] sm:right-0 sm:bottom-0
             lg:top-[8%] lg:left-[42%]
           "
         >

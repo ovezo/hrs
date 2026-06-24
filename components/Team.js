@@ -1,4 +1,5 @@
 import CheckIcon from '@/icons/CheckIcon';
+import Image from 'next/image';
 
 const credentials = [
   '20+ years in automation & robotics',
@@ -40,14 +41,14 @@ export default function Team() {
           {/* Left — identity + bio */}
           <div className="flex flex-col gap-7">
             <div className="flex items-center gap-5">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-gray-700 to-gray-950 flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold text-lg tracking-tight">LR</span>
+              <div className="w-18 h-18 rounded-2xl overflow-hidden border-2 border-gray-400">
+                <Image src="/images/Llewelyn_Rees.avif" alt="Llewelyn Rees" width={72} height={72} />
               </div>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-widest text-gray-400">
                   Founder &amp; CEO
                 </p>
-                <h3 className="mt-0.5 text-xl font-bold text-gray-900">Lel Rees</h3>
+                <h3 className="mt-0.5 text-xl font-bold text-gray-900">Llewelyn Rees</h3>
               </div>
             </div>
 

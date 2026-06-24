@@ -69,7 +69,7 @@ export const metadata = {
 };
 
 // Structured data is kept in sync with what is actually visible on the page:
-// the named founder (Team section — Lel Rees, Founder & CEO), the contact email
+// the named founder (Team section — Llewelyn Rees, Founder & CEO), the contact email
 // (CTAs), the UK focus (throughout), and the real positioning. No FAQ markup — those Q&As
 // are not shown on the page, and Google requires FAQ structured data to match
 // visible content.
@@ -110,7 +110,7 @@ const jsonLd = {
         'Manufacturing',
       ],
       founder: [
-        { '@type': 'Person', name: 'Lel Rees', jobTitle: 'Founder & CEO' },
+        { '@type': 'Person', name: 'Llewelyn Rees', jobTitle: 'Founder & CEO' },
       ],
       contactPoint: {
         '@type': 'ContactPoint',

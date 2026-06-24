@@ -11,7 +11,7 @@ HRS (Humanoid Robot Solutions) is a UK humanoid robot integrator. We take humano
 - Category: Humanoid Robotics / Physical AI / Industrial Automation / Manufacturing
 
 ## Founder
-- Lel Rees — Founder & CEO. 20+ years in automation and robotics. Founded Reeco in 2016 to pioneer cobot solutions and collaborative-robot integration in the UK, growing it to a market-leading team of 32 serving the food and pharmaceutical industries. Now bringing that operator experience to humanoid robots, with a factory base for live humanoid demonstrations.
+- Llewelyn Rees — Founder & CEO. 20+ years in automation and robotics. Founded Reeco in 2016 to pioneer cobot solutions and collaborative-robot integration in the UK, growing it to a market-leading team of 32 serving the food and pharmaceutical industries. Now bringing that operator experience to humanoid robots, with a factory base for live humanoid demonstrations.
 
 ## Robots & Platforms (platform-agnostic)
 - AGIBOT G2 — industrial-grade interactive humanoid; sub-millimetre dual-arm precision and round-the-clock endurance; our primary platform for production work, research and media.
@@ -57,5 +57,5 @@ Contact info@hrsrobot.co.uk or visit https://hrsrobot.co.uk to book a live human
 - Focus is real factory work, not lab demos — trials and proven ROI come before capital commitment
 - HRS handles task selection, procurement (including robot-as-a-service), integration, safety, AI training and long-term support
 - Technology centres on physical AI: vision-language-action models, egocentric-data training, neuro-symbolic AI and digital twins
-- Founder Lel Rees previously built Reeco (UK cobot / collaborative-robot integration, est. 2016)
+- Founder Llewelyn Rees previously built Reeco (UK cobot / collaborative-robot integration, est. 2016)
 - Target market: UK manufacturing, warehousing and logistics, defence, pharmaceuticals, hospitality

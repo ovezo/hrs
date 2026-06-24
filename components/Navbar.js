@@ -7,8 +7,8 @@ import { FlagChip } from '@/components/UnionJack';
 
 const navLinks = [
   { label: 'Robots', id: 'robots' },
-  { label: 'About', id: 'about' },
   { label: 'Solutions', id: 'solutions' },
+  { label: 'About us', id: 'about' },
   { label: 'Demos', id: 'demos' },
   { label: 'How it works', id: 'how-it-works' },
   { label: 'Contact', id: 'contact' },
