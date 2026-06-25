@@ -1,0 +1,108 @@
+{
+  "title": "How to Choose a Humanoid Robot Integrator",
+  "description": "What to look for in a humanoid robot integrator: task selection, real trials, safety, support and platform independence — plus the questions to ask.",
+  "category": "Buying",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "humanoid robot integrator",
+    "humanoid robot solutions provider",
+    "choosing a robot integrator",
+    "robot deployment partner",
+    "humanoid robot consultant"
+  ],
+  "quickAnswer": "Choose a humanoid robot integrator on their ability to deliver outcomes, not just supply hardware. The strongest partners help you select high-fit tasks, prove them in real factory trials, integrate with proper safety set-up, and provide long-term support — and they stay platform-agnostic, matching the robot to the task rather than pushing one brand. Judge them on a measured first task and the evidence it produces, not on demos in ideal conditions.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Why the integrator matters as much as the robot"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "A humanoid robot is only as valuable as the deployment around it. As covered in ",
+        { "text": "how to deploy a humanoid robot", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        ", success depends on task selection, trials, safe integration and support — all of which sit with your partner, not the hardware. The wrong partner can stall a project with a great robot; the right one turns it into proven ROI."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What to look for"
+    },
+    {
+      "type": "table",
+      "headers": ["Capability", "Why it matters"],
+      "rows": [
+        ["Task selection", "They help you pick high-fit tasks, not just sell whatever you ask for."],
+        ["Real trials", "They prove performance on your line before you commit to scaling."],
+        ["Safety competence", "They build risk assessment and safeguards in from the start."],
+        ["End-to-end delivery", "They handle integration, training and ongoing support — not just supply."],
+        ["Platform independence", "They match the robot to the task instead of pushing one brand."],
+        ["Long-term support", "They keep uptime high and improve the system over time."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Why platform independence is a green flag"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "An integrator tied to a single vendor has an incentive to fit your task to their robot. A ",
+        { "text": "platform-agnostic", "href": "/learn/humanoid-robot-platforms-2026" },
+        " partner can choose the best robot for the job — and, just as importantly, tell you when a humanoid is not the right answer at all. That independence is a strong signal they are optimising for your outcome rather than a product sale."
+      ]
+    },
+    {
+      "type": "callout",
+      "text": "A trustworthy partner will sometimes recommend a fixed robot arm, a cobot, or no robot for a given task. A provider who says a humanoid is always the answer is selling hardware, not solving your problem."
+    },
+    {
+      "type": "heading",
+      "text": "Questions to ask a prospective integrator"
+    },
+    {
+      "type": "orderedList",
+      "items": [
+        "How will you help us choose the first task, and what makes a task a poor fit?",
+        "Will you run a real trial on our line, and how will success be measured?",
+        "How do you handle safety, risk assessment and staff training?",
+        "Are you tied to one platform, or do you select the best robot for the task?",
+        "What does ongoing support and improvement look like after go-live?",
+        "How do you build and prove the ROI case before we scale?"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Judge on evidence, not demos"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "A polished demonstration in ideal conditions proves little. The real test is a measured trial on your actual task, with the numbers to back it up. That is the approach HRS takes with UK manufacturers — selecting high-fit tasks, proving them in real trials, and delivering integration, safety and long-term support, while staying platform-agnostic. Start by scoping one task and letting the ",
+        { "text": "ROI evidence", "href": "/learn/humanoid-robot-roi" },
+        " make the decision."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What does a humanoid robot integrator do?",
+      "answer": "A good integrator delivers the whole outcome, not just the robot: helping select high-fit tasks, running real trials, integrating the robot with proper safety set-up, training staff, and providing long-term support. The hardware is one part; the deployment around it is where most of the value and risk sits."
+    },
+    {
+      "question": "Should an integrator be tied to one robot brand?",
+      "answer": "Platform independence is generally preferable. A partner tied to one vendor is incentivised to fit your task to their robot, whereas a platform-agnostic integrator can choose the best robot for the job — or advise against a humanoid when it is not the right tool."
+    },
+    {
+      "question": "How do I evaluate a humanoid robot provider?",
+      "answer": "Judge them on outcomes and evidence: how they choose the first task, whether they run a measured trial on your line, how they handle safety and support, and whether they build a real ROI case before scaling. Be wary of decisions based only on demos in ideal conditions."
+    }
+  ],
+  "related": [
+    "how-to-deploy-a-humanoid-robot",
+    "humanoid-robot-platforms-2026",
+    "humanoid-robot-roi",
+    "humanoid-robots-uk-guide"
+  ]
+}

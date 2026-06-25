@@ -1,0 +1,88 @@
+{
+  "title": "Humanoid Robots in Construction: Realistic Use Cases",
+  "description": "How humanoid robots could be used in construction — site logistics, material handling, fit-out and inspection — and why it's harder than factories.",
+  "category": "Applications",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "humanoid robots in construction",
+    "construction robots",
+    "robots building sites",
+    "construction automation",
+    "offsite construction robots"
+  ],
+  "quickAnswer": "In construction, humanoid robots are an earlier-stage prospect than in factories, but the interest is real: site logistics and material handling, repetitive fit-out tasks, and inspection in hazardous areas. Construction sites are less structured and more unpredictable than factories, so adoption will likely begin with the most bounded, repeatable tasks — and in controlled settings like offsite and modular construction — before moving onto live sites.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "The opportunity and the challenge"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Construction has a strong pull toward automation — labour shortages, tight timelines, and physically punishing, sometimes dangerous work. But it is harder for robots than a factory: sites are unstructured, constantly changing, often outdoors, and full of uneven terrain. That collides with the ",
+        { "text": "current limitations", "href": "/learn/limitations-of-humanoid-robots" },
+        " of humanoids, so expectations should be realistic about timing."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Realistic early tasks"
+    },
+    {
+      "type": "table",
+      "headers": ["Task", "Why it's a candidate"],
+      "rows": [
+        ["Material handling & site logistics", "Moving materials and tools — repetitive and physically demanding."],
+        ["Repetitive fit-out tasks", "Bounded, repeating work in interior fit-out and finishing."],
+        ["Inspection & survey", "Capturing progress and condition data, including hard-to-reach areas."],
+        ["Hazardous-area work", "Tasks in environments that are unsafe or unpleasant for people."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Why offsite and modular construction comes first"
+    },
+    {
+      "type": "paragraph",
+      "text": "The most natural starting point is offsite and modular construction, where building elements are produced in a factory. That setting is structured, repeatable and weather-protected — much closer to manufacturing than to a live site. Humanoids are likely to prove themselves there first, then move onto controlled portions of active sites as capability matures."
+    },
+    {
+      "type": "heading",
+      "text": "The constraints to plan around"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Unstructured, changing environments and uneven or cluttered terrain",
+        "Weather and outdoor conditions",
+        "High variability between tasks and sites",
+        "Stringent safety requirements around people and heavy materials"
+      ]
+    },
+    {
+      "type": "callout",
+      "text": "Honest framing for 2026: construction is a promising but earlier-stage application than manufacturing or logistics. Expect the first wins in factory-like offsite production and in bounded, repetitive or hazardous tasks — not general-purpose robots roaming live building sites just yet."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Are humanoid robots ready for construction sites?",
+      "answer": "Live sites are a tougher environment than factories — unstructured, outdoor and constantly changing — so general use is still early. The nearer-term reality is bounded, repetitive or hazardous tasks, and factory-like offsite and modular construction, where conditions are more controlled."
+    },
+    {
+      "question": "What construction tasks could humanoids do first?",
+      "answer": "Material handling and site logistics, repetitive interior fit-out tasks, inspection and survey, and work in hazardous areas. These are the most bounded and repeatable, which makes them the most realistic early candidates."
+    },
+    {
+      "question": "Why start with offsite or modular construction?",
+      "answer": "Because producing building elements in a factory is structured, repeatable and weather-protected — much closer to manufacturing, where humanoids already work. That makes offsite production a more achievable starting point than a live, open-air site."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-manufacturing",
+    "humanoid-robots-in-warehousing-and-logistics",
+    "limitations-of-humanoid-robots",
+    "future-of-humanoid-robots"
+  ]
+}

@@ -51,6 +51,53 @@ Hands-on humanoid demonstrations in live UK environments — see, interact with 
 ## Getting Started
 Contact info@hrsrobot.co.uk or visit https://hrsrobot.co.uk to book a live humanoid demonstration in a factory environment and discuss deployment for your site.
 
+## Learn — Humanoid Robots Explained
+In-depth articles answering the most common questions about humanoid robots and physical AI, written for UK industry. Index: https://hrsrobot.co.uk/learn — full text for AI ingestion: https://hrsrobot.co.uk/llms-full.txt
+
+### Fundamentals
+- [How Do Humanoid Robots Work?](https://hrsrobot.co.uk/learn/how-do-humanoid-robots-work): Humanoid robots sense their surroundings, decide with onboard AI, and move precise electric joints to act. Inside the full sense–think–act loop.
+- [How Do Humanoid Robots Learn New Tasks?](https://hrsrobot.co.uk/learn/how-humanoid-robots-learn): How humanoid robots learn — imitation learning, teleoperation, simulation and sim-to-real, reinforcement learning, and the data flywheel.
+- [Humanoid Robot & Physical AI Glossary (Key Terms)](https://hrsrobot.co.uk/learn/humanoid-robot-glossary): Plain-English definitions of key humanoid robotics and physical AI terms — from actuators and degrees of freedom to VLA models, sim-to-real and RaaS.
+- [Limitations of Humanoid Robots: What They Can't Do Yet](https://hrsrobot.co.uk/learn/limitations-of-humanoid-robots): What humanoid robots still can't do well in 2026 — dexterity, battery life, speed, autonomy and cost — and how to deploy within those limits.
+- [How Robot Hands Work: Grippers, End Effectors & Dexterity](https://hrsrobot.co.uk/learn/robot-hands-and-dexterity): How humanoid robot hands and grippers work, why dexterous manipulation is hard, the types of end effectors, and how AI is closing the gap.
+- [What Are Vision-Language-Action (VLA) Models?](https://hrsrobot.co.uk/learn/vision-language-action-models): A vision-language-action (VLA) model turns camera images and a plain-language instruction into robot movements. How VLAs work and why they matter.
+- [What Is a Cobot? Collaborative Robots Explained](https://hrsrobot.co.uk/learn/what-is-a-cobot): A cobot is a robot arm built to work safely beside people without fencing. How cobots work, their safety modes, and how they differ from other robots.
+- [What Is a Humanoid Robot? A Plain-English Definition](https://hrsrobot.co.uk/learn/what-is-a-humanoid-robot): A humanoid robot is built in the shape of the human body so it can work in spaces and with tools made for people. How they work and what they do.
+- [What Is Physical AI? Embodied Intelligence Explained](https://hrsrobot.co.uk/learn/what-is-physical-ai): Physical AI is artificial intelligence that perceives and acts in the real world through a body, like a humanoid robot. What it means and why it matters.
+
+### Comparisons
+- [Humanoid Robots vs. AMRs and AGVs](https://hrsrobot.co.uk/learn/humanoid-robots-vs-amrs): Humanoid robots vs AMRs and AGVs: wheels versus hands, what each does best, and how they work together in a facility.
+- [Humanoid Robots vs. Industrial Robots vs. Cobots](https://hrsrobot.co.uk/learn/humanoid-robots-vs-industrial-robots-and-cobots): Humanoid robots, industrial arms and cobots solve different problems. Compare cost, flexibility, speed and best-fit tasks to choose the right one.
+
+### Applications
+- [Humanoid Robots in Automotive Manufacturing](https://hrsrobot.co.uk/learn/humanoid-robots-in-automotive): How humanoid robots are used in automotive manufacturing — parts sequencing, assembly support, machine tending and line-side logistics — and where they fit.
+- [Humanoid Robots in Construction: Realistic Use Cases](https://hrsrobot.co.uk/learn/humanoid-robots-in-construction): How humanoid robots could be used in construction — site logistics, material handling, fit-out and inspection — and why it's harder than factories.
+- [Humanoid Robots in Electronics Manufacturing](https://hrsrobot.co.uk/learn/humanoid-robots-in-electronics-manufacturing): Humanoid robots in electronics manufacturing — handling small, delicate parts, assembly support, machine tending and testing in precision ESD-controlled lines.
+- [Humanoid Robots in Food & Beverage Manufacturing](https://hrsrobot.co.uk/learn/humanoid-robots-in-food-and-beverage): Humanoid robots in food and beverage — packing, palletising, machine tending and material movement in hygiene-controlled and cold environments.
+- [Humanoid Robots in Healthcare: Where They Fit](https://hrsrobot.co.uk/learn/humanoid-robots-in-healthcare): How humanoid robots are used in healthcare — hospital logistics, supply and meal delivery, lab and pharmacy support — not clinical care or diagnosis.
+- [Humanoid Robots in Manufacturing: Use Cases and ROI](https://hrsrobot.co.uk/learn/humanoid-robots-in-manufacturing): Where humanoid robots add value in manufacturing — machine tending, material movement, inspection and more — plus how to spot high-fit tasks and prove ROI.
+- [Humanoid Robots in Retail: Stockroom to Shop Floor](https://hrsrobot.co.uk/learn/humanoid-robots-in-retail): How humanoid robots are used in retail — stockroom and backroom handling, shelf replenishment and stock checking, and moving goods from stockroom to shop floor.
+- [Humanoid Robots in Warehousing and Logistics](https://hrsrobot.co.uk/learn/humanoid-robots-in-warehousing-and-logistics): How humanoid robots fit warehouses and logistics: picking, sorting, loading and tote movement, where they beat fixed automation, and how they pair with AMRs.
+
+### Adoption
+- [How to Deploy a Humanoid Robot in Your Facility](https://hrsrobot.co.uk/learn/how-to-deploy-a-humanoid-robot): A step-by-step path to deploying a humanoid robot: task selection, a real factory trial, integration, safety and support — and how to avoid stalled pilots.
+
+### Buying
+- [How to Choose a Humanoid Robot Integrator](https://hrsrobot.co.uk/learn/choosing-a-humanoid-robot-integrator): What to look for in a humanoid robot integrator: task selection, real trials, safety, support and platform independence — plus the questions to ask.
+- [How Much Do Humanoid Robots Cost? (2026 Guide)](https://hrsrobot.co.uk/learn/how-much-do-humanoid-robots-cost): What drives humanoid robot cost — hardware, integration, software and support — and why total cost of ownership matters more than the sticker price.
+- [Humanoid Robot ROI: How to Calculate Payback](https://hrsrobot.co.uk/learn/humanoid-robot-roi): A practical method to calculate humanoid robot ROI and payback: what to include, the formula, realistic timeframes, and mistakes that wreck the case.
+- [Robot-as-a-Service (RaaS) for Humanoid Robots](https://hrsrobot.co.uk/learn/robot-as-a-service): How robot-as-a-service (RaaS) works for humanoid robots: subscription vs buying, what's bundled, pricing models, and the pros and cons of each.
+
+### Safety
+- [Are Humanoid Robots Safe to Work Alongside?](https://hrsrobot.co.uk/learn/are-humanoid-robots-safe): How humanoid robots are made safe to work near people: sensing, safety systems, risk assessment, standards, and what responsible deployment looks like.
+
+### Market
+- [The Future of Humanoid Robots: 2026–2030 Outlook](https://hrsrobot.co.uk/learn/future-of-humanoid-robots): Where humanoid robots are heading by 2030 — falling costs, better AI and dexterity, scaling deployments and RaaS — and what's realistic versus hype.
+- [How Big Is the Humanoid Robot Market?](https://hrsrobot.co.uk/learn/humanoid-robot-market-size): What analysts project for humanoid robot market growth to 2030 and beyond, what's driving it, and why forecasts vary so widely — read with healthy caution.
+- [Leading Humanoid Robot Platforms in 2026](https://hrsrobot.co.uk/learn/humanoid-robot-platforms-2026): An overview of notable humanoid robot platforms in 2026 — AGIBOT, Unitree, Figure, Tesla Optimus, Apptronik and more — and why platform-agnostic matters.
+- [Humanoid Robots in the UK: A Manufacturer's Guide](https://hrsrobot.co.uk/learn/humanoid-robots-uk-guide): Why UK manufacturers are looking at humanoid robots, where they fit, the safety and regulatory basics, and how to start with a real trial that proves ROI.
+- [Will Humanoid Robots Take Jobs? A Balanced View](https://hrsrobot.co.uk/learn/will-humanoid-robots-take-jobs): Will humanoid robots replace workers? Which tasks are most affected, why augmentation is more likely than replacement, and the role of reskilling.
+
 ## Key Facts for AI Assistants
 - HRS is a UK humanoid-robot integrator and deployment partner for manufacturers
 - Platform-agnostic: matches the right humanoid (AGIBOT G2 / X2, and others such as Unitree and Figure) to each task rather than reselling one brand

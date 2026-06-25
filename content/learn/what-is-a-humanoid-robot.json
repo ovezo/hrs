@@ -1,0 +1,122 @@
+{
+  "title": "What Is a Humanoid Robot? A Plain-English Definition",
+  "description": "A humanoid robot is built in the shape of the human body so it can work in spaces and with tools made for people. How they work and what they do.",
+  "category": "Fundamentals",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "what is a humanoid robot",
+    "humanoid robot definition",
+    "humanoid robots explained",
+    "humanoid robot meaning",
+    "general-purpose robot"
+  ],
+  "quickAnswer": "A humanoid robot is a robot built in the general shape of the human body — a torso, two arms, hands, and either legs or a wheeled base, topped by a sensor head — so it can operate in spaces and with tools designed for people. Modern humanoids pair that body with AI that lets them see their surroundings, understand instructions, and carry out physical tasks without custom-built automation around them.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "What makes a robot \"humanoid\"?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Plenty of robots are not humanoid: a robot arm bolted to a factory floor, a wheeled warehouse mover, or a robot vacuum all do useful work without looking remotely human. A humanoid robot is defined by its form. It approximates the human body so that it can move through, and act within, environments that were built for human workers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Three traits separate a humanoid from other robots:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Human-like form — a torso with two arms and dexterous hands, mounted on legs or a mobile base, plus a head carrying cameras and sensors.",
+        "Human-scale reach and footprint — sized to use the same doorways, shelves, workstations and tools people already use.",
+        "General purpose — designed to be re-tasked through software rather than rebuilt in hardware for each new job."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The main parts of a humanoid robot"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Under the skin, a humanoid robot is a tightly integrated bundle of sensing, actuation, computing and power. For a deeper walkthrough, see ",
+        { "text": "how humanoid robots work", "href": "/learn/how-do-humanoid-robots-work" },
+        "."
+      ]
+    },
+    {
+      "type": "table",
+      "headers": ["System", "What it does"],
+      "rows": [
+        ["Sensors", "Cameras, depth sensors, an inertial measurement unit (IMU) for balance, and force/torque sensing in the joints and hands."],
+        ["Actuators", "Electric motors at each joint that move the limbs; hands or grippers that grasp and manipulate objects."],
+        ["Compute", "Onboard processors running the AI models that turn what the robot sees and is told into movement."],
+        ["Power", "A rechargeable battery, typically giving a few hours of work between charges."],
+        ["Structure", "A lightweight but rigid frame that carries loads while keeping the robot balanced."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What can humanoid robots actually do today?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The realistic near-term value is in repetitive, physically simple tasks in environments built for people — not science-fiction autonomy. Common early use cases include:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Moving parts, totes and materials between workstations",
+        "Loading and unloading machines (machine tending)",
+        "Picking, placing and kitting components",
+        "Visual inspection and quality checks",
+        "Internal logistics along routes originally built for human workers"
+      ]
+    },
+    {
+      "type": "callout",
+      "text": "The point of a humanoid is flexibility. A single platform can be moved from one task to another by changing software and training, instead of buying and installing a different fixed machine for every job."
+    },
+    {
+      "type": "heading",
+      "text": "Why give a robot a human shape at all?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A human form is rarely the most efficient shape for any single task — a conveyor moves boxes faster than legs ever will. The argument for humanoids is about the environment, not the task. Factories, warehouses and back-of-house spaces are full of stairs, ramps, handles, shelves and hand tools designed around human bodies. A robot shaped like a person can slot into those \"brownfield\" spaces with little or no rebuilding, which is often where the real cost of automation hides."
+    },
+    {
+      "type": "heading",
+      "text": "Humanoid robots vs. androids vs. cobots"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "\"Android\" usually implies a robot designed to look convincingly human, including skin and face — appearance is the goal. A humanoid robot only needs a human-like layout to do work; most look unmistakably like machines. A \"cobot\" (collaborative robot) is typically a single arm built to work safely beside people, not a full body. For a side-by-side breakdown, read ",
+        { "text": "humanoid robots vs. industrial robots and cobots", "href": "/learn/humanoid-robots-vs-industrial-robots-and-cobots" },
+        "."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is a humanoid robot the same as an android?",
+      "answer": "No. An android is specifically designed to look human, often with synthetic skin and facial features. A humanoid robot only needs a human-like body layout — arms, hands, a mobile base — to do useful work, and most look clearly like machines."
+    },
+    {
+      "question": "Do humanoid robots have to walk on two legs?",
+      "answer": "No. Many humanoids are bipedal, but others use a wheeled or tracked base for the lower body. Both still count as humanoid because the upper body and reach are human-like, which is what lets them use human tools and workspaces."
+    },
+    {
+      "question": "Are humanoid robots useful yet, or just a demo?",
+      "answer": "They are moving from demonstrations into early real-world deployments. The honest position in 2026 is that humanoids are genuinely useful for bounded, repetitive tasks in human-built environments, while fully general autonomy is still developing. The value today comes from picking high-fit tasks and proving them in real trials."
+    }
+  ],
+  "related": [
+    "how-do-humanoid-robots-work",
+    "what-is-physical-ai",
+    "humanoid-robots-vs-industrial-robots-and-cobots",
+    "humanoid-robots-in-manufacturing"
+  ]
+}

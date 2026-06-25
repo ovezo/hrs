@@ -1,0 +1,88 @@
+{
+  "title": "Humanoid Robots in Automotive Manufacturing",
+  "description": "How humanoid robots are used in automotive manufacturing — parts sequencing, assembly support, machine tending and line-side logistics — and where they fit.",
+  "category": "Applications",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "humanoid robots in automotive",
+    "humanoid robots car manufacturing",
+    "automotive automation",
+    "humanoid robots assembly line",
+    "robots in car factories"
+  ],
+  "quickAnswer": "In automotive manufacturing, humanoid robots are being trialled for repetitive support tasks around the assembly line: sequencing and presenting parts, line-side material movement, machine tending, and handling components in spaces built for human workers. They complement the fixed industrial robots that already do high-speed welding and body assembly, taking on the flexible, human-paced jobs that are hard to automate with fixed cells.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Why automotive is an early adopter"
+    },
+    {
+      "type": "paragraph",
+      "text": "Car plants are among the most automated factories in the world, but that automation is concentrated in high-volume, fixed tasks like welding and body assembly. A large amount of supporting work — moving parts to the line, sequencing components, tending machines — is still manual because it varies too much for fixed cells. That mix of structure and flexible support work makes automotive a natural early home for humanoids."
+    },
+    {
+      "type": "heading",
+      "text": "High-fit tasks on and around the line"
+    },
+    {
+      "type": "table",
+      "headers": ["Task", "What the robot does"],
+      "rows": [
+        ["Parts sequencing & kitting", "Preparing and presenting the right components in the right order for assembly."],
+        ["Line-side logistics", "Moving parts and totes from storage to the workstation without fixed conveyors."],
+        ["Machine tending", "Loading and unloading presses, moulding and processing machines."],
+        ["Assembly support", "Fetching, holding and presenting parts to human or robot assemblers."],
+        ["Inspection assist", "Visual checks and flagging exceptions in the flow."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Working alongside existing robots"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Humanoids are not a replacement for the fast, fenced ",
+        { "text": "industrial robots", "href": "/learn/humanoid-robots-vs-industrial-robots-and-cobots" },
+        " that dominate automotive lines. They fill the gaps those robots cannot economically cover: the variable, human-paced, mobile tasks between the fixed cells. The two operate as layers of the same line."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The EV factor"
+    },
+    {
+      "type": "paragraph",
+      "text": "The shift to electric vehicles is reshaping car plants — new lines, new components like battery modules, and frequent changeovers. That period of change favours flexible automation that can be re-tasked through software, which is exactly the humanoid value proposition: adapt to a new task without rebuilding a fixed cell."
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "As in any sector, success comes from picking one bounded, high-fit task and proving it in a ",
+        { "text": "real trial", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        " before scaling across the plant."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Are humanoid robots actually used in car factories?",
+      "answer": "Automotive is one of the leading early sectors for humanoid trials, focused on support tasks like parts sequencing, line-side logistics and machine tending rather than the high-speed welding and body assembly already handled by fixed robots. Most activity is at the trial-and-early-deployment stage."
+    },
+    {
+      "question": "Do humanoids replace the robots car plants already use?",
+      "answer": "No. Fixed industrial robots remain best for high-volume, high-speed tasks behind fencing. Humanoids take on the variable, human-paced, mobile support work between those cells, so the two complement each other on the same line."
+    },
+    {
+      "question": "What automotive task should a humanoid start with?",
+      "answer": "Usually a repetitive, bounded support task such as parts sequencing, line-side material movement or machine tending — work that is hard to staff and currently manual. Prove it on one task in a real trial, then expand."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-manufacturing",
+    "humanoid-robots-vs-industrial-robots-and-cobots",
+    "humanoid-robots-in-electronics-manufacturing",
+    "how-to-deploy-a-humanoid-robot"
+  ]
+}

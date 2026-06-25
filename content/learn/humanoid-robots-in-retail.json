@@ -1,0 +1,88 @@
+{
+  "title": "Humanoid Robots in Retail: Stockroom to Shop Floor",
+  "description": "How humanoid robots are used in retail — stockroom and backroom handling, shelf replenishment and stock checking, and moving goods from stockroom to shop floor.",
+  "category": "Applications",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "humanoid robots in retail",
+    "retail robots",
+    "shelf replenishment robot",
+    "stockroom automation",
+    "retail backroom robots"
+  ],
+  "quickAnswer": "In retail, humanoid robots are best suited to the backroom and stockroom: receiving and moving stock, replenishing shelves, checking stock levels, and carrying goods from the stockroom to the shop floor. The structured back-of-house is a more realistic starting point than the busy, unpredictable shop floor. As capability grows, roles like shelf-edge scanning and customer assistance may follow, but stockroom logistics is where the early value sits.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Back-of-house first, shop floor later"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Retail spans two very different environments. The stockroom is structured and predictable; the shop floor is crowded, changeable and full of people. Humanoids are far better suited to the former today, which is why the credible early use cases sit back-of-house — the same \"structured before unstructured\" pattern seen across the ",
+        { "text": "adoption curve", "href": "/learn/future-of-humanoid-robots" },
+        "."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "High-fit retail tasks"
+    },
+    {
+      "type": "table",
+      "headers": ["Task", "What the robot does"],
+      "rows": [
+        ["Goods-in handling", "Receiving deliveries and moving stock into the stockroom."],
+        ["Stockroom logistics", "Organising and moving stock within the back-of-house."],
+        ["Replenishment", "Carrying stock to the shop floor and supporting shelf filling."],
+        ["Stock checking", "Counting and monitoring stock levels and locations."],
+        ["Stockroom-to-floor movement", "Bridging the busiest manual gap between storage and sales."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Why the stockroom is the sweet spot"
+    },
+    {
+      "type": "paragraph",
+      "text": "Stockroom work is repetitive, physically demanding and hard to staff — and it happens away from customers, in a more controlled space. That makes it lower-risk and higher-fit than the shop floor, where unpredictability and constant human presence raise the bar considerably. Starting back-of-house lets retailers capture value while the technology matures."
+    },
+    {
+      "type": "heading",
+      "text": "What may come next"
+    },
+    {
+      "type": "paragraph",
+      "text": "As perception, dexterity and safety improve, more shop-floor-adjacent tasks become plausible — shelf-edge scanning, tidying and restocking during quiet hours, and eventually some customer-facing assistance. These are later steps, not today's reality, and they depend on robots handling busy, unstructured public spaces reliably and safely."
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "As elsewhere, the winning approach is to pick one bounded stockroom task, prove it in a ",
+        { "text": "real trial", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        ", and expand from there — rather than starting with the hardest, most public tasks."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Are humanoid robots working on shop floors yet?",
+      "answer": "Busy, public shop floors are a hard environment, so general use there is still early. The realistic near-term role is back-of-house — stockroom handling, replenishment and stock checking — with shop-floor tasks following as perception, dexterity and safety mature."
+    },
+    {
+      "question": "What retail tasks should a humanoid start with?",
+      "answer": "Structured stockroom work: goods-in handling, stockroom logistics, replenishment support and stock checking. These are repetitive, hard to staff and away from customers, making them lower-risk and higher-fit than shop-floor tasks."
+    },
+    {
+      "question": "Will humanoid robots serve customers?",
+      "answer": "Possibly in time, but it is not the near-term focus. Customer-facing assistance requires reliably handling busy, unpredictable public spaces, so early value comes from stockroom and replenishment work rather than direct customer service."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-warehousing-and-logistics",
+    "humanoid-robots-in-healthcare",
+    "future-of-humanoid-robots",
+    "what-is-a-humanoid-robot"
+  ]
+}

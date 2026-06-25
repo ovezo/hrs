@@ -1,0 +1,108 @@
+{
+  "title": "Limitations of Humanoid Robots: What They Can't Do Yet",
+  "description": "What humanoid robots still can't do well in 2026 — dexterity, battery life, speed, autonomy and cost — and how to deploy within those limits.",
+  "category": "Fundamentals",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "limitations of humanoid robots",
+    "what humanoid robots cannot do",
+    "humanoid robot challenges",
+    "are humanoid robots reliable",
+    "humanoid robot drawbacks"
+  ],
+  "quickAnswer": "Despite rapid progress, humanoid robots in 2026 still have real limits: dexterous manipulation of varied objects is hard, battery life is only a few hours, they are slower and less precise than fixed automation, fully autonomous general behaviour is still developing, and they cost more than the hardware alone. The practical response is to deploy them on well-chosen, bounded tasks with humans in the loop — not as drop-in replacements for an entire workforce.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Why honesty about limits matters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Humanoid robots are genuinely useful today, but the hype runs ahead of the reality. Knowing the limits is not a reason to avoid them — it is how you pick tasks that actually succeed and avoid the stalled pilots that come from over-promising."
+    },
+    {
+      "type": "heading",
+      "text": "The real limitations in 2026"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Dexterity — handling varied, delicate or unfamiliar objects is still hard and error-prone compared with a person.",
+        "Battery life — most run for only a few hours before charging, so runtime has to be planned around shifts.",
+        "Speed and precision — for high-volume, identical work a fixed robot arm is faster and more accurate.",
+        "Autonomy — general, unsupervised behaviour is still maturing; real deployments keep humans in the loop for exceptions.",
+        "Edge cases — unusual situations the robot has not been trained on can trip it up.",
+        "Cost and effort — beyond the hardware, integration, training and support all take real investment."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What they're good at vs. not (yet)"
+    },
+    {
+      "type": "table",
+      "headers": ["Strong fit today", "Still a stretch"],
+      "rows": [
+        ["Repetitive, bounded tasks", "Open-ended, improvised work"],
+        ["Human-paced cycle times", "Maximum-speed high-volume lines"],
+        ["Handling regular, known parts", "Delicate, highly varied manipulation"],
+        ["Supervised operation", "Fully autonomous, unsupervised running"],
+        ["Spaces built for people", "Chaotic, unpredictable environments"]
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "None of these are reasons to wait indefinitely — they are reasons to choose tasks carefully. The same limits define what a good ",
+        { "text": "first task", "href": "/learn/humanoid-robots-in-manufacturing" },
+        " looks like: repetitive, bounded and human-paced."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "How to deploy within the limits"
+    },
+    {
+      "type": "orderedList",
+      "items": [
+        "Pick a task that plays to the strengths and avoids the weaknesses above.",
+        "Keep people supervising and handling exceptions, especially early on.",
+        "Plan for charging, maintenance and the occasional failure — design for realistic uptime, not 100%.",
+        "Prove it in a real trial before scaling, so the limits surface on one task rather than across a fleet."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Are the limits going away?"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Many are narrowing fast. Dexterity and autonomy improve as AI models train on more data, and hardware keeps getting better and cheaper. But progress is uneven and timelines are uncertain, so the sensible stance is to start now on tasks that work today while staying ready for what comes next. See ",
+        { "text": "the future of humanoid robots", "href": "/learn/future-of-humanoid-robots" },
+        " for where this is heading."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can a humanoid robot do everything a human worker can?",
+      "answer": "No. Humanoids handle repetitive, bounded, physically simple tasks well, but they cannot match human judgement, adaptability and dexterity across open-ended work. They are best used for specific, well-chosen tasks with people supervising, not as full replacements for human workers."
+    },
+    {
+      "question": "Are humanoid robots reliable enough for real production?",
+      "answer": "For the right tasks, yes — provided you design for realistic uptime and keep humans handling exceptions. Reliability is highest on bounded, repetitive work and lowest on highly variable manipulation, which is why task selection and a real trial matter so much."
+    },
+    {
+      "question": "Will these limitations be solved soon?",
+      "answer": "Several are narrowing quickly as AI and hardware improve, but progress is uneven and timelines are uncertain. The pragmatic approach is to deploy on tasks that work today and expand as capability grows, rather than waiting for a fully general robot."
+    }
+  ],
+  "related": [
+    "what-is-a-humanoid-robot",
+    "humanoid-robots-vs-industrial-robots-and-cobots",
+    "future-of-humanoid-robots",
+    "how-to-deploy-a-humanoid-robot"
+  ]
+}

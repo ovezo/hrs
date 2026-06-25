@@ -1,0 +1,111 @@
+{
+  "title": "What Are Vision-Language-Action (VLA) Models?",
+  "description": "A vision-language-action (VLA) model turns camera images and a plain-language instruction into robot movements. How VLAs work and why they matter.",
+  "category": "Fundamentals",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "vision-language-action model",
+    "VLA model",
+    "VLA robotics",
+    "robot foundation model",
+    "what is a VLA"
+  ],
+  "quickAnswer": "A vision-language-action (VLA) model is an AI model that takes in what a robot sees (vision) and a plain-language instruction (language) and directly outputs the movements the robot should make (action). It is the robotics equivalent of a large language model: a single, general model trained on huge amounts of data that can be told what to do in ordinary words, instead of being hand-programmed for one fixed task.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "The three parts in the name"
+    },
+    {
+      "type": "paragraph",
+      "text": "A VLA model is named after what flows through it:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Vision — live images from the robot's cameras, showing the objects and scene in front of it.",
+        "Language — an instruction in plain words, such as \"place the bracket in the tray,\" plus general knowledge about how the world works.",
+        "Action — the model's output: the actual joint movements or commands that move the robot's arms, hands and body."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The breakthrough is that all three live in one model. Instead of separate, brittle modules for seeing, planning and moving, a VLA learns the mapping from \"what I see and what I was told\" straight to \"what I should do\" — end to end."
+    },
+    {
+      "type": "heading",
+      "text": "Why VLAs are a turning point for robots"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Traditional industrial robots are programmed for one precise, repeating motion. Change the part or the layout and an engineer has to reprogram them. VLA models are the engine of ",
+        { "text": "physical AI", "href": "/learn/what-is-physical-ai" },
+        ": they let a robot generalise. A model that has learned to pick up many objects in many settings can often handle a new object or a slightly changed scene without being reprogrammed from scratch."
+      ]
+    },
+    {
+      "type": "table",
+      "headers": ["", "Traditional robot programming", "VLA-driven robot"],
+      "rows": [
+        ["How it's set up", "Hand-coded motions for one task", "Trained on broad data, told the task in words"],
+        ["Handling variation", "Fails if the part or scene changes", "Adapts to reasonable variation"],
+        ["Adding a new task", "Re-engineer the program", "Demonstrate or instruct; fine-tune"],
+        ["Best fit", "High-volume, identical, fixed work", "Mixed, changeable, human-built environments"]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "How a VLA model is trained"
+    },
+    {
+      "type": "paragraph",
+      "text": "VLAs learn from large and varied datasets of robots doing tasks, gathered in a few main ways:"
+    },
+    {
+      "type": "orderedList",
+      "items": [
+        "Teleoperation — human operators control robots to perform tasks, creating paired examples of \"scene + instruction → correct movement.\"",
+        "Simulation — robots practise in realistic virtual environments, generating enormous amounts of training data cheaply and safely.",
+        "Real-world fleet data — deployed robots contribute experience that is used to keep improving the model."
+      ]
+    },
+    {
+      "type": "callout",
+      "text": "Just as language models improved as they were trained on more text, VLA models tend to get more capable and more general as they are trained on more robot experience. This is why data — from teleoperation, simulation and real deployments — is so valuable in robotics today."
+    },
+    {
+      "type": "heading",
+      "text": "VLAs in a working humanoid"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "On a ",
+        { "text": "humanoid robot", "href": "/learn/what-is-a-humanoid-robot" },
+        ", the VLA usually handles perception and dexterous manipulation — the \"what should my hands do\" part — while dedicated control systems handle balance and safety. In a real deployment, the VLA is the component that makes the robot adaptable enough to be worth using on varied tasks, rather than a fixed single-purpose machine."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is a VLA model the same as a large language model?",
+      "answer": "It is closely related. A VLA shares the foundation-model idea — one large model trained broadly — but adds vision input and, crucially, action output. Where a language model outputs words, a VLA outputs movements for a robot body."
+    },
+    {
+      "question": "Do VLA models make robots fully autonomous?",
+      "answer": "Not on their own. VLAs make robots far more adaptable, but real deployments still combine them with safety systems, control for balance, and human oversight for exceptions. They raise capability; they do not remove the need for sensible engineering around them."
+    },
+    {
+      "question": "Why are VLAs important for manufacturers specifically?",
+      "answer": "Because they let one robot cover varied, changeable tasks that traditional fixed automation could never economically justify — which is exactly the kind of work found on real production lines and in warehouses."
+    }
+  ],
+  "related": [
+    "what-is-physical-ai",
+    "how-do-humanoid-robots-work",
+    "what-is-a-humanoid-robot",
+    "humanoid-robots-vs-industrial-robots-and-cobots"
+  ]
+}

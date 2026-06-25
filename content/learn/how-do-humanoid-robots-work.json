@@ -1,0 +1,118 @@
+{
+  "title": "How Do Humanoid Robots Work?",
+  "description": "Humanoid robots sense their surroundings, decide with onboard AI, and move precise electric joints to act. Inside the full sense–think–act loop.",
+  "category": "Fundamentals",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "how do humanoid robots work",
+    "humanoid robot sensors",
+    "humanoid robot actuators",
+    "robot perception and control",
+    "humanoid robot AI"
+  ],
+  "quickAnswer": "A humanoid robot works by continuously running a \"sense, think, act\" loop. Cameras and sensors build a live picture of its surroundings; onboard AI interprets that picture along with the task it has been given and decides what to do; and electric motors at each joint move the limbs and hands to carry out the action. This loop repeats many times per second so the robot can balance, react and adjust in real time.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "The sense–think–act loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "Almost every robot, including humanoids, runs the same basic cycle thousands of times an hour: take in information about the world, decide what to do, and move. What makes modern humanoids capable is how good each of those three stages has become — especially the \"think\" stage, thanks to recent advances in AI."
+    },
+    {
+      "type": "heading",
+      "text": "1. Sense: how a humanoid perceives the world"
+    },
+    {
+      "type": "paragraph",
+      "text": "A humanoid robot carries several kinds of sensor, each answering a different question:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Cameras answer \"what is around me?\" — recognising objects, people and obstacles.",
+        "Depth sensors answer \"how far away is it?\" — building a 3D map of the space.",
+        "An inertial measurement unit (IMU) answers \"which way is up, and am I tipping?\" — essential for balance.",
+        "Force and torque sensors answer \"how hard am I pushing or gripping?\" — so the robot can handle objects without crushing or dropping them.",
+        "Joint encoders answer \"exactly where is each limb right now?\""
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "2. Think: the AI that turns perception into action"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "The \"brain\" is software running on processors inside the robot. The most important recent shift is the move to ",
+        { "text": "vision-language-action (VLA) models", "href": "/learn/vision-language-action-models" },
+        " — AI that takes in camera images and a plain-language instruction and outputs the movements needed to carry it out. This is the engine behind what the industry calls ",
+        { "text": "physical AI", "href": "/learn/what-is-physical-ai" },
+        ": intelligence that acts in the real world rather than just on a screen."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In practice the \"think\" stage blends several techniques: classical control for balance and safety, planning to sequence steps of a task, and learned AI models for perception and dexterous manipulation."
+    },
+    {
+      "type": "heading",
+      "text": "3. Act: actuators, joints and hands"
+    },
+    {
+      "type": "paragraph",
+      "text": "The decisions become movement through actuators — almost always electric motors at each joint. A humanoid has dozens of these \"degrees of freedom\": several per leg for walking and balance, several per arm, and many in the hands for grasping. Precise control of each motor, updated continuously, is what lets a humanoid stand on one foot, recover from a nudge, or place a part gently into a fixture."
+    },
+    {
+      "type": "callout",
+      "text": "Balance is the constant background task. Even when a humanoid looks like it is standing still, its control system is making tiny, fast adjustments to stop it from falling — much like a person shifting their weight without noticing."
+    },
+    {
+      "type": "heading",
+      "text": "How a humanoid learns a new task"
+    },
+    {
+      "type": "paragraph",
+      "text": "Re-tasking a humanoid is mostly a software exercise, which is the whole point of a general-purpose machine. Common methods include:"
+    },
+    {
+      "type": "orderedList",
+      "items": [
+        "Teleoperation and imitation — a human operator demonstrates the task (sometimes by wearing motion-capture gear) and the robot learns from those demonstrations.",
+        "Simulation training — the robot practises in a virtual \"digital twin\" of the workspace millions of times before touching real hardware.",
+        "On-site fine-tuning — the behaviour is adjusted to the specifics of a real line, with safety limits in place."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Power and runtime"
+    },
+    {
+      "type": "paragraph",
+      "text": "Humanoids run on rechargeable batteries, typically delivering a few hours of active work before needing a charge or a battery swap. Planning around charging — like scheduling it across shift breaks — is part of deploying them well."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Are humanoid robots remote-controlled or autonomous?",
+      "answer": "Both, depending on the task and how mature it is. Many real deployments start with a degree of human teleoperation or supervision, then shift toward autonomy as the robot's AI is trained on the specific task. Even \"autonomous\" robots usually keep a human in the loop for exceptions and safety."
+    },
+    {
+      "question": "How does a humanoid robot keep its balance?",
+      "answer": "A dedicated control system reads the robot's IMU and joint sensors many times per second and constantly adjusts the leg and torso motors to keep the robot's centre of mass over its feet — the same idea as a person making small, automatic weight shifts to stay upright."
+    },
+    {
+      "question": "Do humanoid robots need the internet to work?",
+      "answer": "Core functions like balance, perception and safety run on the robot's onboard computer so it keeps working if the network drops. A connection is often used for fleet management, updates, and offloading heavier AI processing, but the robot does not freeze the moment it loses Wi-Fi."
+    }
+  ],
+  "related": [
+    "how-humanoid-robots-learn",
+    "robot-hands-and-dexterity",
+    "vision-language-action-models",
+    "what-is-physical-ai",
+    "what-is-a-humanoid-robot"
+  ]
+}

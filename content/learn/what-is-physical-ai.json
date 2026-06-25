@@ -1,0 +1,108 @@
+{
+  "title": "What Is Physical AI? Embodied Intelligence Explained",
+  "description": "Physical AI is artificial intelligence that perceives and acts in the real world through a body, like a humanoid robot. What it means and why it matters.",
+  "category": "Fundamentals",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "what is physical AI",
+    "physical AI meaning",
+    "embodied AI",
+    "embodied intelligence",
+    "AI robotics"
+  ],
+  "quickAnswer": "Physical AI is artificial intelligence that perceives and acts in the physical world through a body — most visibly a humanoid robot. Unlike a chatbot, which only produces text, physical AI must understand a real, changing environment and control real hardware to get things done. It is also called embodied AI, and it is the technology that turns a robot from a pre-programmed machine into one that can adapt to messy, real-world tasks.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Physical AI vs. the AI you already know"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most AI people have used lives entirely in software. It reads text or images and produces text, code or pictures. It never has to deal with gravity, friction, a part that is slightly out of place, or a person walking into its path. Physical AI does. It is intelligence that closes the loop between perceiving the real world and changing it through a body."
+    },
+    {
+      "type": "table",
+      "headers": ["", "Digital AI (e.g. a chatbot)", "Physical AI (e.g. a humanoid)"],
+      "rows": [
+        ["Input", "Text, images, data", "Live cameras, depth, force, balance sensors"],
+        ["Output", "Text, images, code", "Physical movement of a real body"],
+        ["Environment", "Fixed and predictable", "Changing, uncertain, never identical twice"],
+        ["Cost of a mistake", "A bad sentence", "A dropped part — or a safety risk"]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Why \"embodied\" changes everything"
+    },
+    {
+      "type": "paragraph",
+      "text": "Acting through a body makes the problem far harder than it looks. The same task — say, picking up a box — is never exactly the same twice. The box may be heavier, shinier, or in a slightly different spot; the lighting may change; a person may reach in at the wrong moment. Physical AI has to handle that variation in real time, while staying balanced and safe. This is why progress in robotics historically lagged behind progress in software AI."
+    },
+    {
+      "type": "heading",
+      "text": "What made physical AI take off"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Several advances arrived together. The biggest is the rise of ",
+        { "text": "vision-language-action (VLA) models", "href": "/learn/vision-language-action-models" },
+        ", which let a robot map what it sees and is told directly onto how it should move. Add cheaper, more capable robot hardware, vastly more training data from teleoperation and simulation, and far more onboard compute, and tasks that were impractical a few years ago became achievable."
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Foundation models that generalise across many tasks instead of one",
+        "Realistic simulation (\"digital twins\") for training at huge scale and low cost",
+        "Better, lower-cost actuators, sensors and batteries",
+        "Enough onboard compute to run AI models on the robot itself"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Physical AI and humanoid robots"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "A humanoid robot is one of the most demanding and most useful bodies for physical AI: human-shaped, so it can work in human spaces, but with dozens of joints to coordinate. Physical AI is what lets a single ",
+        { "text": "humanoid platform", "href": "/learn/what-is-a-humanoid-robot" },
+        " be re-tasked through software instead of rebuilt in hardware for every job — the core economic argument for humanoids."
+      ]
+    },
+    {
+      "type": "callout",
+      "text": "A useful way to think about it: digital AI automates knowledge work; physical AI automates physical work. The same wave of foundation-model progress now reaches the factory floor and the warehouse."
+    },
+    {
+      "type": "heading",
+      "text": "Where physical AI is heading"
+    },
+    {
+      "type": "paragraph",
+      "text": "The near-term trajectory is general-purpose robots that learn new tasks faster, need less bespoke programming, and improve as they collect more real-world data. For manufacturers, the practical implication is that the barrier to automating a task is shifting from \"can a machine physically do this?\" to \"is this task a good fit, and can we prove the ROI?\""
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is physical AI the same as embodied AI?",
+      "answer": "Yes — the terms are used interchangeably. Both describe AI that perceives and acts in the real world through a physical body, such as a robot, rather than producing only digital outputs like text or images."
+    },
+    {
+      "question": "Is physical AI just a humanoid robot?",
+      "answer": "No. Physical AI is the intelligence; a humanoid is one kind of body it can run on. The same idea applies to robot arms, mobile robots and other machines. Humanoids are simply a high-profile, flexible body for it because they suit human-built environments."
+    },
+    {
+      "question": "Why is physical AI a big deal for manufacturers?",
+      "answer": "Because it lets one flexible machine cover tasks that previously each needed their own fixed automation. That changes the economics of automating low-volume, high-variation work that traditional robots could never justify."
+    }
+  ],
+  "related": [
+    "vision-language-action-models",
+    "what-is-a-humanoid-robot",
+    "how-do-humanoid-robots-work",
+    "humanoid-robots-in-manufacturing"
+  ]
+}

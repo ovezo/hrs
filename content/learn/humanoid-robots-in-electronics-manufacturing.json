@@ -1,0 +1,88 @@
+{
+  "title": "Humanoid Robots in Electronics Manufacturing",
+  "description": "Humanoid robots in electronics manufacturing — handling small, delicate parts, assembly support, machine tending and testing in precision ESD-controlled lines.",
+  "category": "Applications",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "humanoid robots electronics manufacturing",
+    "robots electronics assembly",
+    "electronics automation",
+    "humanoid robot small parts handling",
+    "precision assembly robots"
+  ],
+  "quickAnswer": "In electronics manufacturing, humanoid robots are suited to repetitive handling and assembly-support tasks around precision lines: feeding and presenting small components, machine tending, test handling and material movement. The work demands care with small, delicate, static-sensitive parts, so dexterity and gentle, precise handling matter more than payload. Humanoids add flexibility for the high-mix, frequently-changing tasks common in electronics.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Why electronics is a strong fit — and a hard one"
+    },
+    {
+      "type": "paragraph",
+      "text": "Electronics production combines high mix, frequent changeovers and a lot of delicate manual handling — a good match for a flexible, re-taskable robot. But it is also demanding: components are small and fragile, many are sensitive to static, and tolerances are tight. That raises the bar on dexterity and precision rather than strength."
+    },
+    {
+      "type": "heading",
+      "text": "High-fit tasks"
+    },
+    {
+      "type": "table",
+      "headers": ["Task", "What the robot does"],
+      "rows": [
+        ["Component feeding & kitting", "Presenting and preparing small parts for assembly stations."],
+        ["Assembly support", "Fetching, holding and placing components for human or robot assemblers."],
+        ["Machine tending", "Loading and unloading test, programming and processing equipment."],
+        ["Test & inspection handling", "Moving units through testing and flagging exceptions."],
+        ["Packaging & material movement", "Handling finished units and moving materials between stations."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The dexterity and ESD challenge"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Handling tiny, delicate parts gently and accurately is exactly the kind of ",
+        { "text": "dexterous manipulation", "href": "/learn/robot-hands-and-dexterity" },
+        " that is hardest for robots — so end-effector choice and force sensing are critical. Electrostatic discharge (ESD) control and cleanliness requirements also shape how and where a humanoid can work. These are solvable constraints, but they make task selection and a careful trial especially important."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Fit with existing automation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Electronics lines already use pick-and-place machines and fixed automation for high-speed, high-precision steps. Humanoids are not aimed at those; they target the variable handling and support tasks around them — the high-mix work that changes too often to justify a dedicated machine."
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "Start where handling is repetitive but not ultra-fine, prove it, then extend toward more delicate tasks as confidence grows. The ",
+        { "text": "deployment path", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        " is the same staged one used across manufacturing."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can humanoid robots handle tiny, fragile electronic parts?",
+      "answer": "Increasingly, with the right end effector and force or tactile sensing — but delicate, high-precision handling is among the harder tasks for robots. The practical approach is to start with repetitive handling that is not ultra-fine and extend toward more delicate work as the deployment proves out."
+    },
+    {
+      "question": "What about ESD and cleanroom requirements?",
+      "answer": "Electrostatic discharge control and cleanliness are real constraints that shape where and how a humanoid can operate in electronics. They are manageable with appropriate equipment and set-up, which is why careful task selection and a controlled trial matter in this sector."
+    },
+    {
+      "question": "Which electronics task should a humanoid start with?",
+      "answer": "Usually a repetitive, bounded handling or support task — component feeding, machine tending or test handling — that is currently manual and hard to staff. Prove one task in a real trial before expanding to more delicate or higher-mix work."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-manufacturing",
+    "robot-hands-and-dexterity",
+    "humanoid-robots-in-automotive",
+    "how-to-deploy-a-humanoid-robot"
+  ]
+}

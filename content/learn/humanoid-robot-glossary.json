@@ -1,0 +1,117 @@
+{
+  "title": "Humanoid Robot & Physical AI Glossary (Key Terms)",
+  "description": "Plain-English definitions of key humanoid robotics and physical AI terms — from actuators and degrees of freedom to VLA models, sim-to-real and RaaS.",
+  "category": "Fundamentals",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "humanoid robot glossary",
+    "robotics terms explained",
+    "physical AI terminology",
+    "robot definitions",
+    "robotics jargon"
+  ],
+  "quickAnswer": "This glossary defines the key terms used in humanoid robotics and physical AI in plain English — grouped into core concepts, AI and learning, hardware, and deployment and commercial terms. Use it as a quick reference when reading about humanoid robots, from actuators and degrees of freedom to vision-language-action models, sim-to-real and robot-as-a-service.",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Humanoid robotics borrows vocabulary from mechanical engineering, AI and manufacturing. Here are the terms you will meet most often, grouped by theme."
+    },
+    {
+      "type": "heading",
+      "text": "Core concepts"
+    },
+    {
+      "type": "table",
+      "headers": ["Term", "Plain-English definition"],
+      "rows": [
+        ["Humanoid robot", "A robot built in the general shape of the human body so it can work in spaces and with tools made for people."],
+        ["Cobot (collaborative robot)", "A robot arm designed to work safely beside people without fencing, using force and speed limits."],
+        ["Industrial robot", "A fast, powerful robot arm for high-volume fixed tasks, usually kept behind safety fencing."],
+        ["AMR", "Autonomous mobile robot — a wheeled robot that navigates and moves goods, but has no arms."],
+        ["AGV", "Automated guided vehicle — a wheeled transport robot that follows fixed routes or markers."],
+        ["Degrees of freedom (DoF)", "The number of independent joints a robot can move; more DoF means more flexible movement."],
+        ["Bipedal", "Walking on two legs, as opposed to using a wheeled or tracked base."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "AI and learning"
+    },
+    {
+      "type": "table",
+      "headers": ["Term", "Plain-English definition"],
+      "rows": [
+        ["Physical AI", "AI that perceives and acts in the real world through a body, such as a robot. Also called embodied AI."],
+        ["VLA model", "Vision-language-action model — AI that turns camera images and a plain-language instruction into robot movements."],
+        ["Foundation model", "A large, general AI model trained on broad data that can be adapted to many tasks."],
+        ["Imitation learning", "Teaching a robot by showing it demonstrations of a task, often via teleoperation."],
+        ["Reinforcement learning", "Training a robot to improve through trial, error and feedback signals."],
+        ["Teleoperation", "A human remotely controlling a robot — used to operate it and to gather training data."],
+        ["Sim-to-real", "Training a robot in simulation, then transferring what it learned to the physical robot."],
+        ["Digital twin", "A realistic virtual copy of a robot or workspace, used for training and testing."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Hardware and the body"
+    },
+    {
+      "type": "table",
+      "headers": ["Term", "Plain-English definition"],
+      "rows": [
+        ["Actuator", "The motor at a joint that creates movement; humanoids have dozens."],
+        ["End effector", "The tool at the end of a robot arm — a gripper, hand or other device that does the work."],
+        ["Gripper", "An end effector that grasps objects, from simple two-finger types to multi-fingered hands."],
+        ["Payload", "The maximum weight a robot can carry or manipulate."],
+        ["IMU", "Inertial measurement unit — a sensor that tracks motion and orientation, essential for balance."],
+        ["Proprioception", "A robot's sense of where its own joints and limbs are positioned."],
+        ["Dexterity", "How skilfully a robot can manipulate objects with its hands or end effector."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Deployment and commercial"
+    },
+    {
+      "type": "table",
+      "headers": ["Term", "Plain-English definition"],
+      "rows": [
+        ["Brownfield", "An existing facility built for people, deployed into with minimal change — versus a purpose-built greenfield site."],
+        ["Machine tending", "Loading, unloading and monitoring a machine such as a CNC or moulding press."],
+        ["Cycle time", "The time a robot takes to complete one repetition of a task."],
+        ["Uptime / availability", "The share of scheduled time a robot is actually working and productive."],
+        ["RaaS", "Robot-as-a-service — subscribing to a robot for a recurring fee instead of buying it outright."],
+        ["TCO", "Total cost of ownership — all costs of running a robot over time, not just its purchase price."],
+        ["ROI", "Return on investment — the value a robot creates measured against what it costs."],
+        ["Integrator", "A partner that selects, deploys, integrates and supports robots for a specific operation."]
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "New to the topic? Start with ",
+        { "text": "what is a humanoid robot", "href": "/learn/what-is-a-humanoid-robot" },
+        " and ",
+        { "text": "how do humanoid robots work", "href": "/learn/how-do-humanoid-robots-work" },
+        ", then use this glossary as a reference."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What does VLA stand for in robotics?",
+      "answer": "VLA stands for vision-language-action. A VLA model takes in camera images (vision) and a plain-language instruction (language) and outputs the movements a robot should make (action) — the AI engine behind modern general-purpose robots."
+    },
+    {
+      "question": "What is the difference between an AMR and a humanoid robot?",
+      "answer": "An AMR (autonomous mobile robot) is a wheeled robot that transports goods but has no arms. A humanoid robot has a full body with hands, so it can manipulate objects and use spaces and tools built for people."
+    }
+  ],
+  "related": [
+    "what-is-a-humanoid-robot",
+    "how-do-humanoid-robots-work",
+    "vision-language-action-models",
+    "humanoid-robots-vs-amrs"
+  ]
+}

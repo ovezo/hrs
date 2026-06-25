@@ -1,0 +1,103 @@
+{
+  "title": "How Robot Hands Work: Grippers, End Effectors & Dexterity",
+  "description": "How humanoid robot hands and grippers work, why dexterous manipulation is hard, the types of end effectors, and how AI is closing the gap.",
+  "category": "Fundamentals",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "robot hands",
+    "robot dexterity",
+    "end effector",
+    "robot gripper types",
+    "dexterous manipulation"
+  ],
+  "quickAnswer": "A humanoid robot manipulates objects with its hands or a gripper — known collectively as the \"end effector.\" Dexterity comes from three things: enough joints (degrees of freedom) to position and grasp, touch and force sensing to handle objects without crushing or dropping them, and AI that decides how to grasp each item. Grippers range from simple two-finger and vacuum types to multi-fingered hands, and dexterous handling of varied objects remains one of robotics' hardest, most valuable problems.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Why hands are the hard part"
+    },
+    {
+      "type": "paragraph",
+      "text": "There is a well-known irony in robotics: tasks humans find effortless, like picking up a soft, shiny or oddly shaped object, are extremely hard for robots, while tasks humans find hard, like precise repetitive motion, are easy. Walking and balance are largely solved; reliably grasping the endless variety of real-world objects is not. That is why manipulation is where much of today's research and value sits."
+    },
+    {
+      "type": "heading",
+      "text": "End effectors: the tool at the end of the arm"
+    },
+    {
+      "type": "paragraph",
+      "text": "The \"hand\" of a robot is its end effector — the device that actually does the work. Not every task needs human-like fingers; the right end effector depends on the job:"
+    },
+    {
+      "type": "table",
+      "headers": ["End effector", "Best for"],
+      "rows": [
+        ["Two-finger (parallel) gripper", "Simple, reliable grasping of regular, rigid parts."],
+        ["Vacuum / suction", "Flat, smooth or porous surfaces like boxes, sheets and panels."],
+        ["Multi-finger hand", "Varied shapes, tool use and tasks needing human-like dexterity."],
+        ["Soft / adaptive gripper", "Delicate, irregular or fragile items that need a gentle, conforming grip."],
+        ["Specialised tooling", "A specific task — a dedicated tool fitted for one job."]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "A key advantage of a human-like hand on a ",
+        { "text": "humanoid", "href": "/learn/what-is-a-humanoid-robot" },
+        " is that it can use tools and fixtures designed for people, and switch between tasks without changing hardware."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What makes a hand dexterous"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Degrees of freedom — enough independent joints to position fingers and grasp in different ways",
+        "Force and torque sensing — knowing how hard it is gripping, so it neither crushes nor drops",
+        "Tactile sensing — a sense of touch and contact, increasingly important for fine manipulation",
+        "Speed and stability — grasping quickly and holding securely while the body moves"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The role of AI in grasping"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Hardware alone is not enough — the robot has to decide how to grasp each object it sees. This is where ",
+        { "text": "vision-language-action models", "href": "/learn/vision-language-action-models" },
+        " come in: they map what the camera sees to a sensible grasp and motion, and they generalise to objects the robot has not seen in exactly that form before. Better models, trained on more ",
+        { "text": "manipulation data", "href": "/learn/how-humanoid-robots-learn" },
+        ", are the main reason robot dexterity is improving quickly."
+      ]
+    },
+    {
+      "type": "callout",
+      "text": "Practical takeaway: for a given task, the smartest choice is often the simplest end effector that works. A two-finger or vacuum gripper can be more reliable than a complex hand — while multi-fingered hands unlock the varied, tool-using tasks that make humanoids flexible."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is an end effector on a robot?",
+      "answer": "An end effector is the device at the end of a robot arm that interacts with the world — a gripper, a multi-fingered hand, a suction cup or a specialised tool. It is effectively the robot's \"hand,\" chosen to suit the task."
+    },
+    {
+      "question": "Can robots handle delicate or irregular objects?",
+      "answer": "Increasingly, yes — using force and tactile sensing plus soft or adaptive grippers, guided by AI that adjusts the grasp. It remains harder than handling uniform rigid parts, which is why delicate, high-variety manipulation is an active frontier in robotics."
+    },
+    {
+      "question": "Do humanoid robots need human-like hands?",
+      "answer": "Not always. Human-like hands are valuable for tool use and varied tasks, but many jobs are done more reliably with a simpler gripper. Good deployments match the end effector to the task rather than assuming a five-fingered hand is always best."
+    }
+  ],
+  "related": [
+    "how-do-humanoid-robots-work",
+    "how-humanoid-robots-learn",
+    "vision-language-action-models",
+    "humanoid-robots-in-manufacturing"
+  ]
+}

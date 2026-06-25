@@ -1,0 +1,92 @@
+{
+  "title": "Will Humanoid Robots Take Jobs? A Balanced View",
+  "description": "Will humanoid robots replace workers? Which tasks are most affected, why augmentation is more likely than replacement, and the role of reskilling.",
+  "category": "Market",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "will humanoid robots take jobs",
+    "humanoid robots and jobs",
+    "robots replacing workers",
+    "automation job displacement",
+    "robots and employment"
+  ],
+  "quickAnswer": "Humanoid robots are more likely to automate specific tasks than whole jobs, at least for the foreseeable future. The roles most affected are repetitive, physically demanding ones that are already hard to staff; work needing judgement, creativity, social skills or unstructured problem-solving is far safer. Many surveys of roboticists expect augmentation and a shift in what people do — not mass replacement — in the near term, with reskilling central to the transition.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "The honest answer: tasks, not whole jobs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most jobs are bundles of many tasks, and humanoid robots are good at only some of them — the repetitive, physical, bounded ones. So the realistic near-term effect is robots taking over parts of jobs, changing what a role involves rather than eliminating it wholesale. Predictions of entire workforces being replaced overnight are not supported by where the technology actually is."
+    },
+    {
+      "type": "heading",
+      "text": "Which work is most and least exposed"
+    },
+    {
+      "type": "table",
+      "headers": ["More exposed", "Less exposed"],
+      "rows": [
+        ["Repetitive physical tasks", "Judgement and decision-making"],
+        ["Structured, predictable settings", "Unstructured, changing environments"],
+        ["Material movement and handling", "Creative and strategic work"],
+        ["Routine machine tending", "Skilled trades and complex repair"],
+        ["Tasks already hard to staff", "Roles built on human relationships"]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The labour-shortage context"
+    },
+    {
+      "type": "paragraph",
+      "text": "A lot of early humanoid deployment targets roles employers already struggle to fill — repetitive, physically tiring, high-turnover work. In those cases robots address a shortage rather than displace willing workers, and they can relieve ergonomic strain and improve safety. That is a very different picture from robots pushing people out of jobs they want to keep."
+    },
+    {
+      "type": "heading",
+      "text": "Augmentation vs. replacement"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "History with automation suggests a recurring pattern: machines take over specific tasks, roles evolve toward oversight and higher-value work, and new types of jobs emerge around the technology — operating, supervising, maintaining and improving it. Surveys of robotics experts broadly expect augmentation in the near term rather than sweeping replacement, partly because of the ",
+        { "text": "real limitations", "href": "/learn/limitations-of-humanoid-robots" },
+        " that remain."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Reskilling and the transition"
+    },
+    {
+      "type": "paragraph",
+      "text": "The disruption is real even if it is gradual, and the responsible path is to manage it: redeploy people from the dullest, most strenuous tasks toward supervision, exception handling and higher-value work, and invest in reskilling. Organisations that plan the human side of automation — not just the technical side — tend to get better results and smoother adoption."
+    },
+    {
+      "type": "callout",
+      "text": "A grounded position for 2026: humanoid robots are best framed as a way to cover hard-to-fill tasks, relieve strain and lift productivity — augmenting teams rather than replacing them — while the longer-term impact is managed deliberately through reskilling."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Will humanoid robots cause mass unemployment?",
+      "answer": "There is no strong evidence for that in the near term. Most experts expect robots to automate specific tasks and shift what roles involve, rather than replace whole workforces — especially as much early deployment targets jobs employers already struggle to fill. The longer-term impact depends heavily on reskilling and how adoption is managed."
+    },
+    {
+      "question": "Which jobs are safest from humanoid robots?",
+      "answer": "Roles built on judgement, creativity, social interaction, skilled trades and work in unstructured, unpredictable environments are the least exposed. The most exposed are repetitive, physical, structured tasks — which are also often the hardest to staff."
+    },
+    {
+      "question": "Do humanoid robots create jobs as well?",
+      "answer": "Typically yes. Deploying and running robots creates roles in operation, supervision, maintenance, integration and improvement, and frees people for higher-value work. As with past automation, new categories of work tend to emerge around the technology even as some tasks are automated."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-manufacturing",
+    "future-of-humanoid-robots",
+    "limitations-of-humanoid-robots",
+    "humanoid-robots-uk-guide"
+  ]
+}

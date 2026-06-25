@@ -1,0 +1,110 @@
+{
+  "title": "Robot-as-a-Service (RaaS) for Humanoid Robots",
+  "description": "How robot-as-a-service (RaaS) works for humanoid robots: subscription vs buying, what's bundled, pricing models, and the pros and cons of each.",
+  "category": "Buying",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "robot as a service",
+    "RaaS",
+    "humanoid robot subscription",
+    "robot leasing",
+    "RaaS vs buying"
+  ],
+  "quickAnswer": "Robot-as-a-service (RaaS) is a subscription model where you pay a recurring fee to use a humanoid robot instead of buying it outright. The fee usually bundles the hardware, software, support, maintenance and updates, turning a large upfront capital cost into a predictable operating cost and shifting uptime and obsolescence risk to the provider. RaaS suits many first deployments; outright purchase can be cheaper over a long, intensive lifespan.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "What RaaS means"
+    },
+    {
+      "type": "paragraph",
+      "text": "With robot-as-a-service, you do not buy a machine — you subscribe to a working capability. The provider keeps ownership of the robot and stays responsible for it across its life: uptime, software updates, servicing and eventual replacement. It is the same shift that moved software from boxed purchases to subscriptions, applied to physical robots."
+    },
+    {
+      "type": "heading",
+      "text": "What's usually bundled"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The robot hardware itself",
+        "The AI software and task configuration",
+        "Maintenance, servicing and spare parts",
+        "Software updates and improvements over time",
+        "Support, and often uptime or performance commitments"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "How RaaS is priced"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two common structures, sometimes combined:"
+    },
+    {
+      "type": "table",
+      "headers": ["Model", "How you pay"],
+      "rows": [
+        ["Time-based", "A fixed fee per period — for example monthly — for access to the robot."],
+        ["Task-based", "A fee tied to output, such as per task, pick or unit of work performed."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "RaaS vs. buying outright"
+    },
+    {
+      "type": "table",
+      "headers": ["", "Robot-as-a-service", "Outright purchase"],
+      "rows": [
+        ["Upfront cost", "Low — spread into a recurring fee", "High — full capital outlay"],
+        ["Maintenance & updates", "Included by the provider", "Your responsibility"],
+        ["Obsolescence risk", "Carried by the provider", "Carried by you"],
+        ["Long-term cost", "Higher if used intensively for years", "Lower over a long lifespan"],
+        ["Best for", "First deployments, flexibility, scaling", "Owning a proven asset long-term"]
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "RaaS mainly changes the shape of the cost, not the underlying test. Whichever model you choose, the decision still rests on ",
+        { "text": "total cost of ownership and ROI", "href": "/learn/humanoid-robot-roi" },
+        " for your specific task."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "When each makes sense"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "RaaS is attractive for a first deployment: it lowers the barrier to entry, removes maintenance hassle, and lets you scale up or down as needs change — useful while the technology is advancing quickly. Outright purchase can win when you will run a proven robot intensively for many years. For most UK manufacturers starting out, a subscription that bundles support pairs naturally with a staged ",
+        { "text": "deployment", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        "."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is robot-as-a-service cheaper than buying a humanoid robot?",
+      "answer": "It depends on usage. RaaS lowers upfront cost and bundles support, which suits many first deployments, but an outright purchase can be cheaper over a long, intensive lifespan. Compare total cost of ownership for your specific task and time horizon rather than headline figures."
+    },
+    {
+      "question": "What is included in a RaaS subscription?",
+      "answer": "Typically the robot hardware, AI software, task configuration, maintenance and spares, ongoing updates, and support — often with uptime or performance commitments. The exact bundle varies by provider, so confirm what is and isn't covered before signing."
+    },
+    {
+      "question": "Does RaaS make it easier to change platforms later?",
+      "answer": "Generally yes — because you are not locked into owning hardware, RaaS can make it easier to adjust or switch as the technology evolves, especially with a platform-agnostic provider. Check contract length and exit terms to be sure."
+    }
+  ],
+  "related": [
+    "how-much-do-humanoid-robots-cost",
+    "humanoid-robot-roi",
+    "choosing-a-humanoid-robot-integrator",
+    "how-to-deploy-a-humanoid-robot"
+  ]
+}

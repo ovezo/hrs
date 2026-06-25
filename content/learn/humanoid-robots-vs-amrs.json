@@ -1,0 +1,96 @@
+{
+  "title": "Humanoid Robots vs. AMRs and AGVs",
+  "description": "Humanoid robots vs AMRs and AGVs: wheels versus hands, what each does best, and how they work together in a facility.",
+  "category": "Comparisons",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "humanoid robots vs AMR",
+    "AMR vs AGV",
+    "autonomous mobile robot",
+    "humanoid vs mobile robot",
+    "warehouse robot types"
+  ],
+  "quickAnswer": "AMRs (autonomous mobile robots) and AGVs (automated guided vehicles) are wheeled robots that move goods around a facility — AGVs follow fixed routes, while AMRs navigate dynamically. Neither has arms. Humanoid robots add hands and the ability to use spaces and tools built for people, so they handle dexterous, variable tasks like picking, loading and packing. Use AGVs and AMRs for transport and humanoids for manipulation — they are complementary, not competing.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Wheels vs. hands"
+    },
+    {
+      "type": "paragraph",
+      "text": "The simplest way to understand these robots is by what they are built to do. AGVs and AMRs are about moving things from A to B. Humanoids are about doing things with their hands. Confusing the two is the main source of disappointment when people expect a wheeled transport robot to also pick and pack."
+    },
+    {
+      "type": "heading",
+      "text": "AGV vs. AMR: both move goods, differently"
+    },
+    {
+      "type": "list",
+      "items": [
+        "AGV (automated guided vehicle) — follows fixed, pre-defined routes using markers, wires or magnets; reliable but inflexible if the layout changes.",
+        "AMR (autonomous mobile robot) — navigates dynamically with onboard sensors and maps, routing around obstacles and adapting to changes.",
+        "Neither has arms — both transport loads, carts or totes, but cannot grasp or manipulate individual items."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Where humanoids are different"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "A ",
+        { "text": "humanoid robot", "href": "/learn/what-is-a-humanoid-robot" },
+        " brings dexterity — the hands and AI to pick, place, load and use tools — and a human-like form that fits spaces built for people. It trades the raw transport efficiency of a wheeled base for flexibility on the manipulation tasks that AMRs and AGVs simply cannot do."
+      ]
+    },
+    {
+      "type": "table",
+      "headers": ["", "AGV", "AMR", "Humanoid robot"],
+      "rows": [
+        ["Main job", "Transport on fixed routes", "Flexible transport", "Manipulation & varied tasks"],
+        ["Has arms / hands", "No", "No", "Yes"],
+        ["Navigation", "Fixed paths", "Dynamic, adaptive", "Walks or drives through human spaces"],
+        ["Best at", "Repeatable bulk movement", "Adaptable goods movement", "Picking, loading, packing, tool use"],
+        ["Weakness", "Inflexible to change", "No manipulation", "Slower transport than wheels"]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "How they work together"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "In a real operation these are layers, not rivals: AGVs and AMRs move goods efficiently across the floor, while humanoids handle the dexterous \"edges\" — picking items, loading containers, packing and exceptions. We cover the application side in ",
+        { "text": "humanoid robots in warehousing and logistics", "href": "/learn/humanoid-robots-in-warehousing-and-logistics" },
+        "."
+      ]
+    },
+    {
+      "type": "callout",
+      "text": "Think of it as wheels plus hands. Many facilities already have good \"wheels\" in their AMRs and conveyors; a humanoid adds the \"hands\" to automate the manual handling that was left to people."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is the difference between an AMR and an AGV?",
+      "answer": "An AGV follows fixed, pre-defined routes using guides like markers or wires, so it is reliable but inflexible. An AMR navigates dynamically with onboard sensors and maps, routing around obstacles and adapting to layout changes. Both transport goods; neither has arms."
+    },
+    {
+      "question": "Do humanoid robots replace AMRs and AGVs?",
+      "answer": "No — they do different jobs. AMRs and AGVs move goods efficiently; humanoids manipulate items and use human spaces and tools. Most operations combine them, using wheeled robots for transport and humanoids for picking, packing and other dexterous work."
+    },
+    {
+      "question": "Can a humanoid robot move goods like an AMR?",
+      "answer": "It can carry items, but a wheeled AMR is far more efficient at pure transport. The point of a humanoid is manipulation and flexibility, so using one only to move loads usually wastes its main advantage."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-warehousing-and-logistics",
+    "humanoid-robots-vs-industrial-robots-and-cobots",
+    "humanoid-robot-glossary",
+    "what-is-a-humanoid-robot"
+  ]
+}

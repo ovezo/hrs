@@ -1,0 +1,99 @@
+{
+  "title": "Are Humanoid Robots Safe to Work Alongside?",
+  "description": "How humanoid robots are made safe to work near people: sensing, safety systems, risk assessment, standards, and what responsible deployment looks like.",
+  "category": "Safety",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "are humanoid robots safe",
+    "humanoid robot safety",
+    "robot safety standards",
+    "collaborative robot safety",
+    "factory robot risk assessment"
+  ],
+  "quickAnswer": "Humanoid robots can be safe to work alongside when they are deployed responsibly — with sensing to detect people, safety systems that slow or stop the robot near humans, a proper risk assessment, and compliance with established machinery-safety standards. Safety is not a property of the robot alone; it comes from the whole system: the task, the workspace, the safeguards and the training around it. Done well, humanoids work near people much as collaborative robots already do.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Safety is a system, not a feature"
+    },
+    {
+      "type": "paragraph",
+      "text": "The honest answer to \"are humanoid robots safe?\" is: it depends on how they are deployed. A capable robot in a poorly designed setup can be unsafe; a sensibly deployed one can be very safe. Safety comes from the combination of the machine, the task, the workspace and the procedures — the same principle that governs all industrial machinery."
+    },
+    {
+      "type": "heading",
+      "text": "How humanoids are made safe near people"
+    },
+    {
+      "type": "table",
+      "headers": ["Safeguard", "What it does"],
+      "rows": [
+        ["Perception of people", "Cameras and sensors detect humans entering the robot's space."],
+        ["Speed & separation", "The robot slows or pauses as people get closer, keeping a safe gap."],
+        ["Force limiting", "Movements and grip are limited so contact stays below harmful levels."],
+        ["Emergency stop", "Clear, accessible stops halt the robot instantly."],
+        ["Stable control", "Balance systems reduce the risk of falls and unexpected motion."],
+        ["Defined work zones", "Tasks and routes are designed so robot and human paths are managed."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Risk assessment and standards"
+    },
+    {
+      "type": "paragraph",
+      "text": "Responsible deployment in an industrial setting follows the same safety discipline as any machinery: a documented risk assessment, appropriate safeguards, and compliance with relevant standards. The robotics industry already has well-established safety standards for industrial and collaborative robots, and the principles — identify hazards, reduce risk, verify, train, review — carry directly across to humanoids."
+    },
+    {
+      "type": "callout",
+      "text": "A key idea borrowed from collaborative robotics is \"speed and separation monitoring\": the robot is fully aware of where people are and automatically reduces speed or stops to maintain a safe distance, rather than relying on fences alone."
+    },
+    {
+      "type": "heading",
+      "text": "What responsible deployment looks like"
+    },
+    {
+      "type": "orderedList",
+      "items": [
+        "Assess the task and workspace for hazards before anything is installed.",
+        "Design safe interaction — zones, speeds, separation and clear stops.",
+        "Start supervised, with humans monitoring and exceptions handled by people.",
+        "Train the staff who work near the robot on how it behaves and how to stop it.",
+        "Review and improve as real-world experience accumulates."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Keeping a human in the loop"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Early deployments deliberately keep people supervising the robot and handling anything unusual. This is good for safety and for results: it catches edge cases the robot's ",
+        { "text": "AI", "href": "/learn/how-do-humanoid-robots-work" },
+        " has not yet mastered. Autonomy increases over time as the system proves itself, but the goal is always safe, reliable operation — not removing human judgement prematurely."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can a humanoid robot hurt someone?",
+      "answer": "Any powered machine carries risk, which is exactly why deployment includes sensing, speed and force limits, emergency stops and a documented risk assessment. With those safeguards in place and the task properly designed, humanoids can operate safely around people, as collaborative robots already do."
+    },
+    {
+      "question": "What safety standards apply to humanoid robots?",
+      "answer": "The established machinery-safety and robot-safety standards and principles for industrial and collaborative robots apply: hazard identification, risk reduction, safeguards such as speed-and-separation monitoring, verification and training. A competent integrator builds compliance into the deployment from the start."
+    },
+    {
+      "question": "Do you still need a risk assessment for a humanoid robot?",
+      "answer": "Yes. A documented risk assessment of the specific task and workspace is a core part of responsible deployment. Safety depends on the whole system — robot, task, environment and procedures — not on the robot's features alone."
+    }
+  ],
+  "related": [
+    "how-do-humanoid-robots-work",
+    "how-to-deploy-a-humanoid-robot",
+    "humanoid-robots-in-manufacturing",
+    "humanoid-robots-vs-industrial-robots-and-cobots"
+  ]
+}

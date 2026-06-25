@@ -1,0 +1,129 @@
+{
+  "title": "Humanoid Robot ROI: How to Calculate Payback",
+  "description": "A practical method to calculate humanoid robot ROI and payback: what to include, the formula, realistic timeframes, and mistakes that wreck the case.",
+  "category": "Buying",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "humanoid robot ROI",
+    "humanoid robot payback period",
+    "robot return on investment",
+    "automation business case",
+    "robot cost benefit"
+  ],
+  "quickAnswer": "To calculate humanoid robot ROI, compare the total cost of running the robot for a task against the total value it creates over the same period. Add up hardware or subscription, integration, software, support and running costs; then total the labour hours offset, extra output, and reduced errors and downtime. Payback period is the upfront cost divided by the net monthly saving. For most realistic first deployments the business case is proven task by task in a real trial, not assumed from a generic figure.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "The basic ROI formula"
+    },
+    {
+      "type": "paragraph",
+      "text": "ROI for a humanoid robot is not mysterious — it is the same logic as any capital decision, applied honestly:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Net annual benefit = value created in a year − cost to run for a year",
+        "ROI (%) = net annual benefit ÷ total investment × 100",
+        "Payback period = total upfront cost ÷ net monthly benefit"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What to put on each side of the equation"
+    },
+    {
+      "type": "table",
+      "headers": ["Costs (what you spend)", "Benefits (what you gain)"],
+      "rows": [
+        ["Hardware or subscription fee", "Labour hours offset on the task"],
+        ["Integration & commissioning", "Extra throughput or output"],
+        ["Software & task training", "Fewer errors, less rework and scrap"],
+        ["Support & maintenance", "Reduced downtime and bottlenecks"],
+        ["Energy & supervision time", "Better ergonomics, safety and staff retention"]
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "Use fully-loaded labour cost, not just wage — include on-costs, breaks, training and turnover. And use ",
+        { "text": "total cost of ownership", "href": "/learn/how-much-do-humanoid-robots-cost" },
+        " on the cost side, not just the purchase price. Skipping these is the most common way a business case is quietly overstated."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "A worked example (illustrative)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Suppose a humanoid covers a repetitive task across two shifts that would otherwise need additional staffing, and it runs reliably for most of those hours. The fully-loaded labour it offsets, plus reduced errors, is weighed against the all-in annual cost of running the robot. If the annual benefit comfortably exceeds the annual cost, payback lands within a sensible window and ROI is positive. The exact numbers depend entirely on your labour cost, hours of use and the robot's reliability — which is why a trial matters."
+    },
+    {
+      "type": "heading",
+      "text": "Don't forget the value that isn't on the payslip"
+    },
+    {
+      "type": "paragraph",
+      "text": "Pure labour substitution undersells most good deployments. Genuine but often-missed benefits include:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Filling roles that are simply hard to recruit for",
+        "Removing repetitive strain and improving workplace safety",
+        "More consistent quality and fewer defects",
+        "Flexibility — re-tasking the same robot as needs change",
+        "Resilience — keeping a line running through staffing gaps"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Mistakes that wreck the business case"
+    },
+    {
+      "type": "orderedList",
+      "items": [
+        "Comparing the robot's purchase price to a wage, ignoring integration, support and running costs.",
+        "Assuming 100% uptime and zero supervision — build in realistic availability and exception handling.",
+        "Picking a poorly matched task, so the robot underperforms and the payback never arrives.",
+        "Scaling before proving — committing to a fleet before a single real trial confirms the numbers."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Prove it before you scale"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "The reliable way to know the ROI is to run a real trial on one ",
+        { "text": "high-fit task", "href": "/learn/humanoid-robots-in-manufacturing" },
+        ", measure actual performance, and only then scale. That is the core of a sensible ",
+        { "text": "deployment plan", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        " — and it turns ROI from a guess into evidence."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is a typical payback period for a humanoid robot?",
+      "answer": "It varies too much for a single honest number — it depends on labour cost, hours of use, reliability and the task. The credible approach is to estimate total cost of ownership against the value created for your specific task, then confirm it in a real trial rather than relying on a generic payback claim."
+    },
+    {
+      "question": "How do I justify a humanoid robot to finance?",
+      "answer": "Build the case on one well-chosen task using fully-loaded labour cost and total cost of ownership, include non-labour benefits like quality and retention, and propose a measured trial before any fleet commitment. Evidence from a real trial is far more persuasive than vendor averages."
+    },
+    {
+      "question": "Does robot-as-a-service change the ROI calculation?",
+      "answer": "Yes — it shifts cost from a large upfront capital outlay to a recurring operating fee, which can improve cash flow and simplify the payback view. The underlying test is the same: does the value created exceed the all-in cost over the period you will use it?"
+    }
+  ],
+  "related": [
+    "how-much-do-humanoid-robots-cost",
+    "how-to-deploy-a-humanoid-robot",
+    "humanoid-robots-in-manufacturing",
+    "choosing-a-humanoid-robot-integrator"
+  ]
+}

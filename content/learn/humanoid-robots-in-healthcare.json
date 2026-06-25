@@ -1,0 +1,84 @@
+{
+  "title": "Humanoid Robots in Healthcare: Where They Fit",
+  "description": "How humanoid robots are used in healthcare — hospital logistics, supply and meal delivery, lab and pharmacy support — not clinical care or diagnosis.",
+  "category": "Applications",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "humanoid robots in healthcare",
+    "robots in hospitals",
+    "healthcare logistics robots",
+    "medical robots support",
+    "hospital automation"
+  ],
+  "quickAnswer": "In healthcare, the realistic near-term role for humanoid robots is logistics and support, not clinical care: moving supplies, samples, linens and meals around hospitals, supporting labs and pharmacies, and assisting with disinfection. These tasks relieve overstretched staff and free clinicians for patient-facing work. Direct medical care, diagnosis and hands-on patient handling remain human responsibilities and a much higher bar for any robot.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Drawing the line: support, not clinical care"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is important to separate hype from reality in healthcare. Humanoid robots are not poised to diagnose, treat or provide hands-on patient care — those require human judgement, accountability and a level of safety and trust that robots do not meet. Where they can help now is the large volume of logistical and support work that surrounds care and consumes clinical staff time."
+    },
+    {
+      "type": "heading",
+      "text": "High-fit support tasks"
+    },
+    {
+      "type": "table",
+      "headers": ["Task", "What the robot does"],
+      "rows": [
+        ["Internal logistics", "Moving supplies, equipment, linens and waste around a facility."],
+        ["Supply & meal delivery", "Transporting consumables and meals to wards and departments."],
+        ["Sample transport", "Carrying specimens between collection points and labs."],
+        ["Lab & pharmacy support", "Handling and moving items in controlled, structured environments."],
+        ["Disinfection support", "Assisting with cleaning and disinfection routines."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Why these tasks, and why now"
+    },
+    {
+      "type": "paragraph",
+      "text": "Healthcare faces chronic staffing pressure, and a surprising share of skilled clinicians' time goes on fetching, carrying and logistics. Offloading that repetitive, non-clinical work can free people for patient care — the same labour-shortage logic that drives humanoid adoption in industry, applied to the back-of-house of hospitals."
+    },
+    {
+      "type": "heading",
+      "text": "The constraints are high"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Healthcare sets an especially high bar: vulnerable people, strict hygiene and infection control, heavy regulation, and little tolerance for error. ",
+        { "text": "Safety", "href": "/learn/are-humanoid-robots-safe" },
+        " around patients and staff is paramount, which is exactly why early use focuses on structured, lower-risk logistics rather than anything involving direct patient contact."
+      ]
+    },
+    {
+      "type": "callout",
+      "text": "Realistic stance: in healthcare, think of humanoids as support workers for logistics and structured back-of-house tasks — relieving staff and freeing clinicians — not as carers or clinicians. The human side of care stays human."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Will humanoid robots care for patients?",
+      "answer": "Not in the near term. Direct patient care, diagnosis and hands-on treatment require human judgement, accountability and trust that robots do not meet. The realistic role is logistics and support around care — moving supplies, samples and meals — that frees clinicians for patient-facing work."
+    },
+    {
+      "question": "What healthcare tasks can humanoid robots do today?",
+      "answer": "Mainly structured, non-clinical support: internal logistics, supply and meal delivery, sample transport, lab and pharmacy handling, and disinfection support. These relieve staff of repetitive carrying and fetching without involving direct patient care."
+    },
+    {
+      "question": "Are humanoid robots safe to use around patients?",
+      "answer": "Safety is the central concern, which is why early use focuses on structured, lower-risk logistics rather than patient contact. Any deployment in a care setting demands rigorous risk assessment, infection control and regulatory compliance given the vulnerability of the people involved."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-retail",
+    "humanoid-robots-in-warehousing-and-logistics",
+    "what-is-a-humanoid-robot",
+    "are-humanoid-robots-safe"
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "title": "Humanoid Robots in Manufacturing: Use Cases and ROI",
+  "description": "Where humanoid robots add value in manufacturing — machine tending, material movement, inspection and more — plus how to spot high-fit tasks and prove ROI.",
+  "category": "Applications",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "humanoid robots in manufacturing",
+    "humanoid robot use cases",
+    "manufacturing automation humanoid",
+    "factory humanoid robots",
+    "humanoid robot tasks"
+  ],
+  "quickAnswer": "In manufacturing, humanoid robots are best used for repetitive, physically simple tasks in spaces built for people — machine tending, line-side material movement, picking and kitting, packing and palletising, and visual inspection. Their advantage is flexibility: one human-shaped, mobile machine can cover several such tasks without rebuilding the line. The value comes from choosing high-fit tasks and proving them in real factory trials, not from trying to automate everything at once.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Why manufacturers are looking at humanoids"
+    },
+    {
+      "type": "paragraph",
+      "text": "Manufacturing has automated the high-volume core for decades, but a lot of work remains stubbornly manual: low-volume, high-mix tasks; jobs that move around the building; and roles that are hard to fill because they are repetitive or physically tiring. Humanoids are interesting precisely because they fit human-built environments without expensive rebuilding, which is where traditional fixed automation often fails to pay back."
+    },
+    {
+      "type": "heading",
+      "text": "High-fit use cases on the factory floor"
+    },
+    {
+      "type": "table",
+      "headers": ["Use case", "What the robot does"],
+      "rows": [
+        ["Machine tending", "Loading and unloading CNC, moulding or processing machines, and monitoring cycles."],
+        ["Line-side material movement", "Carrying parts, totes and small materials between stations without fixed conveyors."],
+        ["Pick-and-place & kitting", "Repeatable picking and preparing parts or kits near assembly workstations."],
+        ["Packing & palletising", "Handling, packing and stacking product where fixture types change between shifts."],
+        ["In-line inspection assist", "Vision-led quality checks and flagging exceptions in the production flow."],
+        ["Internal logistics", "Moving materials along brownfield routes originally designed for people."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What makes a task a good fit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Not every manual task is a sensible first target. The strongest early candidates share most of these traits:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Repetitive and bounded — a clear, repeatable sequence rather than constant improvisation",
+        "Physically simple — modest payloads and reachable from a normal standing position",
+        "Hard to staff or ergonomically tiring — where labour is scarce or the work is wearing",
+        "Tolerant of human-paced cycle times — not a job where only top-speed fixed automation works",
+        "In a human-built space — stairs, shelves, standard tools, no room for fixed robot cells"
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "A good rule of thumb: if a task is repetitive, bounded and sits in a space built for people, it is worth assessing. If it needs maximum speed and never changes, a fixed ",
+        { "text": "industrial robot arm", "href": "/learn/humanoid-robots-vs-industrial-robots-and-cobots" },
+        " is probably the better tool."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "From idea to deployment"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Successful adoption is a staged process, not a single purchase. It usually runs from task selection, to a real factory trial that measures performance, to integration and long-term support. We cover the full sequence in ",
+        { "text": "how to deploy a humanoid robot", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        ", and the payback maths in ",
+        { "text": "humanoid robot ROI", "href": "/learn/humanoid-robot-roi" },
+        "."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Setting realistic expectations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Humanoids in 2026 are powerful for the right tasks but are not drop-in replacements for a whole workforce. The manufacturers who succeed treat them as flexible tools for specific, well-chosen jobs, prove them on real lines before scaling, and keep humans in the loop for exceptions. That disciplined approach is what turns the technology into measurable ROI rather than a stalled pilot."
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is the best first task for a humanoid robot in a factory?",
+      "answer": "Usually a repetitive, bounded, physically light task that is hard to staff — such as machine tending or line-side material movement — in a space built for people. Picking one high-fit task and proving it in a real trial beats trying to automate many things at once."
+    },
+    {
+      "question": "Can humanoid robots work safely alongside factory staff?",
+      "answer": "Yes, when deployed properly. They use sensing and safety systems to operate near people, and deployments follow established machinery-safety practices including risk assessment. See our guide on whether humanoid robots are safe for detail."
+    },
+    {
+      "question": "How quickly can a humanoid robot pay for itself?",
+      "answer": "It depends on the task, labour cost, hours of use and reliability. The right way to judge it is total cost of ownership against the labour and downtime it offsets, proven in a trial — not a generic payback figure. Our ROI guide walks through the calculation."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-automotive",
+    "humanoid-robots-in-electronics-manufacturing",
+    "humanoid-robots-in-food-and-beverage",
+    "humanoid-robots-in-warehousing-and-logistics",
+    "how-to-deploy-a-humanoid-robot",
+    "humanoid-robot-roi"
+  ]
+}

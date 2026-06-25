@@ -1,0 +1,106 @@
+{
+  "title": "Humanoid Robots vs. Industrial Robots vs. Cobots",
+  "description": "Humanoid robots, industrial arms and cobots solve different problems. Compare cost, flexibility, speed and best-fit tasks to choose the right one.",
+  "category": "Comparisons",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "humanoid robots vs industrial robots",
+    "humanoid robot vs cobot",
+    "cobot vs industrial robot",
+    "types of robots in manufacturing",
+    "which robot to choose"
+  ],
+  "quickAnswer": "Industrial robot arms are fast, precise and ideal for high-volume, unchanging tasks behind safety fencing. Cobots are smaller arms built to work safely beside people on lighter tasks. Humanoid robots are general-purpose, human-shaped machines that move between tasks and through human-built spaces using AI. The simple rule: choose an industrial arm for high-volume repetition, a cobot for fixed light tasks near people, and a humanoid for varied work across spaces designed for humans.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Three different tools for three different jobs"
+    },
+    {
+      "type": "paragraph",
+      "text": "These are not just three points on one scale — they are built around different assumptions. The fastest way to choose is to be honest about how repetitive and how fixed your task really is."
+    },
+    {
+      "type": "table",
+      "headers": ["", "Industrial robot arm", "Cobot", "Humanoid robot"],
+      "rows": [
+        ["Form", "Single fixed arm", "Single lightweight arm", "Full human-like body, mobile"],
+        ["Works near people", "No — usually fenced", "Yes — designed for it", "Yes — designed for it"],
+        ["Mobility", "Bolted in place", "Bolted in place", "Walks or drives between tasks"],
+        ["Flexibility", "Low — one task", "Medium — reprogrammable", "High — re-taskable via AI"],
+        ["Speed & payload", "Very high", "Lower", "Moderate"],
+        ["Best for", "High-volume, identical work", "Fixed light tasks beside staff", "Varied tasks in human spaces"]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Industrial robot arms: speed and precision at volume"
+    },
+    {
+      "type": "paragraph",
+      "text": "These are the heavy hitters of modern factories — welding car bodies, moving pallets, spraying paint. They are extremely fast, strong and repeatable, but they do one programmed motion behind safety fencing, and changing the task means re-engineering the cell. They win decisively when volumes are high and the work never changes."
+    },
+    {
+      "type": "heading",
+      "text": "Cobots: a safe arm beside the worker"
+    },
+    {
+      "type": "paragraph",
+      "text": "A collaborative robot (cobot) is a smaller, slower arm designed to share space with people without fencing, using force limits and sensors to stop safely on contact. Cobots are easier to set up than full industrial cells and suit lighter tasks like assembly assistance, screw-driving or machine tending. But a cobot is still a fixed arm: it does not move around the building or re-task itself."
+    },
+    {
+      "type": "heading",
+      "text": "Humanoid robots: flexibility across human spaces"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "A ",
+        { "text": "humanoid robot", "href": "/learn/what-is-a-humanoid-robot" },
+        " trades peak speed for flexibility. Because it is human-shaped and mobile and driven by ",
+        { "text": "physical AI", "href": "/learn/what-is-physical-ai" },
+        ", it can move between several tasks and operate in spaces built for people — stairs, shelves, hand tools — without rebuilding the environment. That makes it valuable exactly where fixed automation struggles: lower-volume, higher-variation, human-built workspaces."
+      ]
+    },
+    {
+      "type": "callout",
+      "text": "It is rarely \"humanoid or nothing.\" Most modern facilities will mix all three — fixed arms for the high-volume core, cobots for fixed light tasks, and humanoids for the varied, mobile work in between."
+    },
+    {
+      "type": "heading",
+      "text": "How to choose: a quick decision guide"
+    },
+    {
+      "type": "orderedList",
+      "items": [
+        "Is the task high-volume and identical every time? An industrial arm is likely the most efficient choice.",
+        "Is it a fixed, light task right next to staff? A cobot is often the simplest fit.",
+        "Does the work vary, move around the building, or use spaces and tools built for people? That is where a humanoid earns its place.",
+        "Unsure? Start by mapping your tasks by volume and variation — the right tool usually becomes obvious, and the best ROI often comes from matching each task to the right machine."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Will humanoid robots replace industrial robots?",
+      "answer": "No — they target different work. Industrial arms remain unbeatable for high-volume, fixed, high-speed tasks. Humanoids address varied, lower-volume work in human-built spaces that fixed automation cannot economically handle. Most facilities will use both."
+    },
+    {
+      "question": "Is a humanoid robot just a cobot with legs?",
+      "answer": "Not quite. A cobot is a single arm built for safe, fixed, collaborative tasks. A humanoid adds a full mobile body and AI-driven general-purpose behaviour, so it can move between tasks and through spaces rather than staying at one workstation."
+    },
+    {
+      "question": "Which is cheaper, a cobot or a humanoid?",
+      "answer": "A single cobot for one fixed task is typically cheaper to buy. A humanoid can be more cost-effective when one machine covers several varied tasks that would otherwise need multiple fixed installations. The right comparison is total cost across all the work it covers, not unit price alone."
+    }
+  ],
+  "related": [
+    "what-is-a-cobot",
+    "humanoid-robots-vs-amrs",
+    "what-is-a-humanoid-robot",
+    "humanoid-robots-in-manufacturing",
+    "how-much-do-humanoid-robots-cost",
+    "humanoid-robot-roi"
+  ]
+}

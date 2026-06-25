@@ -1,0 +1,97 @@
+{
+  "title": "How Do Humanoid Robots Learn New Tasks?",
+  "description": "How humanoid robots learn — imitation learning, teleoperation, simulation and sim-to-real, reinforcement learning, and the data flywheel.",
+  "category": "Fundamentals",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "how do humanoid robots learn",
+    "imitation learning robots",
+    "sim-to-real",
+    "robot reinforcement learning",
+    "teleoperation training"
+  ],
+  "quickAnswer": "Humanoid robots learn mainly in three ways: imitation learning from human demonstrations (often gathered through teleoperation), practice in simulation that is then transferred to the real robot (sim-to-real), and reinforcement learning where the robot improves through trial and feedback. Most are trained with a combination of these, plus on-site fine-tuning, so the robot can perform a task reliably before and during deployment.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Why learning replaced hand-programming"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Traditional industrial robots are hand-programmed for one exact motion. That works for fixed, repeating tasks but breaks the moment anything varies. Modern humanoids instead learn from data, which is what lets them handle the variation found in real, human-built environments. The AI that turns this learning into action is the ",
+        { "text": "vision-language-action model", "href": "/learn/vision-language-action-models" },
+        "."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "1. Imitation learning and teleoperation"
+    },
+    {
+      "type": "paragraph",
+      "text": "The most intuitive method is to show the robot what to do. A human operator performs the task — often by teleoperating the robot directly, sometimes while wearing motion-capture gear — and the robot learns from these paired examples of \"what I see\" and \"what the correct movement was.\" Teleoperation is doubly useful: it both operates the robot in early deployments and generates the demonstrations that train it toward autonomy."
+    },
+    {
+      "type": "heading",
+      "text": "2. Simulation and sim-to-real"
+    },
+    {
+      "type": "paragraph",
+      "text": "Practising on real hardware is slow, costly and risky. So robots first practise in a realistic virtual copy of the workspace — a digital twin — where they can repeat a task millions of times, safely and cheaply. The skills learned in simulation are then transferred to the physical robot, a step known as sim-to-real. Done well, the robot can perform in the real world a behaviour it only ever practised virtually."
+    },
+    {
+      "type": "heading",
+      "text": "3. Reinforcement learning"
+    },
+    {
+      "type": "paragraph",
+      "text": "Reinforcement learning lets a robot improve by trial and error against a goal: behaviours that move it closer to success are reinforced. It is especially powerful for whole-body skills like walking, balancing and recovering from a stumble, and it is frequently combined with simulation so the millions of trials happen virtually before anything touches real hardware."
+    },
+    {
+      "type": "heading",
+      "text": "The data flywheel"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Like the foundation models behind chatbots, robot models tend to improve as they are trained on more experience. Demonstrations, simulation and data from deployed fleets all feed back into better models — a \"flywheel\" where more use produces more data, which produces a more capable robot. This is why data is so valuable in ",
+        { "text": "physical AI", "href": "/learn/what-is-physical-ai" },
+        "."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "On-site fine-tuning and humans in the loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "A general model still has to be adapted to the specifics of your line — your parts, layout and lighting. Early in a deployment, people supervise the robot and handle exceptions, which both keeps things safe and captures the edge cases the robot has not yet mastered. Autonomy then increases as the system proves itself on the real task."
+    },
+    {
+      "type": "callout",
+      "text": "A practical implication for buyers: a humanoid does not arrive knowing your task. Part of any serious deployment is training and fine-tuning the robot for your specific job — which is exactly why a real trial matters before scaling."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How long does it take to train a humanoid robot for a task?",
+      "answer": "It varies by task complexity and how much it resembles what the robot's model already knows. Well-bounded, repetitive tasks are faster; highly variable manipulation takes longer. A real trial on your line is the reliable way to gauge it, since it includes the on-site fine-tuning step."
+    },
+    {
+      "question": "Do humanoid robots keep learning after deployment?",
+      "answer": "Typically yes, in a managed way. Data from real operation feeds back into improved models and updates over time, while humans handle exceptions in the meantime. Updates are rolled out deliberately rather than the robot silently changing its behaviour on its own."
+    },
+    {
+      "question": "What is the difference between imitation and reinforcement learning?",
+      "answer": "Imitation learning teaches a robot by copying human demonstrations of the correct behaviour. Reinforcement learning has the robot discover good behaviour through trial, error and feedback. Many humanoids are trained with both, often combined with simulation."
+    }
+  ],
+  "related": [
+    "how-do-humanoid-robots-work",
+    "vision-language-action-models",
+    "what-is-physical-ai",
+    "robot-hands-and-dexterity"
+  ]
+}

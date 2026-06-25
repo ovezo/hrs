@@ -1,0 +1,101 @@
+{
+  "title": "Humanoid Robots in Warehousing and Logistics",
+  "description": "How humanoid robots fit warehouses and logistics: picking, sorting, loading and tote movement, where they beat fixed automation, and how they pair with AMRs.",
+  "category": "Applications",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "humanoid robots in warehousing",
+    "humanoid robots logistics",
+    "warehouse automation humanoid",
+    "robot picking and sorting",
+    "humanoid vs AMR"
+  ],
+  "quickAnswer": "In warehousing and logistics, humanoid robots are suited to the manual, dexterous tasks that fixed automation struggles with: picking mixed items, sorting, loading and unloading, and moving totes along routes built for people. They complement — rather than replace — conveyors and autonomous mobile robots (AMRs), handling the variable handling work while existing systems move goods in bulk. Their key advantage is fitting an existing \"brownfield\" warehouse without rebuilding it.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Why warehouses are a natural fit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Warehouses already use a lot of automation, but it tends to handle bulk movement — conveyors, sortation lines and goods-to-person systems. The remaining manual work is exactly the kind humans are still needed for: grasping varied items, packing, and moving things through spaces designed around people. That is the gap humanoids target."
+    },
+    {
+      "type": "heading",
+      "text": "Where humanoids add value in logistics"
+    },
+    {
+      "type": "table",
+      "headers": ["Task", "Why a humanoid suits it"],
+      "rows": [
+        ["Mixed-item picking", "Varied shapes and sizes need dexterous, adaptable grasping rather than one fixed gripper."],
+        ["Sorting & induction", "Presenting and placing items into the right lane, bin or container."],
+        ["Loading & unloading", "Handling boxes into and out of trailers and cages in tight, changing spaces."],
+        ["Tote & container movement", "Carrying totes along routes and through doors built for people."],
+        ["Replenishment", "Moving stock to pick faces without new fixed infrastructure."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Humanoids vs. AMRs: not the same thing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Autonomous mobile robots (AMRs) are wheeled robots that move goods around a facility — efficient at transport, but they do not have arms or hands. Humanoids bring dexterity and the ability to use human spaces and tools. In practice the two are complementary:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "AMRs move bulk goods efficiently across open floor",
+        "Conveyors and sortation handle high-volume flow",
+        "Humanoids handle the dexterous, variable, human-space tasks at the edges — picking, packing, loading, exceptions"
+      ]
+    },
+    {
+      "type": "callout",
+      "text": "Think of a humanoid as adding \"hands\" to a logistics operation that already has good \"wheels.\" The biggest wins come from slotting it into the manual gaps rather than ripping out systems that already work."
+    },
+    {
+      "type": "heading",
+      "text": "The brownfield advantage"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Rebuilding a working warehouse for fixed automation is expensive and disruptive. Because a ",
+        { "text": "humanoid robot", "href": "/learn/what-is-a-humanoid-robot" },
+        " is human-shaped and mobile, it can often start work in an existing \"brownfield\" facility — using the same aisles, racking and doors as staff — with minimal change. That lowers the barrier to automating handling work that never justified a full system redesign."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Practical considerations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Realistic deployment means planning around battery runtime and charging across shifts, designing safe shared zones with staff, and starting with bounded tasks that have clear success measures. As with manufacturing, the path is task selection, a real trial, then integration and support — proving value on one workflow before scaling across the site."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Do humanoid robots replace warehouse workers?",
+      "answer": "In the near term they target specific repetitive or physically demanding tasks rather than entire roles. Most operations use them to cover hard-to-staff handling work and to relieve ergonomic strain, with people moving to oversight and exception handling."
+    },
+    {
+      "question": "What is the difference between a humanoid robot and an AMR?",
+      "answer": "An AMR is a wheeled robot that transports goods but has no arms. A humanoid has a full body with hands, so it can pick, pack and manipulate items and use spaces built for people. The two are complementary — wheels for transport, hands for handling."
+    },
+    {
+      "question": "Can humanoids work in an existing warehouse without a rebuild?",
+      "answer": "That is one of their main advantages. Being human-shaped and mobile, they can often work in an existing brownfield facility using the same aisles, racking and doors as staff, with far less infrastructure change than fixed automation requires."
+    }
+  ],
+  "related": [
+    "humanoid-robots-vs-amrs",
+    "humanoid-robots-in-manufacturing",
+    "what-is-a-humanoid-robot",
+    "how-to-deploy-a-humanoid-robot",
+    "humanoid-robot-roi"
+  ]
+}

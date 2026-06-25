@@ -1,0 +1,104 @@
+{
+  "title": "What Is a Cobot? Collaborative Robots Explained",
+  "description": "A cobot is a robot arm built to work safely beside people without fencing. How cobots work, their safety modes, and how they differ from other robots.",
+  "category": "Fundamentals",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "what is a cobot",
+    "collaborative robot",
+    "cobot meaning",
+    "cobot vs robot",
+    "collaborative robot safety"
+  ],
+  "quickAnswer": "A cobot, or collaborative robot, is a robot arm designed to work safely alongside people without safety fencing. It uses force limits, sensors and collision detection to slow or stop on contact, and it is typically smaller, slower and easier to reprogram than a traditional industrial robot. Cobots suit lighter, fixed tasks beside human workers — assembly assistance, machine tending, screwdriving and pick-and-place.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "What makes a robot \"collaborative\"?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The defining feature of a cobot is not its shape but its ability to share a workspace with people safely. A traditional industrial robot is fast and powerful and is normally kept behind fencing. A cobot is engineered so that a person can work right next to it — it senses contact and limits its own force and speed to avoid causing harm."
+    },
+    {
+      "type": "heading",
+      "text": "The four ways cobots work safely with people"
+    },
+    {
+      "type": "paragraph",
+      "text": "Collaborative operation is defined by recognised safety methods, and a given cobot task usually relies on one or more of them:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Safety-rated monitored stop — the robot halts when a person enters its space and resumes when they leave.",
+        "Hand guiding — an operator physically moves the robot to teach or position it.",
+        "Speed and separation monitoring — the robot slows or stops as people get closer, keeping a safe gap.",
+        "Power and force limiting — the robot's force and speed are capped so any contact stays below harmful levels."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What cobots are used for"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Machine tending — loading and unloading CNC and other machines",
+        "Assembly assistance — screwdriving, fastening and part presentation",
+        "Pick-and-place and packaging on lighter lines",
+        "Quality inspection and testing",
+        "Dispensing, gluing and simple finishing tasks"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Cobot vs. industrial robot vs. humanoid"
+    },
+    {
+      "type": "table",
+      "headers": ["", "Cobot", "Industrial robot", "Humanoid robot"],
+      "rows": [
+        ["Form", "Single light arm", "Single heavy arm", "Full mobile body"],
+        ["Near people", "Yes, no fencing", "No, usually fenced", "Yes"],
+        ["Mobility", "Fixed", "Fixed", "Walks or drives"],
+        ["Best for", "Fixed light tasks beside staff", "High-volume fixed work", "Varied tasks in human spaces"]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "A cobot is a fixed arm; a ",
+        { "text": "humanoid robot", "href": "/learn/what-is-a-humanoid-robot" },
+        " adds a full mobile body and AI-driven general-purpose behaviour. For a fuller side-by-side, see ",
+        { "text": "humanoid robots vs. industrial robots and cobots", "href": "/learn/humanoid-robots-vs-industrial-robots-and-cobots" },
+        "."
+      ]
+    },
+    {
+      "type": "callout",
+      "text": "A cobot being \"collaborative\" does not remove the need for a risk assessment. The application as a whole — the robot, the tool it carries, the part and the task — still has to be assessed and made safe."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is a cobot the same as a robot arm?",
+      "answer": "A cobot is a type of robot arm — one specifically designed to operate safely near people without fencing. Not all robot arms are cobots; traditional industrial arms are faster and stronger but are normally kept separated from workers."
+    },
+    {
+      "question": "Are cobots safe to work next to without a cage?",
+      "answer": "They are built for it, using methods like power-and-force limiting and speed-and-separation monitoring. However, safety still depends on a risk assessment of the whole application — the robot, its tool, the part and the task — not the cobot's design alone."
+    },
+    {
+      "question": "What is the difference between a cobot and a humanoid robot?",
+      "answer": "A cobot is a single fixed arm for collaborative tasks at one workstation. A humanoid robot has a full mobile body and AI that lets it move between tasks and through spaces built for people, rather than staying at one spot."
+    }
+  ],
+  "related": [
+    "humanoid-robots-vs-industrial-robots-and-cobots",
+    "what-is-a-humanoid-robot",
+    "are-humanoid-robots-safe",
+    "humanoid-robot-glossary"
+  ]
+}

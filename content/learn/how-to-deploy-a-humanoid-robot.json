@@ -1,0 +1,116 @@
+{
+  "title": "How to Deploy a Humanoid Robot in Your Facility",
+  "description": "A step-by-step path to deploying a humanoid robot: task selection, a real factory trial, integration, safety and support — and how to avoid stalled pilots.",
+  "category": "Adoption",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "how to deploy a humanoid robot",
+    "humanoid robot integration",
+    "robot deployment process",
+    "humanoid robot pilot",
+    "humanoid robot adoption"
+  ],
+  "quickAnswer": "Deploying a humanoid robot is a staged process, not a single purchase. The reliable path is: select one high-fit task, run a real trial on your line to measure performance, integrate the robot with proper safety set-up, then provide ongoing support and gradually expand. Starting with a well-chosen task and proving it before scaling is what separates successful deployments from stalled pilots.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Why a staged approach wins"
+    },
+    {
+      "type": "paragraph",
+      "text": "The most common reason humanoid projects stall is trying to do too much at once — automating an ambitious, ill-defined task and hoping it works. The deployments that succeed move in deliberate stages, proving value at each step before committing further. It is slower to start but far faster to real results."
+    },
+    {
+      "type": "heading",
+      "text": "The end-to-end deployment path"
+    },
+    {
+      "type": "table",
+      "headers": ["Stage", "What happens"],
+      "rows": [
+        ["1. Task selection", "Identify a repetitive, bounded, high-fit task with a clear success measure."],
+        ["2. Factory trial", "Run the robot on the real task and measure performance against targets."],
+        ["3. Integration", "Fit the robot into the line, set up safety, and connect to existing workflows."],
+        ["4. Support", "Maintain uptime, refine behaviour, and improve the robot over time."],
+        ["5. Scale", "Expand to more tasks or units once the case is proven."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Step 1 — Choose the right first task"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Everything depends on this. The best first task is repetitive, physically simple, hard to staff, and located in a space built for people. Picking a poor task dooms the project no matter how good the robot is. Our guide to ",
+        { "text": "use cases in manufacturing", "href": "/learn/humanoid-robots-in-manufacturing" },
+        " covers what high-fit tasks look like."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Step 2 — Run a real trial"
+    },
+    {
+      "type": "paragraph",
+      "text": "A trial on your actual line — not a vendor demo in ideal conditions — is where claims meet reality. Define success up front (cycle time, reliability, quality) and measure against it. A trial both proves the ROI and surfaces the practical wrinkles of your specific environment before you commit."
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "Treat the trial as the moment your ",
+        { "text": "ROI estimate", "href": "/learn/humanoid-robot-roi" },
+        " becomes evidence. If the numbers hold on your real task, scaling is a confident decision rather than a leap of faith."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Step 3 — Integrate safely and properly"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Integration covers fitting the robot into the workflow, connecting it to existing systems, and — critically — setting up safety: risk assessment, safe zones and stops. See ",
+        { "text": "are humanoid robots safe", "href": "/learn/are-humanoid-robots-safe" },
+        " for what responsible set-up involves. This stage turns a promising trial into dependable daily operation."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Step 4 — Support and improve"
+    },
+    {
+      "type": "paragraph",
+      "text": "A humanoid is not fit-and-forget. Ongoing support keeps uptime high, refines the robot's behaviour on the task, and rolls out improvements. Plan for charging across shifts, spare parts, and staff who know how to supervise and intervene. Good support is often what determines whether the long-term ROI actually materialises."
+    },
+    {
+      "type": "heading",
+      "text": "Step 5 — Scale on evidence"
+    },
+    {
+      "type": "paragraph",
+      "text": "With one task proven and running reliably, expanding is low-risk — adding tasks, shifts or units with a template you already trust. Scaling on evidence, rather than ambition, is how a single successful deployment becomes a genuine capability across the site."
+    }
+  ],
+  "faq": [
+    {
+      "question": "How long does it take to deploy a humanoid robot?",
+      "answer": "It varies by task and site, but the sequence is consistent: task selection, a real trial, integration, then support and scaling. The trial stage is what sets the realistic timeline, because it proves performance on your specific line before any wider commitment."
+    },
+    {
+      "question": "Do I need to redesign my facility for a humanoid robot?",
+      "answer": "Usually far less than for fixed automation. Because humanoids are human-shaped and mobile, they can often work in existing brownfield spaces using the same routes and workstations as staff. Integration focuses on the task and safety set-up rather than rebuilding the environment."
+    },
+    {
+      "question": "Why do humanoid robot pilots fail?",
+      "answer": "Most often because the first task was poorly chosen, success was never clearly defined, or the team scaled before proving the case. A staged approach — one high-fit task, a measured trial, then expansion — directly avoids those traps."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-manufacturing",
+    "humanoid-robot-roi",
+    "are-humanoid-robots-safe",
+    "choosing-a-humanoid-robot-integrator"
+  ]
+}

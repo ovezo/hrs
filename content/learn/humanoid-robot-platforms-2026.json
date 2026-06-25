@@ -1,0 +1,107 @@
+{
+  "title": "Leading Humanoid Robot Platforms in 2026",
+  "description": "An overview of notable humanoid robot platforms in 2026 — AGIBOT, Unitree, Figure, Tesla Optimus, Apptronik and more — and why platform-agnostic matters.",
+  "category": "Market",
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "humanoid robot platforms",
+    "humanoid robot companies",
+    "AGIBOT humanoid",
+    "Unitree humanoid",
+    "Figure robot",
+    "Tesla Optimus"
+  ],
+  "quickAnswer": "By 2026 there are several notable humanoid robot platforms, including AGIBOT (with its G2 and X2 robots), Unitree, Figure, Tesla's Optimus, Apptronik, Boston Dynamics and others. They differ in form, maturity, cost and target tasks, and the field is moving fast. For a manufacturer, the platform matters less than fit-to-task: the right approach is to stay platform-agnostic and choose the robot that best suits the specific job, rather than committing to a single vendor up front.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "A fast-moving field"
+    },
+    {
+      "type": "paragraph",
+      "text": "Humanoid robotics is developing quickly, with new platforms and capabilities announced regularly. Any snapshot dates fast, so treat the list below as an orientation to the landscape rather than a ranking. Capability, availability and pricing all shift from one release to the next."
+    },
+    {
+      "type": "heading",
+      "text": "Notable humanoid platforms"
+    },
+    {
+      "type": "table",
+      "headers": ["Platform", "In brief"],
+      "rows": [
+        ["AGIBOT", "A leading developer whose line-up includes the G2 and X2; a primary platform HRS works with for real-world deployment."],
+        ["Unitree", "Known for comparatively affordable robots, including humanoid models, which has helped widen access to the category."],
+        ["Figure", "A US developer focused on general-purpose humanoids for commercial and industrial work."],
+        ["Tesla Optimus", "Tesla's humanoid programme, aimed at large-scale general-purpose tasks."],
+        ["Apptronik", "A US developer of the Apollo humanoid, targeting logistics and manufacturing."],
+        ["Boston Dynamics", "Long-established in advanced robotics; its Atlas humanoid is known for mobility and dexterity."],
+        ["Others", "1X, Agility Robotics and a growing number of entrants continue to expand the field."]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Descriptions here are deliberately high-level. Specifications, availability and real-world performance vary, change often, and are best verified for your specific use case at the time you evaluate."
+    },
+    {
+      "type": "heading",
+      "text": "How the platforms differ"
+    },
+    {
+      "type": "paragraph",
+      "text": "When comparing platforms for a real task, the dimensions that actually matter are practical:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Form and mobility — bipedal legs versus a wheeled base, reach and payload",
+        "Dexterity — how capable the hands are at varied manipulation",
+        "AI and autonomy — how well it adapts to your task with less bespoke programming",
+        "Maturity and support — availability, reliability, service and spare parts",
+        "Commercial model — outright purchase versus robot-as-a-service",
+        "Total cost of ownership — not just the headline unit price"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Why platform-agnostic beats single-vendor"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "No single platform is best for every task, and the leader on one job may not be the leader on the next. Committing to one vendor early risks locking your operation to a robot that does not suit your real work. A platform-agnostic approach — matching the robot to the task — keeps you flexible as the field evolves. This is how HRS operates: AGIBOT's G2 and X2 are key platforms it deploys, but the priority is always fit-to-task, not single-vendor lock-in. See ",
+        { "text": "choosing a humanoid robot integrator", "href": "/learn/choosing-a-humanoid-robot-integrator" },
+        "."
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "For most manufacturers, the better question is not \"which humanoid is best?\" but \"which humanoid is best for this task, proven in a ",
+        { "text": "real trial", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        "?\""
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Which humanoid robot is the best?",
+      "answer": "There is no single best humanoid — it depends on the task. Platforms differ in form, dexterity, AI, maturity and cost, and the field changes quickly. The right choice is the robot that best fits your specific job, ideally confirmed in a real trial rather than chosen on reputation."
+    },
+    {
+      "question": "What is AGIBOT?",
+      "answer": "AGIBOT is a leading humanoid robot developer whose products include the G2 and X2. It is a primary platform HRS deploys, while HRS stays platform-agnostic and selects the best robot for each task rather than acting as a single-vendor reseller."
+    },
+    {
+      "question": "Should I commit to one humanoid robot vendor?",
+      "answer": "Generally no, especially early. Because no platform leads on every task and the technology is advancing fast, a platform-agnostic approach that matches the robot to the task keeps you flexible and reduces the risk of being locked to a poor fit."
+    }
+  ],
+  "related": [
+    "humanoid-robot-market-size",
+    "future-of-humanoid-robots",
+    "what-is-a-humanoid-robot",
+    "choosing-a-humanoid-robot-integrator",
+    "humanoid-robots-uk-guide"
+  ]
+}

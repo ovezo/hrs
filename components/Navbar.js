@@ -11,6 +11,7 @@ const navLinks = [
   { label: 'About us', id: 'about' },
   { label: 'Demos', id: 'demos' },
   { label: 'How it works', id: 'how-it-works' },
+  { label: 'Learn', href: '/learn' },
   { label: 'Contact', id: 'contact' },
 ];
 
@@ -64,15 +65,24 @@ export default function Navbar({ showFlag = false }) {
 
           {/* Desktop links */}
           <ul className="hidden md:flex items-center gap-8 lg:gap-10" role="list">
-            {navLinks.map(({ label, id }) => (
-              <li key={id}>
-                <a
-                  href={`#${id}`}
-                  onClick={(e) => scrollTo(e, id)}
-                  className="text-sm font-medium text-gray-800 hover:text-gray-500 transition-colors duration-300 whitespace-nowrap"
-                >
-                  {label}
-                </a>
+            {navLinks.map(({ label, id, href }) => (
+              <li key={id || href}>
+                {href ? (
+                  <Link
+                    href={href}
+                    className="text-sm font-medium text-gray-800 hover:text-gray-500 transition-colors duration-300 whitespace-nowrap"
+                  >
+                    {label}
+                  </Link>
+                ) : (
+                  <a
+                    href={`#${id}`}
+                    onClick={(e) => scrollTo(e, id)}
+                    className="text-sm font-medium text-gray-800 hover:text-gray-500 transition-colors duration-300 whitespace-nowrap"
+                  >
+                    {label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -116,19 +126,24 @@ export default function Navbar({ showFlag = false }) {
       >
         <nav className="px-6 pt-[72px] pb-4 max-w-[1440px] mx-auto">
           <ul role="list">
-            {navLinks.map(({ label, id }, i) => (
-              <li key={id}>
-                <a
-                  href={`#${id}`}
-                  onClick={(e) => scrollTo(e, id)}
-                  className={`flex items-center py-5 text-lg font-medium text-gray-900 hover:text-gray-500 transition-colors ${
-                    i < navLinks.length - 1 ? 'border-b border-gray-100' : ''
-                  }`}
-                >
-                  {label}
-                </a>
-              </li>
-            ))}
+            {navLinks.map(({ label, id, href }, i) => {
+              const linkClass = `flex items-center py-5 text-lg font-medium text-gray-900 hover:text-gray-500 transition-colors ${
+                i < navLinks.length - 1 ? 'border-b border-gray-100' : ''
+              }`;
+              return (
+                <li key={id || href}>
+                  {href ? (
+                    <Link href={href} onClick={closeMenu} className={linkClass}>
+                      {label}
+                    </Link>
+                  ) : (
+                    <a href={`#${id}`} onClick={(e) => scrollTo(e, id)} className={linkClass}>
+                      {label}
+                    </a>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>
