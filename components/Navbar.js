@@ -12,7 +12,7 @@ const navLinks = [
   { label: 'Demos', id: 'demos' },
   { label: 'How it works', id: 'how-it-works' },
   { label: 'Learn', href: '/learn' },
-  { label: 'Contact', id: 'contact' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export default function Navbar({ showFlag = false }) {
