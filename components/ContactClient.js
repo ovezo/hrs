@@ -16,26 +16,33 @@ export default function ContactClient() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Honeypot: real visitors never tick this hidden box.
+    if (e.target.botcheck?.checked) return;
     setStatus('submitting');
     setErrorMsg('');
     try {
-      const res = await fetch('/api/contact', {
+      // Web3Forms' free plan only accepts submissions from the browser, so we
+      // post to it directly. The access key is a public NEXT_PUBLIC_* value
+      // (it only allows sending to the inbox configured for this form).
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
-          email: form.email,
-          subject: form.subject,
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+          from_name: 'HRS Website — Contact Form',
+          subject: `[HRS Website] ${form.subject}`,
+          email: form.email, // sets the reply-to so the team can respond directly
+          replyto: form.email,
           message: form.message,
-          botcheck: e.target.botcheck?.checked || false,
         }),
       });
       const data = await res.json().catch(() => ({}));
-      if (res.ok && data.ok) {
+      if (res.ok && data.success) {
         setStatus('success');
         setForm({ email: '', subject: '', message: '' });
       } else {
         setStatus('error');
-        setErrorMsg(data.error || 'Something went wrong. Please try again.');
+        setErrorMsg(data.message || 'Something went wrong. Please try again.');
       }
     } catch {
       setStatus('error');
