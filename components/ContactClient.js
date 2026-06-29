@@ -25,11 +25,11 @@ export default function ContactClient() {
       <div className="relative w-full h-[300px] md:h-[380px] overflow-hidden">
         {/* Background image */}
         <Image
-          src="/images/contact_humanoid_robots.png"
+          src="/images/contact_us_robot_bg.png"
           alt="Humanoid robot on a factory floor — HRS"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-right"
           sizes="100vw"
         />
 
