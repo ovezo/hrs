@@ -7,15 +7,40 @@ import Image from 'next/image';
 const CONTACT_EMAIL = 'info@hrsrobot.co.uk';
 
 export default function ContactClient() {
-  const [form, setForm] = useState({ subject: '', body: '' });
+  const [form, setForm] = useState({ email: '', subject: '', message: '' });
+  const [status, setStatus] = useState('idle'); // idle | submitting | success | error
+  const [errorMsg, setErrorMsg] = useState('');
 
   const handleChange = (e) =>
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(form.body)}`;
-    window.location.href = mailto;
+    setStatus('submitting');
+    setErrorMsg('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: form.email,
+          subject: form.subject,
+          message: form.message,
+          botcheck: e.target.botcheck?.checked || false,
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.ok) {
+        setStatus('success');
+        setForm({ email: '', subject: '', message: '' });
+      } else {
+        setStatus('error');
+        setErrorMsg(data.error || 'Something went wrong. Please try again.');
+      }
+    } catch {
+      setStatus('error');
+      setErrorMsg('Could not send your message. Please check your connection and try again.');
+    }
   };
 
   return (
@@ -111,51 +136,108 @@ export default function ContactClient() {
 
           {/* ── Right: form ── */}
           <div className="bg-gray-50 rounded-2xl border border-gray-100 p-8 md:p-10">
-            <h2 className="text-xl font-semibold text-gray-900 mb-1">Send us a message</h2>
-            <p className="text-sm text-gray-500 mb-8">We&apos;ll respond within one business day.</p>
-
-            <form onSubmit={handleSubmit} className="space-y-5">
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1.5">
-                  Subject <span className="text-red-400">*</span>
-                </label>
-                <input
-                  id="subject"
-                  name="subject"
-                  type="text"
-                  required
-                  placeholder="e.g. Factory trial enquiry"
-                  value={form.subject}
-                  onChange={handleChange}
-                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200 transition"
-                />
+            {status === 'success' ? (
+              <div className="text-center py-10">
+                <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-green-50 border border-green-100">
+                  <svg className="h-7 w-7 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h2 className="text-xl font-semibold text-gray-900 mb-1.5">Message sent</h2>
+                <p className="text-sm text-gray-500 mb-6 max-w-xs mx-auto leading-relaxed">
+                  Thanks for getting in touch — we&apos;ll reply to your email within one business day.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setStatus('idle')}
+                  className="text-sm font-medium text-gray-700 hover:text-gray-900 underline underline-offset-4"
+                >
+                  Send another message
+                </button>
               </div>
+            ) : (
+              <>
+                <h2 className="text-xl font-semibold text-gray-900 mb-1">Send us a message</h2>
+                <p className="text-sm text-gray-500 mb-8">We&apos;ll respond within one business day.</p>
 
-              <div>
-                <label htmlFor="body" className="block text-sm font-medium text-gray-700 mb-1.5">
-                  Message <span className="text-red-400">*</span>
-                </label>
-                <textarea
-                  id="body"
-                  name="body"
-                  required
-                  rows={6}
-                  placeholder="Tell us about your operation, what tasks you're looking to automate, and where you're based."
-                  value={form.body}
-                  onChange={handleChange}
-                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200 transition resize-none"
-                />
-              </div>
+                <form onSubmit={handleSubmit} className="space-y-5">
 
-              <button
-                type="submit"
-                className="w-full rounded-xl bg-gray-900 text-white text-sm font-semibold py-3.5 hover:bg-gray-700 active:scale-[0.98] transition-all duration-150"
-              >
-                Send
-              </button>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5">
+                      Your email <span className="text-red-400">*</span>
+                    </label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      autoComplete="email"
+                      placeholder="you@company.com"
+                      value={form.email}
+                      onChange={handleChange}
+                      className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200 transition"
+                    />
+                  </div>
 
-            </form>
+                  <div>
+                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1.5">
+                      Subject <span className="text-red-400">*</span>
+                    </label>
+                    <input
+                      id="subject"
+                      name="subject"
+                      type="text"
+                      required
+                      placeholder="e.g. Factory trial enquiry"
+                      value={form.subject}
+                      onChange={handleChange}
+                      className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200 transition"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5">
+                      Message <span className="text-red-400">*</span>
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows={6}
+                      placeholder="Tell us about your operation, what tasks you're looking to automate, and where you're based."
+                      value={form.message}
+                      onChange={handleChange}
+                      className="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200 transition resize-none"
+                    />
+                  </div>
+
+                  {/* Honeypot — hidden from people, catches bots */}
+                  <input
+                    type="checkbox"
+                    name="botcheck"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    aria-hidden="true"
+                    className="hidden"
+                  />
+
+                  {status === 'error' && (
+                    <p role="alert" className="text-sm text-red-600 bg-red-50 border border-red-100 rounded-lg px-4 py-3">
+                      {errorMsg}
+                    </p>
+                  )}
+
+                  <button
+                    type="submit"
+                    disabled={status === 'submitting'}
+                    className="w-full rounded-xl bg-gray-900 text-white text-sm font-semibold py-3.5 hover:bg-gray-700 active:scale-[0.98] transition-all duration-150 disabled:opacity-60 disabled:cursor-not-allowed disabled:active:scale-100"
+                  >
+                    {status === 'submitting' ? 'Sending…' : 'Send'}
+                  </button>
+
+                </form>
+              </>
+            )}
           </div>
 
         </div>
