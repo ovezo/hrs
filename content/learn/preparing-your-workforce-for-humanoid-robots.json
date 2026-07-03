@@ -1,0 +1,92 @@
+{
+  "title": "Preparing Your Workforce for Humanoid Robots",
+  "description": "How to introduce humanoid robots to your team — honest communication, training, new roles and safety familiarisation — so adoption succeeds, not stalls.",
+  "category": "Adoption",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "keywords": [
+    "robot workforce training",
+    "preparing staff for robots",
+    "robot change management",
+    "working with humanoid robots",
+    "robot adoption workforce"
+  ],
+  "quickAnswer": "Humanoid robot deployments succeed or stall on people more often than on technology. The essentials: tell the team early and honestly what the robot will and won't do, involve operators in choosing and shaping the task, train a small group of robot champions in day-to-day handling, run the trial visibly and share the results, and define who owns the robot each shift. Robots take tasks rather than whole jobs — but staff only believe that when they see it, so the first deployment is as much a communication exercise as a technical one.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Robots fail socially before they fail technically"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "A robot that operators resent gets blamed for everything, worked around, and quietly starved of the small human help every early deployment needs. The fear underneath is usually about jobs, and it deserves a straight answer rather than a slogan — the honest picture is covered in ",
+        { "text": "will humanoid robots take jobs", "href": "/learn/will-humanoid-robots-take-jobs" },
+        ": robots take over tasks, typically the ones sites already struggle to staff, and someone still has to run, check and manage the work around them."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "A practical sequence"
+    },
+    {
+      "type": "orderedList",
+      "items": [
+        "Announce early and specifically: which task, which area, what the robot won't be doing, and what happens to the hours it frees.",
+        "Involve the team in shaping the task — operators know the exceptions, workarounds and awkward parts no process document captures.",
+        "Pick and train robot champions: one or two people per shift who learn to start, pause, recover and escalate.",
+        "Run the trial in the open — let people watch, ask and test it, rather than fencing it off behind mystery.",
+        "Share the results honestly, including what failed and what was fixed.",
+        "Formalise ownership before scaling: who checks the robot at shift start, who responds to stops, who reviews its output."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "New roles, not just fewer hands"
+    },
+    {
+      "type": "paragraph",
+      "text": "Every deployed robot creates work as well as removing it: daily checks, exception handling, quality review of its output, and feeding back problems to the integrator. These robot-adjacent duties are the natural next step for the operators who know the task best, and framing them as a skill — with training and recognition to match — turns the people most exposed to the change into the people running it."
+    },
+    {
+      "type": "heading",
+      "text": "Safety familiarisation"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Everyone who shares space with the robot needs to know how it behaves and how to stop it: its normal movements and routes, what its signals mean, where the emergency stops are, and what to do when it halts. This is part of the deployment's ",
+        { "text": "risk assessment and safe systems of work", "href": "/learn/humanoid-robot-safety-standards" },
+        ", not an optional extra — and a workforce that knows exactly how to stop a robot is also one that trusts it faster."
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "Plan the people side with the same rigour as the technical side of the ",
+        { "text": "deployment", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        ": the sites where the first robot succeeds are almost always the ones where the team wanted it to."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Do staff need technical skills to work alongside humanoid robots?",
+      "answer": "Day-to-day handling — starting, pausing, recovering a stopped robot, escalating a fault — is operator-level work covered in a short training session, not an engineering skill. Deeper integration and maintenance stay with the integrator and vendor."
+    },
+    {
+      "question": "How should we handle worker concerns about job losses?",
+      "answer": "Directly and specifically: name the task the robot is taking, say what happens to the hours it frees, and involve operators in the trial. Vague reassurance breeds rumour; a visible first deployment on a task nobody wanted to staff usually settles the question faster than any memo."
+    },
+    {
+      "question": "Who should own the robot day to day?",
+      "answer": "Name it before scaling: typically a trained champion per shift owns start-of-shift checks and first response to stops, with a supervisor owning output review and integrator escalation. An unowned robot becomes everyone's problem and no one's job."
+    }
+  ],
+  "related": [
+    "how-to-deploy-a-humanoid-robot",
+    "will-humanoid-robots-take-jobs",
+    "are-humanoid-robots-safe",
+    "humanoid-robot-roi"
+  ]
+}

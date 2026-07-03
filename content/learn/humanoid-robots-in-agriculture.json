@@ -1,0 +1,92 @@
+{
+  "title": "Humanoid Robots in Agriculture: Packhouse to Field",
+  "description": "Where humanoid robots fit agriculture — packhouse grading and packing, glasshouse and nursery tasks, feed and shed work — and why open fields are harder.",
+  "category": "Applications",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "keywords": [
+    "humanoid robots in agriculture",
+    "farm robots",
+    "packhouse automation",
+    "agricultural labour shortage",
+    "glasshouse robots"
+  ],
+  "quickAnswer": "In agriculture, humanoid robots fit the indoor, structured parts of the industry first: packhouses (crate and tray handling, grading and packing support), glasshouses and nurseries (moving trays, spacing plants), and feed and materials handling in livestock sheds. Open-field work — harvesting delicate crops in mud, wind and rain — is far harder and remains the domain of people and purpose-built machines for now. The pull is the same everywhere: seasonal labour is scarce and getting scarcer.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Indoors first: the structured parts of farming"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Agriculture spans everything from a muddy field to a packhouse that looks much like a ",
+        { "text": "food factory", "href": "/learn/humanoid-robots-in-food-and-beverage" },
+        ". Humanoids fit the structured end of that spectrum today: flat floors, defined tasks, repeatable handling. That is where the labour shortage bites hardest at peak season, and where a robot can work year-round."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "High-fit agricultural tasks"
+    },
+    {
+      "type": "table",
+      "headers": ["Task", "What the robot does"],
+      "rows": [
+        ["Packhouse handling", "Moving crates, trays and boxes between intake, grading and dispatch."],
+        ["Grading and packing support", "Feeding lines, box making and pack-off at the end of grading lines."],
+        ["Glasshouse and nursery work", "Moving and spacing trays and pots, and shifting harvested produce."],
+        ["Feed and materials handling", "Carrying feed, bedding and supplies in livestock sheds and yards."],
+        ["Seasonal peak support", "Adding handling capacity at harvest without seasonal recruitment."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Why open fields are the hard case"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Field work combines rough terrain, weather, variable light and delicate, irregular produce — a worst case for today's ",
+        { "text": "locomotion and dexterity", "href": "/learn/limitations-of-humanoid-robots" },
+        ". Purpose-built harvesters and field rigs, designed for one crop, currently beat general-purpose robots outdoors. Humanoids earn their place indoors first, and follow the technology outdoors later, if the economics ever favour a generalist there."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The labour pressure behind the interest"
+    },
+    {
+      "type": "paragraph",
+      "text": "UK growers and packers have struggled for years to recruit seasonal labour, and the shortfall shapes what gets planted and picked. A robot that covers even the steady indoor handling work releases scarce people for the skilled and outdoor jobs machines cannot do — which is why packhouses, not fields, are where humanoid robots will show up first in agriculture."
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "The playbook matches other sectors: pick one bounded packhouse or glasshouse task, run a ",
+        { "text": "structured trial", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        " through a season, and scale on evidence."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can humanoid robots harvest crops?",
+      "answer": "Delicate field harvesting is one of the hardest robotics problems — terrain, weather and irregular produce — and purpose-built machines lead outdoors. The realistic near-term humanoid roles are indoors: packhouse handling, grading and packing support, and glasshouse and nursery work."
+    },
+    {
+      "question": "Why would farms adopt humanoid robots?",
+      "answer": "Seasonal labour is scarce and unreliable to recruit, and much of the indoor work — crate handling, packing support, feed and materials movement — is exactly the repetitive physical work humanoids handle in factories. A robot adds capacity at peak without seasonal hiring."
+    },
+    {
+      "question": "Where should an agricultural business start?",
+      "answer": "The packhouse or glasshouse: structured, indoor, repeatable handling tasks with a clear seasonal labour gap. Prove one task through a season, measure the result, then expand."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-food-and-beverage",
+    "humanoid-robots-in-warehousing-and-logistics",
+    "limitations-of-humanoid-robots",
+    "humanoid-robots-vs-amrs"
+  ]
+}

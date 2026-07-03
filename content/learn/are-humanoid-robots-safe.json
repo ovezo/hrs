@@ -27,14 +27,35 @@
     },
     {
       "type": "table",
-      "headers": ["Safeguard", "What it does"],
+      "headers": [
+        "Safeguard",
+        "What it does"
+      ],
       "rows": [
-        ["Perception of people", "Cameras and sensors detect humans entering the robot's space."],
-        ["Speed & separation", "The robot slows or pauses as people get closer, keeping a safe gap."],
-        ["Force limiting", "Movements and grip are limited so contact stays below harmful levels."],
-        ["Emergency stop", "Clear, accessible stops halt the robot instantly."],
-        ["Stable control", "Balance systems reduce the risk of falls and unexpected motion."],
-        ["Defined work zones", "Tasks and routes are designed so robot and human paths are managed."]
+        [
+          "Perception of people",
+          "Cameras and sensors detect humans entering the robot's space."
+        ],
+        [
+          "Speed & separation",
+          "The robot slows or pauses as people get closer, keeping a safe gap."
+        ],
+        [
+          "Force limiting",
+          "Movements and grip are limited so contact stays below harmful levels."
+        ],
+        [
+          "Emergency stop",
+          "Clear, accessible stops halt the robot instantly."
+        ],
+        [
+          "Stable control",
+          "Balance systems reduce the risk of falls and unexpected motion."
+        ],
+        [
+          "Defined work zones",
+          "Tasks and routes are designed so robot and human paths are managed."
+        ]
       ]
     },
     {
@@ -71,7 +92,10 @@
       "type": "paragraph",
       "runs": [
         "Early deployments deliberately keep people supervising the robot and handling anything unusual. This is good for safety and for results: it catches edge cases the robot's ",
-        { "text": "AI", "href": "/learn/how-do-humanoid-robots-work" },
+        {
+          "text": "AI",
+          "href": "/learn/how-do-humanoid-robots-work"
+        },
         " has not yet mastered. Autonomy increases over time as the system proves itself, but the goal is always safe, reliable operation — not removing human judgement prematurely."
       ]
     }
@@ -91,6 +115,8 @@
     }
   ],
   "related": [
+    "humanoid-robot-safety-standards",
+    "humanoid-robot-security",
     "how-do-humanoid-robots-work",
     "how-to-deploy-a-humanoid-robot",
     "humanoid-robots-in-manufacturing",

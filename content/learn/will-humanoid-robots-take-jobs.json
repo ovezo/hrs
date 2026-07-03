@@ -27,13 +27,31 @@
     },
     {
       "type": "table",
-      "headers": ["More exposed", "Less exposed"],
+      "headers": [
+        "More exposed",
+        "Less exposed"
+      ],
       "rows": [
-        ["Repetitive physical tasks", "Judgement and decision-making"],
-        ["Structured, predictable settings", "Unstructured, changing environments"],
-        ["Material movement and handling", "Creative and strategic work"],
-        ["Routine machine tending", "Skilled trades and complex repair"],
-        ["Tasks already hard to staff", "Roles built on human relationships"]
+        [
+          "Repetitive physical tasks",
+          "Judgement and decision-making"
+        ],
+        [
+          "Structured, predictable settings",
+          "Unstructured, changing environments"
+        ],
+        [
+          "Material movement and handling",
+          "Creative and strategic work"
+        ],
+        [
+          "Routine machine tending",
+          "Skilled trades and complex repair"
+        ],
+        [
+          "Tasks already hard to staff",
+          "Roles built on human relationships"
+        ]
       ]
     },
     {
@@ -52,7 +70,10 @@
       "type": "paragraph",
       "runs": [
         "History with automation suggests a recurring pattern: machines take over specific tasks, roles evolve toward oversight and higher-value work, and new types of jobs emerge around the technology — operating, supervising, maintaining and improving it. Surveys of robotics experts broadly expect augmentation in the near term rather than sweeping replacement, partly because of the ",
-        { "text": "real limitations", "href": "/learn/limitations-of-humanoid-robots" },
+        {
+          "text": "real limitations",
+          "href": "/learn/limitations-of-humanoid-robots"
+        },
         " that remain."
       ]
     },
@@ -84,6 +105,7 @@
     }
   ],
   "related": [
+    "preparing-your-workforce-for-humanoid-robots",
     "humanoid-robots-in-manufacturing",
     "future-of-humanoid-robots",
     "limitations-of-humanoid-robots",

@@ -1,0 +1,105 @@
+{
+  "title": "Wheeled vs Bipedal Humanoid Robots: Do Robots Need Legs?",
+  "description": "Wheeled-base and legged humanoid robots compared — stability, runtime, speed, stairs and cost — and how to choose the right form for your facility.",
+  "category": "Comparisons",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "keywords": [
+    "wheeled humanoid robot",
+    "bipedal robot",
+    "do humanoid robots need legs",
+    "legged vs wheeled robots",
+    "humanoid robot design"
+  ],
+  "quickAnswer": "A humanoid robot doesn't have to walk on two legs. Wheeled humanoids — a human-like torso, arms and head on a wheeled base — are more stable, run longer on a charge, cost less and are ready for flat-floor sites today. Bipedal robots earn their extra complexity where the building demands it: stairs, steps, kerbs and uneven ground. Since most factories and warehouses are flat, a wheeled platform is often the pragmatic first choice, with legs reserved for the areas that genuinely need them.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Two ways to be humanoid"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "What makes a robot useful in human spaces is mostly the upper body: arms, hands and head height matched to benches, shelves and machines built for people — the core argument in ",
+        { "text": "what is a humanoid robot", "href": "/learn/what-is-a-humanoid-robot" },
+        ". How the robot moves underneath is a separate design choice, and manufacturers have split into two camps: wheels for simplicity, legs for terrain."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Wheels vs legs at a glance"
+    },
+    {
+      "type": "table",
+      "headers": ["Factor", "Wheeled base", "Bipedal (legs)"],
+      "rows": [
+        ["Stability", "Inherently stable; no balance computation to fail.", "Dynamically balanced; falling is a designed-for event."],
+        ["Runtime", "Longer — no energy spent balancing.", "Shorter for the same battery; balance costs power."],
+        ["Stairs and steps", "Blocked by them.", "The reason legs exist."],
+        ["Uneven or cluttered floors", "Needs reasonable floors and ramps.", "Handles kerbs, thresholds and debris better."],
+        ["Cost and complexity", "Lower — fewer joints, simpler control.", "Higher — more actuators, harder software."],
+        ["Maturity today", "Deployable now on flat sites.", "Improving fast; more caveats in daily use."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "When wheels win"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most industrial buildings are deliberately flat — pallet trucks and trolleys made them that way. On those floors, a wheeled humanoid does the same work as a legged one with better stability, longer runtime, less maintenance and a lower price, and the safety case is simpler because the failure modes are tamer. If your site has lifts rather than stairs between levels, wheels rarely give anything up."
+    },
+    {
+      "type": "heading",
+      "text": "When legs earn their keep"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Legs are for buildings and grounds that were never flattened: multi-level sites without lifts, steps between areas, outdoor yards, construction sites and older facilities. They are also the harder engineering problem — balance, recovery and fall behaviour remain active ",
+        { "text": "limitations", "href": "/learn/limitations-of-humanoid-robots" },
+        " — so buyers should expect more caveats and faster change on the legged side of the market."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Choose by facility, not by looks"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Some manufacturers offer both forms, and mixed fleets are a sensible outcome: wheeled robots covering the flat majority of a site, legged ones where the building demands it. It is the same match-the-platform-to-the-task logic that separates humanoids from ",
+        { "text": "AMRs", "href": "/learn/humanoid-robots-vs-amrs" },
+        " — the work and the environment pick the robot, not the showreel."
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "Walk the actual route your task covers and count the steps, kerbs and thresholds. That ten-minute audit usually answers the wheels-or-legs question before any ",
+        { "text": "platform comparison", "href": "/learn/humanoid-robot-platforms-2026" },
+        " does."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is a wheeled robot still a humanoid?",
+      "answer": "Yes in the sense that matters: the human-form upper body — arms, hands and working height — is what lets a robot use spaces and tools built for people. Legs are one mobility option under that body, not the definition of a humanoid."
+    },
+    {
+      "question": "Are bipedal robots safe to have around people?",
+      "answer": "They can be deployed safely, but the safety case is more involved than for a wheeled base because balance and falling must be assessed. Speed limits, zoning and supervision are set accordingly — part of the standard deployment risk assessment."
+    },
+    {
+      "question": "Which is cheaper, wheeled or bipedal?",
+      "answer": "Wheeled platforms are generally cheaper to buy and run: fewer actuators, simpler software, less to maintain, longer battery life. Legs add cost that only pays back where stairs, steps or rough ground are genuinely part of the job."
+    }
+  ],
+  "related": [
+    "humanoid-robots-vs-amrs",
+    "humanoid-robot-platforms-2026",
+    "humanoid-robot-specifications",
+    "what-is-a-humanoid-robot"
+  ]
+}

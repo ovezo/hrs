@@ -1,0 +1,92 @@
+{
+  "title": "Humanoid Robots for Quality Inspection",
+  "description": "How humanoid robots support quality inspection — visual checks, gauging, sample runs and data capture — and where fixed vision systems still win.",
+  "category": "Applications",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "keywords": [
+    "quality inspection robot",
+    "visual inspection automation",
+    "robot quality control",
+    "automated inspection manufacturing",
+    "humanoid inspection robot"
+  ],
+  "quickAnswer": "Humanoid robots support quality inspection rather than replace it wholesale: visual checks with onboard cameras, picking up and presenting parts to gauges or fixed instruments, carrying samples to the QC lab, first-off checks at changeover, and walking audit rounds. High-speed in-line inspection remains the territory of fixed vision systems; the humanoid's value is flexible, mobile checking across many points that would never justify a dedicated system each.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Two kinds of inspection"
+    },
+    {
+      "type": "paragraph",
+      "text": "Inspection splits into two very different jobs. In-line, every-part, high-speed checking is a solved problem for fixed cameras and sensors, and a humanoid should not compete with them. The other job — roaming checks, sampling, gauging, first-offs, audits — is done by people walking the factory with their eyes and hands. That second job is where a humanoid fits, because it is really a mobility-plus-manipulation task."
+    },
+    {
+      "type": "heading",
+      "text": "Inspection tasks a humanoid can take on"
+    },
+    {
+      "type": "table",
+      "headers": ["Task", "What the robot does"],
+      "rows": [
+        ["Visual checks", "Inspecting parts, labels, seals and assemblies with onboard cameras."],
+        ["Gauge and measurement support", "Picking up parts and presenting them to gauges, scales or a CMM."],
+        ["Sample transport", "Carrying samples from lines to the QC lab on a defined schedule."],
+        ["First-off checks", "Checking the first parts after a changeover against the standard."],
+        ["Audit rounds", "Walking routine quality and housekeeping rounds and logging findings."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Cameras plus hands"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "What separates a humanoid from a camera on a pole is manipulation: it can pick a part up, turn it over, hold it to the light and present it to an instrument — the same reason ",
+        { "text": "hands and dexterity", "href": "/learn/robot-hands-and-dexterity" },
+        " matter across every application. Modern ",
+        { "text": "vision-language-action models", "href": "/learn/vision-language-action-models" },
+        " also let robots flag \"something looks wrong\" cases for a person to judge, rather than only passing rigid pass/fail rules."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Every check becomes data"
+    },
+    {
+      "type": "paragraph",
+      "text": "A person's walk-round produces a tick sheet; a robot's produces timestamped images and readings for every point checked. That audit trail is valuable in regulated and customer-audited environments — evidence that the check happened, when, and what was seen — and it accumulates into trend data that manual rounds rarely capture."
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "Treat inspection as a strong second task: pair it with a primary handling task like ",
+        { "text": "machine tending", "href": "/learn/humanoid-robots-for-machine-tending" },
+        " so the robot inspects inside cycles it is already working, then prove it through a ",
+        { "text": "structured trial", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        "."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can humanoid robots replace fixed vision systems?",
+      "answer": "No, and they shouldn't try. High-speed, every-part, in-line inspection belongs to fixed cameras and sensors. Humanoids fit the mobile, flexible checking people currently do on foot — sampling, gauging, first-offs and audit rounds across many points."
+    },
+    {
+      "question": "How accurate is a humanoid robot's inspection?",
+      "answer": "For measurements, the robot uses the same gauges and instruments a person would, so accuracy comes from the instrument. For visual checks, performance depends on the cameras, lighting and the model's training — which is why bounded, well-defined checks should come first."
+    },
+    {
+      "question": "Which inspection tasks should a humanoid start with?",
+      "answer": "Defined, repeatable checks with a clear standard: first-off checks after changeover, scheduled sample runs to the lab, and routine audit rounds. Judgement-heavy or borderline calls should stay with people, with the robot flagging cases for review."
+    }
+  ],
+  "related": [
+    "humanoid-robots-for-machine-tending",
+    "humanoid-robots-in-manufacturing",
+    "robot-hands-and-dexterity",
+    "how-do-humanoid-robots-work"
+  ]
+}

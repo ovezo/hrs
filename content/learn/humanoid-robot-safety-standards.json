@@ -1,0 +1,98 @@
+{
+  "title": "Humanoid Robot Safety Standards and Regulations",
+  "description": "The standards that govern humanoid robots at work — ISO robot safety standards, UKCA/CE marking, risk assessment and what UK employers must do.",
+  "category": "Safety",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "keywords": [
+    "humanoid robot safety standards",
+    "robot safety regulations UK",
+    "ISO robot safety",
+    "robot risk assessment",
+    "UKCA robot marking"
+  ],
+  "quickAnswer": "There is no finished, dedicated humanoid robot safety standard yet — one is in development — so today's deployments are governed by the existing machinery and robot safety framework: ISO 10218 for industrial robots, ISO/TS 15066 for collaborative applications, ISO 3691-4 for autonomous mobile machinery, and UK machinery regulations requiring UKCA/CE marking. On top of that, UK employers carry their normal duties: a risk assessment for the specific deployment, safe systems of work, and training. In practice, safety is built per deployment, not assumed from a certificate.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "No finished humanoid standard — yet"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Standards bodies are working on requirements written specifically for legged, dynamically balancing robots, but at the time of writing no dedicated humanoid safety standard is published and complete. That does not mean a regulatory vacuum: humanoids at work are machinery, and the existing framework applies in full. The general question of whether these robots are safe is covered in ",
+        { "text": "are humanoid robots safe", "href": "/learn/are-humanoid-robots-safe" },
+        "; this article covers the rules behind that answer."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The standards that apply today"
+    },
+    {
+      "type": "table",
+      "headers": ["Standard / rule", "What it covers"],
+      "rows": [
+        ["ISO 10218 (parts 1 and 2)", "Safety requirements for industrial robots and robot cell integration."],
+        ["ISO/TS 15066", "Collaborative robot applications — force, speed and separation limits near people."],
+        ["ISO 3691-4", "Safety of driverless industrial trucks — relevant to autonomous movement around a site."],
+        ["UK machinery regulations", "UKCA (or CE) marking, a Declaration of Conformity and technical file for the machine."],
+        ["HSWA and PUWER", "The employer's duties: risk assessment, safe use, maintenance and training."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What UK employers must do"
+    },
+    {
+      "type": "paragraph",
+      "text": "Buying a compliant robot does not discharge the employer's duties. Under the Health and Safety at Work Act and PUWER, the deploying company must risk-assess the specific application — this task, this area, these people — define safe systems of work, train staff who work near the robot, and keep the equipment maintained. The same duty that applies to a forklift or a packing machine applies to a humanoid."
+    },
+    {
+      "type": "heading",
+      "text": "How integrators build the safety case"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "A competent integrator turns those requirements into a deployment-specific safety case: defining the robot's working area and routes, setting speed and behaviour limits near people, specifying emergency stops and supervision arrangements, and documenting it all for the site's files. This is a core part of the ",
+        { "text": "deployment process", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        " and one of the main things to probe when ",
+        { "text": "choosing an integrator", "href": "/learn/choosing-a-humanoid-robot-integrator" },
+        "."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What changes when the dedicated standard lands"
+    },
+    {
+      "type": "paragraph",
+      "text": "A published humanoid-specific standard will sharpen requirements around balance, falling, and behaviour in shared spaces, and make conformity claims easier to compare between platforms. Expect a transition period in which platforms advertise compliance at different levels. Until then, treat vendor safety claims as inputs to your own risk assessment, not substitutes for it."
+    },
+    {
+      "type": "callout",
+      "text": "The practical rule: certification belongs to the machine, but safety belongs to the deployment. Every humanoid installation needs its own risk assessment, whatever the spec sheet says."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is there an ISO standard specifically for humanoid robots?",
+      "answer": "Not a finished one at the time of writing — dedicated requirements for legged, dynamically balancing robots are in development. Today's deployments rely on the existing framework: ISO 10218, ISO/TS 15066 for collaborative work, ISO 3691-4 for autonomous movement, and national machinery regulations."
+    },
+    {
+      "question": "Do humanoid robots need UKCA or CE marking?",
+      "answer": "Yes. In the UK a humanoid robot placed on the market as machinery needs UKCA (or currently accepted CE) marking, a Declaration of Conformity and a technical file — and the integrated installation may itself need assessment as an assembly of machinery."
+    },
+    {
+      "question": "Who is responsible for safety — the manufacturer or the employer?",
+      "answer": "Both, for different things. The manufacturer is responsible for the machine conforming to machinery requirements; the employer is responsible for its safe use — the site-specific risk assessment, safe systems of work, training and maintenance. An integrator typically bridges the two with a deployment safety case."
+    }
+  ],
+  "related": [
+    "are-humanoid-robots-safe",
+    "humanoid-robot-security",
+    "how-to-deploy-a-humanoid-robot",
+    "choosing-a-humanoid-robot-integrator"
+  ]
+}

@@ -55,6 +55,7 @@ Contact info@hrsrobot.co.uk or visit https://hrsrobot.co.uk to book a live human
 In-depth articles answering the most common questions about humanoid robots and physical AI, written for UK industry. Index: https://hrsrobot.co.uk/learn — full text for AI ingestion: https://hrsrobot.co.uk/llms-full.txt
 
 ### Fundamentals
+- [How Are Humanoid Robots Controlled? Teleoperation vs Autonomy](https://hrsrobot.co.uk/learn/how-are-humanoid-robots-controlled): Are humanoid robots remote controlled? How teleoperation, supervised autonomy and full autonomy differ, and what deployed robots actually do today.
 - [How Do Humanoid Robots Work?](https://hrsrobot.co.uk/learn/how-do-humanoid-robots-work): Humanoid robots sense their surroundings, decide with onboard AI, and move precise electric joints to act. Inside the full sense–think–act loop.
 - [How Do Humanoid Robots Learn New Tasks?](https://hrsrobot.co.uk/learn/how-humanoid-robots-learn): How humanoid robots learn — imitation learning, teleoperation, simulation and sim-to-real, reinforcement learning, and the data flywheel.
 - [Humanoid Robot & Physical AI Glossary (Key Terms)](https://hrsrobot.co.uk/learn/humanoid-robot-glossary): Plain-English definitions of key humanoid robotics and physical AI terms — from actuators and degrees of freedom to VLA models, sim-to-real and RaaS.
@@ -68,28 +69,41 @@ In-depth articles answering the most common questions about humanoid robots and 
 ### Comparisons
 - [Humanoid Robots vs. AMRs and AGVs](https://hrsrobot.co.uk/learn/humanoid-robots-vs-amrs): Humanoid robots vs AMRs and AGVs: wheels versus hands, what each does best, and how they work together in a facility.
 - [Humanoid Robots vs. Industrial Robots vs. Cobots](https://hrsrobot.co.uk/learn/humanoid-robots-vs-industrial-robots-and-cobots): Humanoid robots, industrial arms and cobots solve different problems. Compare cost, flexibility, speed and best-fit tasks to choose the right one.
+- [Wheeled vs Bipedal Humanoid Robots: Do Robots Need Legs?](https://hrsrobot.co.uk/learn/wheeled-vs-bipedal-humanoid-robots): Wheeled-base and legged humanoid robots compared — stability, runtime, speed, stairs and cost — and how to choose the right form for your facility.
 
 ### Applications
+- [Humanoid Robots for Machine Tending](https://hrsrobot.co.uk/learn/humanoid-robots-for-machine-tending): How humanoid robots tend CNC machines, presses and moulding lines — loading, unloading and in-cycle checks — and why tending is a first-choice task.
+- [Humanoid Robots for Quality Inspection](https://hrsrobot.co.uk/learn/humanoid-robots-for-quality-inspection): How humanoid robots support quality inspection — visual checks, gauging, sample runs and data capture — and where fixed vision systems still win.
+- [Humanoid Robots in Aerospace Manufacturing and MRO](https://hrsrobot.co.uk/learn/humanoid-robots-in-aerospace): How humanoid robots fit aerospace — kitting, tool and part delivery, inspection support and MRO logistics in low-volume, high-precision production.
+- [Humanoid Robots in Agriculture: Packhouse to Field](https://hrsrobot.co.uk/learn/humanoid-robots-in-agriculture): Where humanoid robots fit agriculture — packhouse grading and packing, glasshouse and nursery tasks, feed and shed work — and why open fields are harder.
 - [Humanoid Robots in Automotive Manufacturing](https://hrsrobot.co.uk/learn/humanoid-robots-in-automotive): How humanoid robots are used in automotive manufacturing — parts sequencing, assembly support, machine tending and line-side logistics — and where they fit.
 - [Humanoid Robots in Construction: Realistic Use Cases](https://hrsrobot.co.uk/learn/humanoid-robots-in-construction): How humanoid robots could be used in construction — site logistics, material handling, fit-out and inspection — and why it's harder than factories.
+- [Humanoid Robots in Defence: Logistics and Support Roles](https://hrsrobot.co.uk/learn/humanoid-robots-in-defence): How humanoid robots fit defence — base logistics, stores and maintenance support, hazardous-area inspection — and the limits, ethics and rules that apply.
 - [Humanoid Robots in Electronics Manufacturing](https://hrsrobot.co.uk/learn/humanoid-robots-in-electronics-manufacturing): Humanoid robots in electronics manufacturing — handling small, delicate parts, assembly support, machine tending and testing in precision ESD-controlled lines.
+- [Humanoid Robots in Energy and Utilities](https://hrsrobot.co.uk/learn/humanoid-robots-in-energy-and-utilities): How humanoid robots fit energy and utilities — inspection rounds, valve and switch operation, maintenance support and work in hazardous or remote areas.
 - [Humanoid Robots in Food & Beverage Manufacturing](https://hrsrobot.co.uk/learn/humanoid-robots-in-food-and-beverage): Humanoid robots in food and beverage — packing, palletising, machine tending and material movement in hygiene-controlled and cold environments.
 - [Humanoid Robots in Healthcare: Where They Fit](https://hrsrobot.co.uk/learn/humanoid-robots-in-healthcare): How humanoid robots are used in healthcare — hospital logistics, supply and meal delivery, lab and pharmacy support — not clinical care or diagnosis.
+- [Humanoid Robots in Hospitality: Hotels, Kitchens and Back-of-House](https://hrsrobot.co.uk/learn/humanoid-robots-in-hospitality): How humanoid robots fit hospitality — hotel back-of-house logistics, kitchen porter support, laundry and linen handling, and room-service deliveries.
 - [Humanoid Robots in Manufacturing: Use Cases and ROI](https://hrsrobot.co.uk/learn/humanoid-robots-in-manufacturing): Where humanoid robots add value in manufacturing — machine tending, material movement, inspection and more — plus how to spot high-fit tasks and prove ROI.
+- [Humanoid Robots in Pharmaceutical Manufacturing](https://hrsrobot.co.uk/learn/humanoid-robots-in-pharmaceutical-manufacturing): Humanoid robots in pharmaceutical manufacturing — material transfer, kitting, packaging and inspection support under GMP — and what validation requires.
 - [Humanoid Robots in Retail: Stockroom to Shop Floor](https://hrsrobot.co.uk/learn/humanoid-robots-in-retail): How humanoid robots are used in retail — stockroom and backroom handling, shelf replenishment and stock checking, and moving goods from stockroom to shop floor.
 - [Humanoid Robots in Warehousing and Logistics](https://hrsrobot.co.uk/learn/humanoid-robots-in-warehousing-and-logistics): How humanoid robots fit warehouses and logistics: picking, sorting, loading and tote movement, where they beat fixed automation, and how they pair with AMRs.
 
 ### Adoption
 - [How to Deploy a Humanoid Robot in Your Facility](https://hrsrobot.co.uk/learn/how-to-deploy-a-humanoid-robot): A step-by-step path to deploying a humanoid robot: task selection, a real factory trial, integration, safety and support — and how to avoid stalled pilots.
+- [Preparing Your Workforce for Humanoid Robots](https://hrsrobot.co.uk/learn/preparing-your-workforce-for-humanoid-robots): How to introduce humanoid robots to your team — honest communication, training, new roles and safety familiarisation — so adoption succeeds, not stalls.
 
 ### Buying
 - [How to Choose a Humanoid Robot Integrator](https://hrsrobot.co.uk/learn/choosing-a-humanoid-robot-integrator): What to look for in a humanoid robot integrator: task selection, real trials, safety, support and platform independence — plus the questions to ask.
 - [How Much Do Humanoid Robots Cost? (2026 Guide)](https://hrsrobot.co.uk/learn/how-much-do-humanoid-robots-cost): What drives humanoid robot cost — hardware, integration, software and support — and why total cost of ownership matters more than the sticker price.
 - [Humanoid Robot ROI: How to Calculate Payback](https://hrsrobot.co.uk/learn/humanoid-robot-roi): A practical method to calculate humanoid robot ROI and payback: what to include, the formula, realistic timeframes, and mistakes that wreck the case.
+- [Humanoid Robot Specifications: What to Compare](https://hrsrobot.co.uk/learn/humanoid-robot-specifications): A buyer's guide to humanoid robot specs — payload, battery life and runtime, reach, speed, hands and IP rating — and which numbers actually matter.
 - [Robot-as-a-Service (RaaS) for Humanoid Robots](https://hrsrobot.co.uk/learn/robot-as-a-service): How robot-as-a-service (RaaS) works for humanoid robots: subscription vs buying, what's bundled, pricing models, and the pros and cons of each.
 
 ### Safety
 - [Are Humanoid Robots Safe to Work Alongside?](https://hrsrobot.co.uk/learn/are-humanoid-robots-safe): How humanoid robots are made safe to work near people: sensing, safety systems, risk assessment, standards, and what responsible deployment looks like.
+- [Humanoid Robot Safety Standards and Regulations](https://hrsrobot.co.uk/learn/humanoid-robot-safety-standards): The standards that govern humanoid robots at work — ISO robot safety standards, UKCA/CE marking, risk assessment and what UK employers must do.
+- [Can Humanoid Robots Be Hacked? Security and Data](https://hrsrobot.co.uk/learn/humanoid-robot-security): Humanoid robot cybersecurity — realistic risks, camera data and privacy on site, network isolation, updates and the questions every buyer should ask.
 
 ### Market
 - [The Future of Humanoid Robots: 2026–2030 Outlook](https://hrsrobot.co.uk/learn/future-of-humanoid-robots): Where humanoid robots are heading by 2030 — falling costs, better AI and dexterity, scaling deployments and RaaS — and what's realistic versus hype.

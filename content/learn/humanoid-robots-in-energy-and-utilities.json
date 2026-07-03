@@ -1,0 +1,92 @@
+{
+  "title": "Humanoid Robots in Energy and Utilities",
+  "description": "How humanoid robots fit energy and utilities — inspection rounds, valve and switch operation, maintenance support and work in hazardous or remote areas.",
+  "category": "Applications",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "keywords": [
+    "humanoid robots in energy",
+    "utilities automation",
+    "plant inspection robots",
+    "hazardous area robots",
+    "energy maintenance robots"
+  ],
+  "quickAnswer": "Energy and utility sites are built for human operators — walkways, stairs, handwheels, gauges and switchgear — which makes them a natural fit for human-shaped robots. The near-term roles are routine inspection rounds and gauge reading, valve and switch operation, tool and part delivery for maintenance teams, and entering hazardous, hot or remote areas so people don't have to. Certified work in explosive atmospheres is a later step; early deployments belong in non-classified areas.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Plants are built for the human form"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Power stations, substations, water works and process plants were designed around a person walking rounds: reading gauges, listening for faults, turning handwheels. Retrofitting fixed automation into that world is expensive; a robot with the ",
+        { "text": "human form factor", "href": "/learn/what-is-a-humanoid-robot" },
+        " can use the site as it stands."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "High-fit energy and utilities tasks"
+    },
+    {
+      "type": "table",
+      "headers": ["Task", "What the robot does"],
+      "rows": [
+        ["Inspection rounds", "Walking routine routes, reading gauges and dials, and reporting anomalies."],
+        ["Valve and switch operation", "Turning handwheels and operating switches under human authorisation."],
+        ["Maintenance support", "Fetching tools, parts and consumables for engineering teams."],
+        ["Hazardous-area entry", "Checking hot, noisy, elevated or contaminated areas ahead of people."],
+        ["Site logistics", "Moving equipment and materials around large, dispersed sites."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "From inspection robots to humanoid hands"
+    },
+    {
+      "type": "paragraph",
+      "text": "Energy companies already use robots for inspection — four-legged platforms and crawlers walk rounds at some plants today. What they mostly cannot do is intervene: open a cabinet, turn a valve, swap a part. Manipulation is the humanoid's contribution, turning a robot that can only report a problem into one that can also act on it, with a human authorising each intervention."
+    },
+    {
+      "type": "heading",
+      "text": "Safety cases come first"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Utilities run on safety cases, permits to work and hazardous-area classification. Equipment for explosive atmospheres needs certification that today's humanoids do not have, so early deployments belong in non-classified areas with the same rigour as any ",
+        { "text": "workplace safety assessment", "href": "/learn/are-humanoid-robots-safe" },
+        ". The discipline utilities already apply to people and equipment maps directly onto robots."
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "Start with a routine inspection round or maintenance-support task in a non-classified area, prove reliability through a ",
+        { "text": "structured trial", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        ", and let the safety case grow with the evidence."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can humanoid robots work in explosive atmospheres?",
+      "answer": "Not yet — equipment in ATEX-classified areas needs specific certification that current humanoid platforms do not hold. Early energy-sector deployments belong in non-classified areas, with hazardous-area work following if and when certified designs appear."
+    },
+    {
+      "question": "Why use a humanoid instead of a drone or four-legged robot?",
+      "answer": "Drones and quadrupeds inspect well but cannot intervene. A humanoid adds hands: opening cabinets, turning valves, carrying tools and parts. Sites built around human operators get the most from a robot with the same reach and grip."
+    },
+    {
+      "question": "Which energy and utilities tasks should come first?",
+      "answer": "Routine inspection rounds, gauge reading and maintenance-support logistics in non-classified areas. They are bounded, repeatable and low-risk, and they free experienced operators and engineers for the judgement-heavy work."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-construction",
+    "humanoid-robots-in-defence",
+    "are-humanoid-robots-safe",
+    "how-to-deploy-a-humanoid-robot"
+  ]
+}

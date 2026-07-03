@@ -27,13 +27,31 @@
     },
     {
       "type": "table",
-      "headers": ["Task", "What the robot does"],
+      "headers": [
+        "Task",
+        "What the robot does"
+      ],
       "rows": [
-        ["Parts sequencing & kitting", "Preparing and presenting the right components in the right order for assembly."],
-        ["Line-side logistics", "Moving parts and totes from storage to the workstation without fixed conveyors."],
-        ["Machine tending", "Loading and unloading presses, moulding and processing machines."],
-        ["Assembly support", "Fetching, holding and presenting parts to human or robot assemblers."],
-        ["Inspection assist", "Visual checks and flagging exceptions in the flow."]
+        [
+          "Parts sequencing & kitting",
+          "Preparing and presenting the right components in the right order for assembly."
+        ],
+        [
+          "Line-side logistics",
+          "Moving parts and totes from storage to the workstation without fixed conveyors."
+        ],
+        [
+          "Machine tending",
+          "Loading and unloading presses, moulding and processing machines."
+        ],
+        [
+          "Assembly support",
+          "Fetching, holding and presenting parts to human or robot assemblers."
+        ],
+        [
+          "Inspection assist",
+          "Visual checks and flagging exceptions in the flow."
+        ]
       ]
     },
     {
@@ -44,7 +62,10 @@
       "type": "paragraph",
       "runs": [
         "Humanoids are not a replacement for the fast, fenced ",
-        { "text": "industrial robots", "href": "/learn/humanoid-robots-vs-industrial-robots-and-cobots" },
+        {
+          "text": "industrial robots",
+          "href": "/learn/humanoid-robots-vs-industrial-robots-and-cobots"
+        },
         " that dominate automotive lines. They fill the gaps those robots cannot economically cover: the variable, human-paced, mobile tasks between the fixed cells. The two operate as layers of the same line."
       ]
     },
@@ -60,7 +81,10 @@
       "type": "callout",
       "runs": [
         "As in any sector, success comes from picking one bounded, high-fit task and proving it in a ",
-        { "text": "real trial", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        {
+          "text": "real trial",
+          "href": "/learn/how-to-deploy-a-humanoid-robot"
+        },
         " before scaling across the plant."
       ]
     }
@@ -81,6 +105,7 @@
   ],
   "related": [
     "humanoid-robots-in-manufacturing",
+    "humanoid-robots-in-aerospace",
     "humanoid-robots-vs-industrial-robots-and-cobots",
     "humanoid-robots-in-electronics-manufacturing",
     "how-to-deploy-a-humanoid-robot"

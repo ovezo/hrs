@@ -27,13 +27,31 @@
     },
     {
       "type": "table",
-      "headers": ["Task", "Why a humanoid suits it"],
+      "headers": [
+        "Task",
+        "Why a humanoid suits it"
+      ],
       "rows": [
-        ["Mixed-item picking", "Varied shapes and sizes need dexterous, adaptable grasping rather than one fixed gripper."],
-        ["Sorting & induction", "Presenting and placing items into the right lane, bin or container."],
-        ["Loading & unloading", "Handling boxes into and out of trailers and cages in tight, changing spaces."],
-        ["Tote & container movement", "Carrying totes along routes and through doors built for people."],
-        ["Replenishment", "Moving stock to pick faces without new fixed infrastructure."]
+        [
+          "Mixed-item picking",
+          "Varied shapes and sizes need dexterous, adaptable grasping rather than one fixed gripper."
+        ],
+        [
+          "Sorting & induction",
+          "Presenting and placing items into the right lane, bin or container."
+        ],
+        [
+          "Loading & unloading",
+          "Handling boxes into and out of trailers and cages in tight, changing spaces."
+        ],
+        [
+          "Tote & container movement",
+          "Carrying totes along routes and through doors built for people."
+        ],
+        [
+          "Replenishment",
+          "Moving stock to pick faces without new fixed infrastructure."
+        ]
       ]
     },
     {
@@ -64,7 +82,10 @@
       "type": "paragraph",
       "runs": [
         "Rebuilding a working warehouse for fixed automation is expensive and disruptive. Because a ",
-        { "text": "humanoid robot", "href": "/learn/what-is-a-humanoid-robot" },
+        {
+          "text": "humanoid robot",
+          "href": "/learn/what-is-a-humanoid-robot"
+        },
         " is human-shaped and mobile, it can often start work in an existing \"brownfield\" facility — using the same aisles, racking and doors as staff — with minimal change. That lowers the barrier to automating handling work that never justified a full system redesign."
       ]
     },
@@ -94,7 +115,7 @@
   "related": [
     "humanoid-robots-vs-amrs",
     "humanoid-robots-in-manufacturing",
-    "what-is-a-humanoid-robot",
+    "humanoid-robots-in-defence",
     "how-to-deploy-a-humanoid-robot",
     "humanoid-robot-roi"
   ]

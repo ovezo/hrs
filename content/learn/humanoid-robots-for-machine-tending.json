@@ -1,0 +1,96 @@
+{
+  "title": "Humanoid Robots for Machine Tending",
+  "description": "How humanoid robots tend CNC machines, presses and moulding lines — loading, unloading and in-cycle checks — and why tending is a first-choice task.",
+  "category": "Applications",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "keywords": [
+    "machine tending robot",
+    "CNC machine tending",
+    "humanoid robot machine tending",
+    "automated machine loading",
+    "machine tending automation"
+  ],
+  "quickAnswer": "Machine tending — loading parts into a machine, starting the cycle, unloading and checking the result — is one of the best first tasks for a humanoid robot. It is repetitive, clearly bounded and hard to staff, and because the humanoid works the cell exactly as a person does, the machines themselves don't need modifying. One robot can also patrol several machines, using each machine's cycle time productively instead of standing idle.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Why machine tending suits humanoids"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Tending is the classic \"dull, repetitive, essential\" factory job: the machine does the skilled work, and a person feeds it. That profile — bounded, repeatable, physically tiring — is exactly the high-fit pattern described in ",
+        { "text": "humanoid robots in manufacturing", "href": "/learn/humanoid-robots-in-manufacturing" },
+        ". Vacancies for tending roles are also among the hardest to fill, so the labour case usually exists before the robot arrives."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Tending tasks a humanoid can take on"
+    },
+    {
+      "type": "table",
+      "headers": ["Task", "What the robot does"],
+      "rows": [
+        ["CNC loading and unloading", "Placing blanks in fixtures, starting cycles, removing finished parts."],
+        ["Press and press-brake support", "Feeding and removing parts within guarded, interlocked cells."],
+        ["Moulding machine tending", "Unloading mouldings, degating and placing parts for the next step."],
+        ["In-cycle checks", "Gauging or visually checking parts while the next cycle runs."],
+        ["Multi-machine patrol", "Serving several machines in sequence as their cycles finish."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The economics: using the machine's cycle time"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "A person tending one machine spends much of the shift waiting. A humanoid can be scheduled across two or three machines, or given secondary work — deburring, packing, checks — inside each cycle. That utilisation is what drives the ",
+        { "text": "ROI case", "href": "/learn/humanoid-robot-roi" },
+        ", and it is much harder to achieve with a fixed robot bolted to a single machine."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Integration without changing the machines"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Fixed automation usually means new interfaces, fixtures and guarding designed around the robot. A humanoid uses the machine's existing doors, buttons and fixtures, which keeps integration light and preserves the option of a person doing the job on any given shift — a key difference from ",
+        { "text": "conventional industrial automation", "href": "/learn/humanoid-robots-vs-industrial-robots-and-cobots" },
+        ". Safety assessment and guarding review are still required, as with any robot cell."
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "Machine tending is often the single best candidate to ",
+        { "text": "trial first", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        ": pick one machine with a chronic staffing gap, define the load–start–unload loop precisely, and measure output against a normal shift."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can a humanoid robot tend CNC machines?",
+      "answer": "Yes — CNC loading and unloading is one of the most practical humanoid tasks: the loop is bounded and repeatable, the machine needs no modification, and one robot can serve several machines as their cycles finish. A safety assessment of the cell is still required."
+    },
+    {
+      "question": "Which machines should a humanoid tend first?",
+      "answer": "Start with a machine that has a chronic staffing gap, a clear load–start–unload loop and moderate part weights. Prove reliability there before adding multi-machine patrols or in-cycle secondary work."
+    },
+    {
+      "question": "Why use a humanoid instead of a fixed gantry or cobot for tending?",
+      "answer": "Fixed automation pays back on one machine running one part family at volume. A humanoid suits high-mix shops: it moves between machines, handles varied parts, needs no machine modification, and the job can revert to a person at any time."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-manufacturing",
+    "humanoid-robots-for-quality-inspection",
+    "humanoid-robots-vs-industrial-robots-and-cobots",
+    "humanoid-robot-roi"
+  ]
+}

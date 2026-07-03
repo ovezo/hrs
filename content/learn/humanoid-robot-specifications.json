@@ -1,0 +1,96 @@
+{
+  "title": "Humanoid Robot Specifications: What to Compare",
+  "description": "A buyer's guide to humanoid robot specs — payload, battery life and runtime, reach, speed, hands and IP rating — and which numbers actually matter.",
+  "category": "Buying",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "keywords": [
+    "humanoid robot specifications",
+    "humanoid robot payload",
+    "humanoid robot battery life",
+    "humanoid robot runtime",
+    "comparing humanoid robots"
+  ],
+  "quickAnswer": "The specifications that matter when comparing humanoid robots are payload (what it can actually carry and manipulate, typically a few kilograms per hand today), runtime and battery strategy (commonly two to eight hours, with swappable batteries changing the maths), reach and working height, movement speed, hand type (simple grippers versus dexterous fingers), environmental rating, and the safety and supervision features. The caveat that matters more than any number: spec sheets describe the machine, not its performance on your task — always see your task run before comparing on paper.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "The numbers that matter"
+    },
+    {
+      "type": "table",
+      "headers": ["Specification", "Why it matters", "What to ask"],
+      "rows": [
+        ["Payload", "Sets which parts, totes and tools the robot can handle.", "Payload per hand and two-handed, at full reach — not just the headline figure."],
+        ["Runtime and batteries", "Determines real shift coverage.", "Runtime under your duty cycle; swap or charge strategy; battery lifespan."],
+        ["Reach and height", "Sets which shelves, machines and fixtures it can serve.", "Working envelope at useful payload, floor to top shelf."],
+        ["Speed", "Affects cycle times and safe behaviour near people.", "Speed while carrying, and limits applied in shared areas."],
+        ["Hands", "Grippers are robust; fingers are flexible.", "Which end-effectors are available and swappable for your parts."],
+        ["Environment rating", "Dust, washdown, cold stores.", "IP rating and operating temperature range against your areas."],
+        ["Safety and supervision", "What the deployment case is built on.", "Safety functions, stop categories and the remote supervision model."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Payload and hands: read the small print"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Headline payload figures often describe the arm at ideal posture, not a real carry at full reach, and payload with a dexterous hand is usually lower than with a simple gripper. Because ",
+        { "text": "hands and dexterity", "href": "/learn/robot-hands-and-dexterity" },
+        " drive what tasks are actually possible, evaluate the end-effector and the payload together, against your heaviest realistic part — not the brochure number."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Batteries and runtime: think in shifts"
+    },
+    {
+      "type": "paragraph",
+      "text": "Quoted runtimes vary with duty cycle: a robot walking and lifting continuously drains far faster than one tending a machine with idle time in each cycle. What matters operationally is shift coverage — whether swappable batteries or opportunity charging can keep the robot working through your pattern, and what the battery replacement interval and cost look like over the life of the machine."
+    },
+    {
+      "type": "heading",
+      "text": "Spec sheets versus task performance"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Two platforms with near-identical specifications can perform very differently on the same task, because software, training and integration quality dominate. That is why ",
+        { "text": "platform comparisons", "href": "/learn/humanoid-robot-platforms-2026" },
+        " are a starting point, not a decision — and why any serious evaluation ends with your task, your parts and your environment in a ",
+        { "text": "structured trial", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        "."
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "Use specifications to shortlist, demonstrations to filter, and a trial on your own task to decide. The same logic applies to ",
+        { "text": "cost comparisons", "href": "/learn/how-much-do-humanoid-robots-cost" },
+        ": price per robot matters less than output per deployed task."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "How much weight can a humanoid robot lift?",
+      "answer": "Typically a few kilograms per hand for today's commercial platforms, with more possible two-handed and less at full reach or with dexterous fingers. Always check payload at working posture against your heaviest realistic part rather than relying on headline figures."
+    },
+    {
+      "question": "How long does a humanoid robot battery last?",
+      "answer": "Commonly in the range of two to eight hours depending on platform and duty cycle — continuous walking and lifting drains far faster than tending work with idle periods. Swappable batteries or opportunity charging are what turn a runtime figure into full-shift coverage."
+    },
+    {
+      "question": "Is the strongest or fastest robot the best choice?",
+      "answer": "Rarely. Software, training quality and integration support usually decide real task performance, and a robot that exceeds your task's requirements on paper adds cost without adding output. Shortlist on specs, but decide on a trial of your actual task."
+    }
+  ],
+  "related": [
+    "humanoid-robot-platforms-2026",
+    "how-much-do-humanoid-robots-cost",
+    "wheeled-vs-bipedal-humanoid-robots",
+    "choosing-a-humanoid-robot-integrator"
+  ]
+}

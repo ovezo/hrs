@@ -27,13 +27,31 @@
     },
     {
       "type": "table",
-      "headers": ["Task", "What the robot does"],
+      "headers": [
+        "Task",
+        "What the robot does"
+      ],
       "rows": [
-        ["Internal logistics", "Moving supplies, equipment, linens and waste around a facility."],
-        ["Supply & meal delivery", "Transporting consumables and meals to wards and departments."],
-        ["Sample transport", "Carrying specimens between collection points and labs."],
-        ["Lab & pharmacy support", "Handling and moving items in controlled, structured environments."],
-        ["Disinfection support", "Assisting with cleaning and disinfection routines."]
+        [
+          "Internal logistics",
+          "Moving supplies, equipment, linens and waste around a facility."
+        ],
+        [
+          "Supply & meal delivery",
+          "Transporting consumables and meals to wards and departments."
+        ],
+        [
+          "Sample transport",
+          "Carrying specimens between collection points and labs."
+        ],
+        [
+          "Lab & pharmacy support",
+          "Handling and moving items in controlled, structured environments."
+        ],
+        [
+          "Disinfection support",
+          "Assisting with cleaning and disinfection routines."
+        ]
       ]
     },
     {
@@ -52,7 +70,10 @@
       "type": "paragraph",
       "runs": [
         "Healthcare sets an especially high bar: vulnerable people, strict hygiene and infection control, heavy regulation, and little tolerance for error. ",
-        { "text": "Safety", "href": "/learn/are-humanoid-robots-safe" },
+        {
+          "text": "Safety",
+          "href": "/learn/are-humanoid-robots-safe"
+        },
         " around patients and staff is paramount, which is exactly why early use focuses on structured, lower-risk logistics rather than anything involving direct patient contact."
       ]
     },
@@ -76,6 +97,7 @@
     }
   ],
   "related": [
+    "humanoid-robots-in-pharmaceutical-manufacturing",
     "humanoid-robots-in-retail",
     "humanoid-robots-in-warehousing-and-logistics",
     "what-is-a-humanoid-robot",

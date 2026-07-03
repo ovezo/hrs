@@ -1,0 +1,92 @@
+{
+  "title": "Humanoid Robots in Aerospace Manufacturing and MRO",
+  "description": "How humanoid robots fit aerospace — kitting, tool and part delivery, inspection support and MRO logistics in low-volume, high-precision production.",
+  "category": "Applications",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "keywords": [
+    "humanoid robots in aerospace",
+    "aerospace manufacturing automation",
+    "MRO automation",
+    "aircraft assembly robots",
+    "aerospace kitting"
+  ],
+  "quickAnswer": "Aerospace is low-volume, high-mix and built around large structures — a poor fit for fixed automation but a promising one for flexible humanoid robots in support roles: kitting, tool and part delivery to fitters, line-side logistics, housekeeping and FOD control, and staging work in MRO hangars. Certified build and repair steps stay human-led; the near-term value is taking the fetching, carrying and staging off skilled hands so they stay on the aircraft.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Low volume, high mix — the fixed-automation gap"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Car plants automate well because they build the same thing thousands of times. Aerospace builds a handful of large, complex assemblies with constant variation — exactly where fixed robots and ",
+        { "text": "cobots", "href": "/learn/humanoid-robots-vs-industrial-robots-and-cobots" },
+        " struggle to pay back. A general-purpose robot that walks to the work, rather than the work coming to it, fits this environment far better."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "High-fit aerospace tasks"
+    },
+    {
+      "type": "table",
+      "headers": ["Task", "What the robot does"],
+      "rows": [
+        ["Kitting", "Assembling kits of parts and fasteners for each build stage."],
+        ["Tool and part delivery", "Fetching tools, parts and consumables so fitters stay on the aircraft."],
+        ["Line-side logistics", "Moving materials between stores, staging areas and assembly positions."],
+        ["Housekeeping and FOD control", "Tidying work areas and supporting foreign-object-debris checks."],
+        ["MRO staging", "Staging parts, consumables and tooling around maintenance bays."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Why certified work stays human-led"
+    },
+    {
+      "type": "paragraph",
+      "text": "Aerospace build and repair steps are certified processes with strict traceability, and changing who or what performs them is a formal, regulated exercise. That is why the credible near-term role is support: a humanoid does not torque the safety-critical fastener, it makes sure the fitter who does never has to leave the aircraft to find one. Robots taking on certified tasks directly is a much later question, if it comes at all."
+    },
+    {
+      "type": "heading",
+      "text": "MRO hangars as a starting point"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Maintenance, repair and overhaul work is even less repetitive than production — every aircraft arrives in a different state — so the logistics around the job dominate. Staging parts, moving tooling and running errands across large hangars is time skilled engineers currently lose, and it is bounded, repeatable work of the kind a ",
+        { "text": "structured trial", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        " can prove quickly."
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "Measure the win in released skilled hours: aerospace wages make the ",
+        { "text": "ROI case", "href": "/learn/humanoid-robot-roi" },
+        " for support automation stronger than in most sectors."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Will humanoid robots build aircraft?",
+      "answer": "Not in the near term. Build and repair steps are certified, traceable processes that stay human-led. The realistic role is support — kitting, tool and part delivery, logistics and housekeeping — so skilled fitters and engineers spend more of their time on the aircraft."
+    },
+    {
+      "question": "Why is aerospace hard to automate with conventional robots?",
+      "answer": "Volumes are low, variation is high and the product is large, so fixed automation rarely pays back outside a few specialised processes. Flexible, general-purpose robots that move to the work suit this environment better than cells the work must come to."
+    },
+    {
+      "question": "Where should an aerospace site start with humanoids?",
+      "answer": "Kitting and logistics in production, or staging work in MRO hangars. Both are bounded, repetitive and measurable in released skilled hours, and neither touches certified build or repair processes."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-automotive",
+    "humanoid-robots-in-electronics-manufacturing",
+    "humanoid-robots-in-manufacturing",
+    "humanoid-robots-vs-industrial-robots-and-cobots"
+  ]
+}

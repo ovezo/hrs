@@ -27,13 +27,31 @@
     },
     {
       "type": "table",
-      "headers": ["Task", "What the robot does"],
+      "headers": [
+        "Task",
+        "What the robot does"
+      ],
       "rows": [
-        ["Packing", "Placing and packing product where formats change between runs."],
-        ["Palletising", "Stacking cases and trays onto pallets at end of line."],
-        ["Machine tending", "Loading and unloading filling, forming and processing machines."],
-        ["Material & ingredient movement", "Moving totes, trays and ingredients between stations."],
-        ["End-of-line handling", "Case handling, labelling support and load preparation."]
+        [
+          "Packing",
+          "Placing and packing product where formats change between runs."
+        ],
+        [
+          "Palletising",
+          "Stacking cases and trays onto pallets at end of line."
+        ],
+        [
+          "Machine tending",
+          "Loading and unloading filling, forming and processing machines."
+        ],
+        [
+          "Material & ingredient movement",
+          "Moving totes, trays and ingredients between stations."
+        ],
+        [
+          "End-of-line handling",
+          "Case handling, labelling support and load preparation."
+        ]
       ]
     },
     {
@@ -52,7 +70,10 @@
       "type": "paragraph",
       "runs": [
         "Some of the strongest early cases are roles people least want to do: repetitive palletising, lifting in cold stores, monotonous end-of-line work. Automating these can improve ergonomics and retention while covering shifts that are hard to fill — a recurring theme in ",
-        { "text": "where humanoids deliver ROI", "href": "/learn/humanoid-robot-roi" },
+        {
+          "text": "where humanoids deliver ROI",
+          "href": "/learn/humanoid-robot-roi"
+        },
         "."
       ]
     },
@@ -60,7 +81,10 @@
       "type": "callout",
       "runs": [
         "Begin with a bounded secondary-handling task such as palletising or case packing, prove it in a ",
-        { "text": "real trial", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        {
+          "text": "real trial",
+          "href": "/learn/how-to-deploy-a-humanoid-robot"
+        },
         ", and extend from there as hygiene and environment allow."
       ]
     }
@@ -81,8 +105,9 @@
   ],
   "related": [
     "humanoid-robots-in-manufacturing",
+    "humanoid-robots-in-pharmaceutical-manufacturing",
+    "humanoid-robots-in-agriculture",
     "humanoid-robots-in-warehousing-and-logistics",
-    "how-to-deploy-a-humanoid-robot",
-    "humanoid-robot-roi"
+    "how-to-deploy-a-humanoid-robot"
   ]
 }

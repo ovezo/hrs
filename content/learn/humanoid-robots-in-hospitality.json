@@ -1,0 +1,94 @@
+{
+  "title": "Humanoid Robots in Hospitality: Hotels, Kitchens and Back-of-House",
+  "description": "How humanoid robots fit hospitality — hotel back-of-house logistics, kitchen porter support, laundry and linen handling, and room-service deliveries.",
+  "category": "Applications",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "keywords": [
+    "humanoid robots in hospitality",
+    "hotel robots",
+    "restaurant robots",
+    "kitchen porter automation",
+    "room service robot"
+  ],
+  "quickAnswer": "In hospitality, humanoid robots are best suited to back-of-house work: linen and laundry handling, kitchen porter support, stores and goods-in, and delivery runs to floors and rooms. These jobs are repetitive, physically hard and chronically short-staffed, and they happen away from guests — which makes them lower-risk starting points than front-of-house service. Guest-facing roles may follow as the technology matures, but back-of-house logistics is where the early value sits.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Back-of-house before front-of-house"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "A hotel or restaurant is really two workplaces. Front-of-house is busy, unpredictable and full of guests; back-of-house — kitchens, laundries, stores, service corridors — is far more structured and repeatable. Humanoids suit the latter today, the same \"structured before unstructured\" pattern seen in ",
+        { "text": "retail", "href": "/learn/humanoid-robots-in-retail" },
+        " and across the wider ",
+        { "text": "adoption curve", "href": "/learn/future-of-humanoid-robots" },
+        "."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "High-fit hospitality tasks"
+    },
+    {
+      "type": "table",
+      "headers": ["Task", "What the robot does"],
+      "rows": [
+        ["Linen and laundry handling", "Moving linen bags and cages between floors, laundry and stores."],
+        ["Kitchen porter support", "Carrying crates, clearing wash-up areas and moving stock in and out of kitchens."],
+        ["Stores and goods-in", "Receiving deliveries and putting stock away in dry stores, cellars and fridges."],
+        ["Floor and room-service runs", "Carrying trays, amenities and supplies through service corridors and lifts."],
+        ["Event setup support", "Moving chairs, tables and equipment for functions and conferences."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Why hospitality is a demanding environment"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Kitchens are hot, wet and cramped; corridors are narrow; work peaks sharply around service times. Hygiene expectations are close to those in ",
+        { "text": "food manufacturing", "href": "/learn/humanoid-robots-in-food-and-beverage" },
+        ", and people are everywhere. That is why credible early deployments pick bounded, repeatable routes and tasks — a laundry run, a stores round — rather than open-ended roles."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What may come next"
+    },
+    {
+      "type": "paragraph",
+      "text": "As perception, dexterity and safety mature, more guest-adjacent tasks become plausible: tray delivery to tables during quiet periods, luggage assistance, and eventually some concierge-style help. Wheeled service robots already do simple deliveries in some hotels; humanoids extend that by handling doors, lifts, stairs and awkward loads. But these are later steps, and they depend on robots coping reliably with busy public spaces."
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "The winning approach mirrors other sectors: pick one bounded back-of-house task with a clear labour gap, prove it in a ",
+        { "text": "real trial", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        ", and expand from there."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Are humanoid robots serving hotel guests yet?",
+      "answer": "Not in any general way. Busy, unpredictable guest areas are a hard environment, so the realistic near-term roles are back-of-house — laundry, kitchen porter support, stores and service-corridor deliveries — with guest-facing tasks following as the technology matures."
+    },
+    {
+      "question": "What hospitality tasks should a humanoid robot start with?",
+      "answer": "Repetitive, physically demanding back-of-house work that is hard to staff: linen and laundry runs, kitchen porter support, goods-in and stores, and floor deliveries through service corridors. These are bounded, repeatable and away from guests."
+    },
+    {
+      "question": "Why would hotels use humanoids instead of wheeled delivery robots?",
+      "answer": "Wheeled robots handle simple flat routes well and are cheaper for that job. Humanoids add value where the work involves hands, doors, stairs, cages and awkward loads — which covers much of real back-of-house work in older buildings not designed for automation."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-retail",
+    "humanoid-robots-in-food-and-beverage",
+    "humanoid-robots-in-healthcare",
+    "how-to-deploy-a-humanoid-robot"
+  ]
+}

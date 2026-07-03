@@ -27,13 +27,31 @@
     },
     {
       "type": "table",
-      "headers": ["Stage", "What happens"],
+      "headers": [
+        "Stage",
+        "What happens"
+      ],
       "rows": [
-        ["1. Task selection", "Identify a repetitive, bounded, high-fit task with a clear success measure."],
-        ["2. Factory trial", "Run the robot on the real task and measure performance against targets."],
-        ["3. Integration", "Fit the robot into the line, set up safety, and connect to existing workflows."],
-        ["4. Support", "Maintain uptime, refine behaviour, and improve the robot over time."],
-        ["5. Scale", "Expand to more tasks or units once the case is proven."]
+        [
+          "1. Task selection",
+          "Identify a repetitive, bounded, high-fit task with a clear success measure."
+        ],
+        [
+          "2. Factory trial",
+          "Run the robot on the real task and measure performance against targets."
+        ],
+        [
+          "3. Integration",
+          "Fit the robot into the line, set up safety, and connect to existing workflows."
+        ],
+        [
+          "4. Support",
+          "Maintain uptime, refine behaviour, and improve the robot over time."
+        ],
+        [
+          "5. Scale",
+          "Expand to more tasks or units once the case is proven."
+        ]
       ]
     },
     {
@@ -44,7 +62,10 @@
       "type": "paragraph",
       "runs": [
         "Everything depends on this. The best first task is repetitive, physically simple, hard to staff, and located in a space built for people. Picking a poor task dooms the project no matter how good the robot is. Our guide to ",
-        { "text": "use cases in manufacturing", "href": "/learn/humanoid-robots-in-manufacturing" },
+        {
+          "text": "use cases in manufacturing",
+          "href": "/learn/humanoid-robots-in-manufacturing"
+        },
         " covers what high-fit tasks look like."
       ]
     },
@@ -60,7 +81,10 @@
       "type": "callout",
       "runs": [
         "Treat the trial as the moment your ",
-        { "text": "ROI estimate", "href": "/learn/humanoid-robot-roi" },
+        {
+          "text": "ROI estimate",
+          "href": "/learn/humanoid-robot-roi"
+        },
         " becomes evidence. If the numbers hold on your real task, scaling is a confident decision rather than a leap of faith."
       ]
     },
@@ -72,7 +96,10 @@
       "type": "paragraph",
       "runs": [
         "Integration covers fitting the robot into the workflow, connecting it to existing systems, and — critically — setting up safety: risk assessment, safe zones and stops. See ",
-        { "text": "are humanoid robots safe", "href": "/learn/are-humanoid-robots-safe" },
+        {
+          "text": "are humanoid robots safe",
+          "href": "/learn/are-humanoid-robots-safe"
+        },
         " for what responsible set-up involves. This stage turns a promising trial into dependable daily operation."
       ]
     },
@@ -109,6 +136,7 @@
   ],
   "related": [
     "humanoid-robots-in-manufacturing",
+    "preparing-your-workforce-for-humanoid-robots",
     "humanoid-robot-roi",
     "are-humanoid-robots-safe",
     "choosing-a-humanoid-robot-integrator"

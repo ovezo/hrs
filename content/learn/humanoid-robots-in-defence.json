@@ -1,0 +1,94 @@
+{
+  "title": "Humanoid Robots in Defence: Logistics and Support Roles",
+  "description": "How humanoid robots fit defence — base logistics, stores and maintenance support, hazardous-area inspection — and the limits, ethics and rules that apply.",
+  "category": "Applications",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "keywords": [
+    "humanoid robots in defence",
+    "military logistics robots",
+    "defence automation",
+    "hazardous environment robots",
+    "dual-use robotics"
+  ],
+  "quickAnswer": "In defence, the realistic near-term roles for humanoid robots are support and logistics, not combat: depot and stores handling, base logistics, maintenance support, and inspection of hazardous or contaminated areas where sending people is risky. These are the same repetitive, physical jobs humanoids do in factories, applied to bases and depots. Weaponisation is a separate, heavily regulated and widely debated domain — it is not what humanoid integrators deploy.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "Support roles, not science fiction"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Popular images of military robots are far ahead of reality. The defence tasks that actually fit today's humanoids look much like ",
+        { "text": "warehouse work", "href": "/learn/humanoid-robots-in-warehousing-and-logistics" },
+        ": moving stores, staging parts, loading and unloading, and doing repetitive physical jobs on bases and in depots that are hard to staff and easy to define."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "High-fit defence tasks"
+    },
+    {
+      "type": "table",
+      "headers": ["Task", "What the robot does"],
+      "rows": [
+        ["Depot and stores handling", "Picking, moving and staging supplies in defence warehouses and depots."],
+        ["Base logistics", "Routine movement of equipment, rations and consumables around a site."],
+        ["Maintenance support", "Fetching tools and parts and staging kit for vehicle and equipment workshops."],
+        ["Hazardous-area inspection", "Entering contaminated, damaged or unstable areas to look, read and report."],
+        ["Facilities support", "Repetitive estate tasks — moving stores, setting up and clearing spaces."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Value in dangerous and dirty environments"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "The strongest defence case is keeping people out of harm's way: inspecting damaged structures, handling tasks in contaminated areas, or working where protective equipment makes human work slow and exhausting. Because bases and depots are built for people, a human-shaped robot can use the same doors, stairs and stores — the general argument covered in ",
+        { "text": "what is a humanoid robot", "href": "/learn/what-is-a-humanoid-robot" },
+        ". Current ",
+        { "text": "limitations", "href": "/learn/limitations-of-humanoid-robots" },
+        " still apply: endurance, dexterity and robustness constrain what is practical today."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Ethics, rules and human control"
+    },
+    {
+      "type": "paragraph",
+      "text": "Defence robotics is tightly governed. Export controls and dual-use regulations apply to much of the underlying technology, and the debate over autonomous weapons is a separate matter of international policy — not something addressed by deploying a logistics robot in a depot. The practical near-term picture keeps humans in control and robots in support roles, with the same safety cases and risk assessments any workplace deployment requires."
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "Defence organisations adopt humanoids the same way factories do: choose one bounded, repetitive support task, prove it in a ",
+        { "text": "structured trial", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        ", and scale on evidence."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Are humanoid robots used in combat?",
+      "answer": "No. The realistic near-term defence roles are logistics, maintenance support and hazardous-area inspection. Weaponised autonomy is a separate, heavily regulated and widely debated policy area, and it is not what humanoid robot integrators supply or deploy."
+    },
+    {
+      "question": "What defence tasks fit humanoid robots best today?",
+      "answer": "Depot and stores handling, routine base logistics, staging tools and parts for workshops, and inspecting hazardous or contaminated areas. These are bounded, repetitive, physical tasks — the same profile that works in factories and warehouses."
+    },
+    {
+      "question": "Why use a humanoid rather than a tracked or wheeled robot?",
+      "answer": "Bases, depots and ships are built for people — stairs, doors, racking and handwheels. A human-shaped robot can work in that infrastructure without modifying it, and can switch between tasks that purpose-built platforms would each need separate machines for."
+    }
+  ],
+  "related": [
+    "humanoid-robots-in-energy-and-utilities",
+    "humanoid-robots-in-warehousing-and-logistics",
+    "are-humanoid-robots-safe",
+    "limitations-of-humanoid-robots"
+  ]
+}

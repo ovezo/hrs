@@ -1,0 +1,93 @@
+{
+  "title": "How Are Humanoid Robots Controlled? Teleoperation vs Autonomy",
+  "description": "Are humanoid robots remote controlled? How teleoperation, supervised autonomy and full autonomy differ, and what deployed robots actually do today.",
+  "category": "Fundamentals",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "keywords": [
+    "are humanoid robots teleoperated",
+    "humanoid robot remote control",
+    "robot teleoperation",
+    "autonomous humanoid robot",
+    "how are humanoid robots controlled"
+  ],
+  "quickAnswer": "Humanoid robots are controlled along a spectrum. At one end is teleoperation — a person drives the robot directly. At the other is task autonomy — the robot performs trained tasks on its own. In between sits supervised autonomy, where the robot works independently and a person monitors, approves or takes over when needed. Many impressive public demos are teleoperated or carefully staged; real workplace deployments today run trained, bounded tasks autonomously with human supervision, and use remote assistance for exceptions.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "The control spectrum"
+    },
+    {
+      "type": "table",
+      "headers": ["Mode", "Who is in control", "Where it's used"],
+      "rows": [
+        ["Teleoperation", "A person drives every movement, often with VR or motion capture.", "Demos, data collection for training, one-off tricky jobs."],
+        ["Shared control", "The person sets goals; the robot handles balance and motion detail.", "Complex manipulation where full autonomy isn't ready."],
+        ["Supervised autonomy", "The robot works alone; a person monitors and can intervene.", "Most real deployments today."],
+        ["Task autonomy", "The robot runs trained tasks end-to-end.", "Bounded, well-learned tasks in defined areas."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Why demo videos can mislead"
+    },
+    {
+      "type": "paragraph",
+      "text": "Some of the most viral humanoid clips are teleoperated, sped up, cherry-picked from many takes, or all three — and the caption doesn't always say so. That gap between showreel and shop floor is one of the main reasons buyers overestimate what a robot will do autonomously on day one. The honest question to ask of any demonstration is simple: who was controlling it, and how many attempts did this take?"
+    },
+    {
+      "type": "heading",
+      "text": "Teleoperation is how robots learn"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "Teleoperation isn't a trick to hide — it is a core part of the training pipeline. Human operators demonstrating tasks generate the data that ",
+        { "text": "learning systems", "href": "/learn/how-humanoid-robots-learn" },
+        " and ",
+        { "text": "vision-language-action models", "href": "/learn/vision-language-action-models" },
+        " are trained on. A robot teleoperated through a task a few hundred times can often perform a version of it autonomously afterwards; the honest framing is that teleop is a stage, not the destination."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What deployed robots actually do"
+    },
+    {
+      "type": "paragraph",
+      "runs": [
+        "In a real facility the pattern is consistent: the robot runs trained, bounded tasks autonomously; a supervisor — often remote, often watching several robots — monitors and handles exceptions; and anything outside the trained envelope stops and asks for help. Where the boundary of that envelope sits is exactly what the ",
+        { "text": "current limitations", "href": "/learn/limitations-of-humanoid-robots" },
+        " describe, and it expands with training rather than with promises."
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "When evaluating a platform, ask to see your task run autonomously, and ask what the supervision model is per robot. Both questions belong in any ",
+        { "text": "structured trial", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        "."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Are humanoid robots remote controlled?",
+      "answer": "Sometimes. Teleoperation is common in demos and in collecting training data, but deployed robots typically run trained tasks autonomously under human supervision, with remote assistance for exceptions. Ask any vendor which mode a demonstration used."
+    },
+    {
+      "question": "Is someone driving the robot in a factory deployment?",
+      "answer": "Not movement-by-movement. The standard model is supervised autonomy: the robot works alone within a trained, bounded task, while a supervisor monitors — often several robots at once — and steps in only for exceptions."
+    },
+    {
+      "question": "Will humanoid robots become fully autonomous?",
+      "answer": "Autonomy is expanding task by task rather than arriving all at once. The trained envelope grows with data and deployment experience, but human oversight remains part of the model for the foreseeable future — for performance reasons as much as safety ones."
+    }
+  ],
+  "related": [
+    "how-do-humanoid-robots-work",
+    "how-humanoid-robots-learn",
+    "vision-language-action-models",
+    "limitations-of-humanoid-robots"
+  ]
+}

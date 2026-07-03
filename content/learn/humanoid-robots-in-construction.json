@@ -21,7 +21,10 @@
       "type": "paragraph",
       "runs": [
         "Construction has a strong pull toward automation — labour shortages, tight timelines, and physically punishing, sometimes dangerous work. But it is harder for robots than a factory: sites are unstructured, constantly changing, often outdoors, and full of uneven terrain. That collides with the ",
-        { "text": "current limitations", "href": "/learn/limitations-of-humanoid-robots" },
+        {
+          "text": "current limitations",
+          "href": "/learn/limitations-of-humanoid-robots"
+        },
         " of humanoids, so expectations should be realistic about timing."
       ]
     },
@@ -31,12 +34,27 @@
     },
     {
       "type": "table",
-      "headers": ["Task", "Why it's a candidate"],
+      "headers": [
+        "Task",
+        "Why it's a candidate"
+      ],
       "rows": [
-        ["Material handling & site logistics", "Moving materials and tools — repetitive and physically demanding."],
-        ["Repetitive fit-out tasks", "Bounded, repeating work in interior fit-out and finishing."],
-        ["Inspection & survey", "Capturing progress and condition data, including hard-to-reach areas."],
-        ["Hazardous-area work", "Tasks in environments that are unsafe or unpleasant for people."]
+        [
+          "Material handling & site logistics",
+          "Moving materials and tools — repetitive and physically demanding."
+        ],
+        [
+          "Repetitive fit-out tasks",
+          "Bounded, repeating work in interior fit-out and finishing."
+        ],
+        [
+          "Inspection & survey",
+          "Capturing progress and condition data, including hard-to-reach areas."
+        ],
+        [
+          "Hazardous-area work",
+          "Tasks in environments that are unsafe or unpleasant for people."
+        ]
       ]
     },
     {
@@ -81,6 +99,7 @@
   ],
   "related": [
     "humanoid-robots-in-manufacturing",
+    "humanoid-robots-in-energy-and-utilities",
     "humanoid-robots-in-warehousing-and-logistics",
     "limitations-of-humanoid-robots",
     "future-of-humanoid-robots"

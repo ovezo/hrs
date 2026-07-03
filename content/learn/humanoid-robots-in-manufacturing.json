@@ -27,14 +27,35 @@
     },
     {
       "type": "table",
-      "headers": ["Use case", "What the robot does"],
+      "headers": [
+        "Use case",
+        "What the robot does"
+      ],
       "rows": [
-        ["Machine tending", "Loading and unloading CNC, moulding or processing machines, and monitoring cycles."],
-        ["Line-side material movement", "Carrying parts, totes and small materials between stations without fixed conveyors."],
-        ["Pick-and-place & kitting", "Repeatable picking and preparing parts or kits near assembly workstations."],
-        ["Packing & palletising", "Handling, packing and stacking product where fixture types change between shifts."],
-        ["In-line inspection assist", "Vision-led quality checks and flagging exceptions in the production flow."],
-        ["Internal logistics", "Moving materials along brownfield routes originally designed for people."]
+        [
+          "Machine tending",
+          "Loading and unloading CNC, moulding or processing machines, and monitoring cycles."
+        ],
+        [
+          "Line-side material movement",
+          "Carrying parts, totes and small materials between stations without fixed conveyors."
+        ],
+        [
+          "Pick-and-place & kitting",
+          "Repeatable picking and preparing parts or kits near assembly workstations."
+        ],
+        [
+          "Packing & palletising",
+          "Handling, packing and stacking product where fixture types change between shifts."
+        ],
+        [
+          "In-line inspection assist",
+          "Vision-led quality checks and flagging exceptions in the production flow."
+        ],
+        [
+          "Internal logistics",
+          "Moving materials along brownfield routes originally designed for people."
+        ]
       ]
     },
     {
@@ -59,7 +80,10 @@
       "type": "callout",
       "runs": [
         "A good rule of thumb: if a task is repetitive, bounded and sits in a space built for people, it is worth assessing. If it needs maximum speed and never changes, a fixed ",
-        { "text": "industrial robot arm", "href": "/learn/humanoid-robots-vs-industrial-robots-and-cobots" },
+        {
+          "text": "industrial robot arm",
+          "href": "/learn/humanoid-robots-vs-industrial-robots-and-cobots"
+        },
         " is probably the better tool."
       ]
     },
@@ -71,9 +95,15 @@
       "type": "paragraph",
       "runs": [
         "Successful adoption is a staged process, not a single purchase. It usually runs from task selection, to a real factory trial that measures performance, to integration and long-term support. We cover the full sequence in ",
-        { "text": "how to deploy a humanoid robot", "href": "/learn/how-to-deploy-a-humanoid-robot" },
+        {
+          "text": "how to deploy a humanoid robot",
+          "href": "/learn/how-to-deploy-a-humanoid-robot"
+        },
         ", and the payback maths in ",
-        { "text": "humanoid robot ROI", "href": "/learn/humanoid-robot-roi" },
+        {
+          "text": "humanoid robot ROI",
+          "href": "/learn/humanoid-robot-roi"
+        },
         "."
       ]
     },
@@ -101,9 +131,9 @@
     }
   ],
   "related": [
+    "humanoid-robots-for-machine-tending",
+    "humanoid-robots-for-quality-inspection",
     "humanoid-robots-in-automotive",
-    "humanoid-robots-in-electronics-manufacturing",
-    "humanoid-robots-in-food-and-beverage",
     "humanoid-robots-in-warehousing-and-logistics",
     "how-to-deploy-a-humanoid-robot",
     "humanoid-robot-roi"

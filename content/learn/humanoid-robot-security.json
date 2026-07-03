@@ -1,0 +1,93 @@
+{
+  "title": "Can Humanoid Robots Be Hacked? Security and Data",
+  "description": "Humanoid robot cybersecurity — realistic risks, camera data and privacy on site, network isolation, updates and the questions every buyer should ask.",
+  "category": "Safety",
+  "datePublished": "2026-07-03",
+  "dateModified": "2026-07-03",
+  "keywords": [
+    "humanoid robot security",
+    "can robots be hacked",
+    "robot cybersecurity",
+    "robot data privacy",
+    "industrial robot security"
+  ],
+  "quickAnswer": "Like any connected industrial equipment, a humanoid robot can in principle be attacked — and it should be secured the way factories already secure connected machinery: network segmentation, strict access control, signed and tested updates, and clear rules about what the robot's cameras record and where that data goes. The distinctive issue isn't hacking so much as data: a humanoid walks around filming your facility, so camera data governance, retention and cloud policies deserve as much scrutiny as the security of the robot itself.",
+  "body": [
+    {
+      "type": "heading",
+      "text": "A robot is connected equipment"
+    },
+    {
+      "type": "paragraph",
+      "text": "A deployed humanoid is a networked computer with cameras, microphones and motors. That puts it in the same category as any other connected operational technology on your site — and the same discipline applies. Sites that already run PLCs, vision systems and AMRs behind segmented networks have most of the playbook they need; the robot adds new data flows rather than a new kind of risk."
+    },
+    {
+      "type": "heading",
+      "text": "The realistic risk areas"
+    },
+    {
+      "type": "table",
+      "headers": ["Risk area", "What it means", "Typical mitigation"],
+      "rows": [
+        ["Remote access", "Vendor or supervisor connections into the robot.", "VPN, per-user accounts, multi-factor, session logging."],
+        ["Camera and sensor data", "The robot continuously films its surroundings.", "Defined retention, on-site processing where possible, access controls."],
+        ["Software and model updates", "Updates change what the robot does.", "Signed updates, staging before production, change control."],
+        ["Network position", "A compromised robot as a way into other systems.", "Segmented OT network, minimal firewall rules, monitoring."],
+        ["Physical ports", "USB and debug ports on the robot itself.", "Locked down or disabled in production configuration."]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Cameras, people and privacy"
+    },
+    {
+      "type": "paragraph",
+      "text": "A humanoid's cameras inevitably capture employees, and possibly visitors and confidential processes. Under UK GDPR that makes the footage personal data: staff should be told what is recorded and why, retention should be defined and short, and access should be limited and logged. Ask where processing happens — footage analysed on the robot or on site raises fewer questions than footage streamed to a vendor's cloud — and get the answer into the contract, not just the sales call."
+    },
+    {
+      "type": "heading",
+      "text": "Questions to ask a vendor or integrator"
+    },
+    {
+      "type": "list",
+      "items": [
+        "What data leaves the site, where does it go, and can that be restricted or disabled?",
+        "How is remote access controlled, logged and revoked?",
+        "How are updates signed, tested and rolled back?",
+        "Can the robot run isolated from the internet, and what functions degrade if it does?",
+        "How long is camera data retained, and who can view it?",
+        "What is the security patching commitment over the robot's service life?"
+      ]
+    },
+    {
+      "type": "callout",
+      "runs": [
+        "Security is a shared responsibility: the vendor secures the platform, your IT/OT team secures the network, and the ",
+        { "text": "integrator", "href": "/learn/choosing-a-humanoid-robot-integrator" },
+        " should broker the two before the robot ever connects. Put the questions above in your evaluation checklist alongside ",
+        { "text": "safety", "href": "/learn/humanoid-robot-safety-standards" },
+        "."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can someone take control of a humanoid robot remotely?",
+      "answer": "Only through the remote-access paths the deployment allows, which is why those paths are the first thing to lock down: authenticated per-user access, multi-factor, logging, and network segmentation so the robot is reachable only from where it should be. Physical safety functions such as emergency stops work independently of the network."
+    },
+    {
+      "question": "Do humanoid robots send video to the cloud?",
+      "answer": "It varies by platform and configuration. Some process camera data on the robot or on site; some stream data to vendor systems for supervision or model improvement. Ask exactly what leaves the site, whether it can be restricted, and put the agreed answer in the contract."
+    },
+    {
+      "question": "Whose job is robot security — the vendor's or ours?",
+      "answer": "Both. The vendor is responsible for a securable platform — signed updates, access controls, patching. Your team is responsible for the environment: network segmentation, account management and data policies. A competent integrator aligns the two before deployment."
+    }
+  ],
+  "related": [
+    "humanoid-robot-safety-standards",
+    "are-humanoid-robots-safe",
+    "choosing-a-humanoid-robot-integrator",
+    "how-do-humanoid-robots-work"
+  ]
+}

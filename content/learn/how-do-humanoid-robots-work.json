@@ -47,9 +47,15 @@
       "type": "paragraph",
       "runs": [
         "The \"brain\" is software running on processors inside the robot. The most important recent shift is the move to ",
-        { "text": "vision-language-action (VLA) models", "href": "/learn/vision-language-action-models" },
+        {
+          "text": "vision-language-action (VLA) models",
+          "href": "/learn/vision-language-action-models"
+        },
         " — AI that takes in camera images and a plain-language instruction and outputs the movements needed to carry it out. This is the engine behind what the industry calls ",
-        { "text": "physical AI", "href": "/learn/what-is-physical-ai" },
+        {
+          "text": "physical AI",
+          "href": "/learn/what-is-physical-ai"
+        },
         ": intelligence that acts in the real world rather than just on a screen."
       ]
     },
@@ -109,6 +115,7 @@
     }
   ],
   "related": [
+    "how-are-humanoid-robots-controlled",
     "how-humanoid-robots-learn",
     "robot-hands-and-dexterity",
     "vision-language-action-models",
