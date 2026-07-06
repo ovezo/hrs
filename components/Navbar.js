@@ -3,10 +3,18 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { FlagChip } from '@/components/UnionJack';
 
 const navLinks = [
-  { label: 'Robots', id: 'robots' },
+  {
+    label: 'Robots',
+    items: [
+      { label: 'Version 1', href: '/robots', note: 'Cinematic showcase' },
+      { label: 'Version 2', href: '/robots-v2', note: 'Editorial + film' },
+      { label: 'Version 3', href: '/robots-v3', note: 'Fleet dossier' },
+    ],
+  },
   { label: 'Solutions', id: 'solutions' },
   { label: 'About us', id: 'about' },
   { label: 'Demos', id: 'demos' },
@@ -18,6 +26,8 @@ const navLinks = [
 export default function Navbar({ showFlag = false }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === '/';
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -45,7 +55,7 @@ export default function Navbar({ showFlag = false }) {
         >
           {/* Logo (+ optional UK flag pill) */}
           <div className="flex items-center gap-3">
-            <Link href="/" aria-label="HRS — Home" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); closeMenu(); }}>
+            <Link href="/" aria-label="HRS — Home" onClick={(e) => { if (isHome) { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); } closeMenu(); }}>
               <Image
                 src="/images/logo.png"
                 alt="HRS"
@@ -65,16 +75,43 @@ export default function Navbar({ showFlag = false }) {
 
           {/* Desktop links */}
           <ul className="hidden md:flex items-center gap-8 lg:gap-10" role="list">
-            {navLinks.map(({ label, id, href }) => (
-              <li key={id || href}>
-                {href ? (
+            {navLinks.map(({ label, id, href, items }) => (
+              <li key={id || href || label} className={items ? 'relative group' : undefined}>
+                {items ? (
+                  <>
+                    <button
+                      type="button"
+                      className="flex items-center gap-1.5 text-sm font-medium text-gray-800 hover:text-gray-500 transition-colors duration-300 whitespace-nowrap"
+                    >
+                      {label}
+                      <svg
+                        className="h-3 w-3 transition-transform duration-200 group-hover:rotate-180"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        aria-hidden="true"
+                      >
+                        <path d="M3 4.5l3 3 3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </button>
+                    <div className="invisible absolute left-1/2 top-full -translate-x-1/2 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                      <div className="min-w-[190px] rounded-2xl bg-white p-2 shadow-lg ring-1 ring-black/5">
+                        {items.map((item) => (
+                          <Link key={item.href} href={item.href} className="block rounded-xl px-4 py-2.5 hover:bg-gray-50">
+                            <span className="block text-sm font-medium text-gray-800">{item.label}</span>
+                            <span className="block text-xs text-gray-400">{item.note}</span>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </>
+                ) : href ? (
                   <Link
                     href={href}
                     className="text-sm font-medium text-gray-800 hover:text-gray-500 transition-colors duration-300 whitespace-nowrap"
                   >
                     {label}
                   </Link>
-                ) : (
+                ) : isHome ? (
                   <a
                     href={`#${id}`}
                     onClick={(e) => scrollTo(e, id)}
@@ -82,6 +119,14 @@ export default function Navbar({ showFlag = false }) {
                   >
                     {label}
                   </a>
+                ) : (
+                  /* Off the homepage, anchors become real links back to / */
+                  <Link
+                    href={`/#${id}`}
+                    className="text-sm font-medium text-gray-800 hover:text-gray-500 transition-colors duration-300 whitespace-nowrap"
+                  >
+                    {label}
+                  </Link>
                 )}
               </li>
             ))}
@@ -126,20 +171,42 @@ export default function Navbar({ showFlag = false }) {
       >
         <nav className="px-6 pt-[72px] pb-4 max-w-[1440px] mx-auto">
           <ul role="list">
-            {navLinks.map(({ label, id, href }, i) => {
-              const linkClass = `flex items-center py-5 text-lg font-medium text-gray-900 hover:text-gray-500 transition-colors ${
-                i < navLinks.length - 1 ? 'border-b border-gray-100' : ''
-              }`;
+            {navLinks.map(({ label, id, href, items }, i) => {
+              const borderClass = i < navLinks.length - 1 ? 'border-b border-gray-100' : '';
+              const linkClass = `flex items-center py-5 text-lg font-medium text-gray-900 hover:text-gray-500 transition-colors ${borderClass}`;
               return (
-                <li key={id || href}>
-                  {href ? (
+                <li key={id || href || label}>
+                  {items ? (
+                    <div className={borderClass}>
+                      <p className="pt-5 pb-1 text-lg font-medium text-gray-900">{label}</p>
+                      <ul className="pb-4" role="list">
+                        {items.map((item) => (
+                          <li key={item.href}>
+                            <Link
+                              href={item.href}
+                              onClick={closeMenu}
+                              className="flex items-center gap-2.5 py-2.5 pl-1 text-base text-gray-600 hover:text-gray-900 transition-colors"
+                            >
+                              <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                              {item.label}
+                              <span className="text-xs text-gray-400">{item.note}</span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : href ? (
                     <Link href={href} onClick={closeMenu} className={linkClass}>
                       {label}
                     </Link>
-                  ) : (
+                  ) : isHome ? (
                     <a href={`#${id}`} onClick={(e) => scrollTo(e, id)} className={linkClass}>
                       {label}
                     </a>
+                  ) : (
+                    <Link href={`/#${id}`} onClick={closeMenu} className={linkClass}>
+                      {label}
+                    </Link>
                   )}
                 </li>
               );

@@ -24,6 +24,12 @@ export default async function sitemap() {
       priority: 1,
     },
     {
+      url: `${siteUrl}/robots`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/contact`,
       lastModified: now,
       changeFrequency: 'yearly',

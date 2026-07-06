@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const robots = [
   {
@@ -85,6 +86,13 @@ export default function WhyNow() {
             behind our showcases and live demonstrations across the UK — and we evaluate and deploy
             other leading humanoid platforms such as Unitree and Figure as each project demands.
           </p>
+          <Link
+            href="/robots"
+            className="group mt-6 inline-flex items-center gap-2 text-sm font-semibold text-amber-600 hover:text-amber-500 transition-colors"
+          >
+            Explore the robots
+            <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">→</span>
+          </Link>
         </div>
 
         {/* Robot rows — alternating image / detail */}
