@@ -16,13 +16,13 @@ export default function Home() {
     <main>
       <Navbar showFlag />
       <HeroSection />
-      <WhyNow />          {/* 01 — Our Robots (G2 + X2)         → bg-white   */}
-      <TheGap />          {/* 02 — End-to-End Adoption (#solutions) → bg-gray-50 */}
-      <Team />            {/* 03 — Founder (Lel + Reeco)         → bg-white   */}
-      <Demonstrations />  {/* 04 — Live Demonstrations           → bg-white   */}
+      <WhyNow />          {/* 01 — Our Robots (G2 + X2)               → bg-white   */}
+      <TheGap />          {/* 02 — End-to-End Adoption (#solutions)   → bg-gray-50 */}
+      <Team />            {/* 03 — Founder (Lel + Reeco)              → bg-white   */}
+      <Demonstrations />  {/* 04 — Live Demonstrations                → bg-white   */}
       <TechApproach />    {/* 05 — Bringing AI to Life (#how-it-works) → bg-gray-50 */}
-      <FirstTargets />    {/* 06 — Use Cases                     → bg-white   */}
-      <VisionCTA />       {/* 07 — Vision + CTA                  → bg-white   */}
+      <FirstTargets />    {/* 06 — Use Cases                          → bg-white   */}
+      <VisionCTA />       {/* 07 — Vision + CTA                       → bg-white   */}
     </main>
   );
 }
