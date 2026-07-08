@@ -34,7 +34,7 @@ export default function LearnHeader() {
         </div>
 
         <a
-          href={`mailto:${contactEmail}`}
+          href={`/contact`}
           className="inline-flex items-center justify-center rounded-full bg-gray-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-gray-700 transition-colors"
         >
           Book a Demo

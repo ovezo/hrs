@@ -149,7 +149,7 @@ export default function Article({ article, related = [] }) {
             </p>
             <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
               <a
-                href={`mailto:${contactEmail}`}
+                href={`/contact`}
                 className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-gray-900 hover:bg-gray-100 transition-colors"
               >
                 Book a Demo

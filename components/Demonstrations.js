@@ -65,7 +65,7 @@ export default function Demonstrations() {
             {/* CTA */}
             <div className="mt-10">
               <a
-                href={`mailto:${contactEmail}`}
+                href={`/contact`}
                 className="inline-flex items-center justify-center bg-black text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-900 transition-colors"
               >
                 Book a Demo

@@ -22,13 +22,13 @@ export default function VisionCTA() {
           {/* CTAs */}
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
             <a
-              href={`mailto:${contactEmail}`}
+              href={`/contact`}
               className="inline-flex items-center justify-center bg-gray-900 text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-700 transition-colors"
             >
               Book a Demo
             </a>
             <a
-              href={`mailto:${contactEmail}`}
+              href={`/contact`}
               className="inline-flex items-center justify-center border border-gray-300 text-gray-900 px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-100 hover:border-gray-400 transition-colors"
             >
               Get in Touch

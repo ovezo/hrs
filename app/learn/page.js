@@ -130,7 +130,7 @@ export default async function LearnHub() {
             </p>
             <div className="mt-7">
               <a
-                href={`mailto:${contactEmail}`}
+                href={`/contact`}
                 className="inline-flex items-center justify-center rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-gray-900 hover:bg-gray-100 transition-colors"
               >
                 Book a Demo
