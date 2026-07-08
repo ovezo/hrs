@@ -24,9 +24,24 @@ export default function Navbar({ showFlag = false }) {
 
   const closeMenu = () => setMenuOpen(false);
 
+  // Logo: on the home page, smooth-scroll to the top; on any other route let the
+  // <Link> navigate home normally. (It used to always preventDefault, so on
+  // /contact, /learn, etc. clicking the logo did nothing but scroll.)
+  const handleLogoClick = (e) => {
+    if (onHome) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    closeMenu();
+  };
+
+  // Section links target home-page anchors. On home we smooth-scroll to the
+  // section; on any other route we let the <Link> navigate to /#id instead.
   const scrollTo = (e, id) => {
-    e.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    if (onHome) {
+      e.preventDefault();
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
     closeMenu();
   };
 
@@ -104,18 +119,10 @@ export default function Navbar({ showFlag = false }) {
                   >
                     {label}
                   </Link>
-                ) : isHome ? (
-                  <a
-                    href={`#${id}`}
-                    onClick={(e) => scrollTo(e, id)}
-                    className="text-sm font-medium text-gray-800 hover:text-gray-500 transition-colors duration-300 whitespace-nowrap"
-                  >
-                    {label}
-                  </a>
                 ) : (
-                  /* Off the homepage, anchors become real links back to / */
                   <Link
                     href={`/#${id}`}
+                    onClick={(e) => scrollTo(e, id)}
                     className="text-sm font-medium text-gray-800 hover:text-gray-500 transition-colors duration-300 whitespace-nowrap"
                   >
                     {label}
