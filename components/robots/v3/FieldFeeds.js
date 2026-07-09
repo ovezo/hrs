@@ -12,10 +12,10 @@ export default function FieldFeeds() {
     <section id="feeds" className="relative bg-gray-50 py-24 scroll-mt-24 md:py-32">
       <div className="mx-auto max-w-[1440px] px-6 md:px-16">
         <SectionHeader
-          index="05"
+          index="03"
           code="FIELD FEEDS"
           title="On station."
-          sub="Task loops from AGIBOT deployments — the work these platforms do all day, framed the way an operator sees it."
+          sub="You've met the units — now watch the work. Task loops from AGIBOT deployments, framed the way an operator sees them."
         />
         <div className="mt-12 grid gap-4 sm:grid-cols-2">
           {FEEDS.map((feed, i) => (

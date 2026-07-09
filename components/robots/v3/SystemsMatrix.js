@@ -11,10 +11,10 @@ export default function SystemsMatrix() {
   const shown = inView || reduced;
 
   return (
-    <section id="stack" className="relative bg-gray-50 py-24 scroll-mt-24 md:py-32">
+    <section id="stack" className="relative bg-white py-24 scroll-mt-24 md:py-32">
       <div className="mx-auto max-w-[1440px] px-6 md:px-16">
         <SectionHeader
-          index="03"
+          index="04"
           code="SHARED STACK"
           title="One stack. Two bodies."
           sub="Both platforms run the same AGIBOT software stack — what one unit learns, the fleet inherits."
@@ -23,7 +23,7 @@ export default function SystemsMatrix() {
           {MATRIX.map((mod, i) => (
             <div
               key={mod.code}
-              className="relative bg-white p-6 ring-1 ring-gray-200"
+              className="relative bg-gray-50 p-6 ring-1 ring-gray-200"
               style={{
                 opacity: shown ? 1 : 0,
                 transform: `translateY(${shown ? 0 : 16}px)`,

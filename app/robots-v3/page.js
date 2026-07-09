@@ -26,11 +26,11 @@ export default function RobotsV3Page() {
       <V3Chrome />
       <main>
         <V3Hero />
+        <FieldFeeds />
         <UnitDossier dossier={G2_DOSSIER} index="01" background="bg-gray-50" />
         <UnitDossier dossier={X2_DOSSIER} index="02" />
         <SystemsMatrix />
         <TelemetryCompare />
-        <FieldFeeds />
         <PlatformTimeline />
         <V3CTA />
       </main>

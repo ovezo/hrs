@@ -112,7 +112,7 @@ export default function UnitDossier({ dossier, index, background = 'bg-white' })
               </span>
             </div>
 
-            <div className="absolute bottom-6 left-0 hidden h-40 w-40 md:block lg:h-56 lg:w-56">
+            <div className="absolute bottom-6 left-0 hidden h-48 w-48 bg-white ring-1 ring-gray-200 md:block lg:h-64 lg:w-64">
               <Ticks />
               {dossier.groups.map((group, i) => (
                 <Image
@@ -120,7 +120,7 @@ export default function UnitDossier({ dossier, index, background = 'bg-white' })
                   src={group.detailImg}
                   alt={group.detailAlt}
                   fill
-                  sizes="224px"
+                  sizes="256px"
                   className="object-cover p-1 transition-opacity duration-500"
                   style={{ opacity: active === i ? 1 : 0 }}
                 />

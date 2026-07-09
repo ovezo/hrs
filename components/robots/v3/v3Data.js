@@ -8,7 +8,7 @@ export const HERO = {
   title: 'Know the machines.',
   sub: 'Every subsystem, every number — the two AGIBOT platforms HRS deploys, documented the way engineers read them.',
   stats: [
-    { label: 'Units', value: 2 },
+    // { label: 'Units', value: 2 },
     { label: 'Combined DOF', value: 51 },
     { label: 'Max payload', value: 10, unit: 'kg' },
     { label: 'Top speed', value: 1.8, unit: 'm/s', decimals: 1 },

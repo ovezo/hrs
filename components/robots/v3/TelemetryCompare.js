@@ -46,10 +46,10 @@ export default function TelemetryCompare() {
   const shown = inView || reduced;
 
   return (
-    <section id="versus" className="relative bg-white py-24 scroll-mt-24 md:py-32">
+    <section id="versus" className="relative bg-gray-50 py-24 scroll-mt-24 md:py-32">
       <div className="mx-auto max-w-[1440px] px-6 md:px-16">
         <SectionHeader
-          index="04"
+          index="05"
           code="TELEMETRY"
           title="Head to head."
           sub={COMPARE.note}

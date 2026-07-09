@@ -47,7 +47,7 @@ function RobotWithRuler({ dossier, height, mounted, preload = false }) {
         {dossier.heightMm} MM
       </span>
       <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-gray-500">
-        Unit {dossier.unit} · {dossier.name.replace('AGIBOT ', '')}
+        {dossier.name}
       </span>
     </div>
   );
