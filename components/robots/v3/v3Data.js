@@ -4,7 +4,7 @@
 // rows with `text` render as-is.
 
 export const HERO = {
-  bootline: 'HRS // FLEET DOSSIER — UNITS ONLINE: 02',
+  bootline: 'HRS // FLEET DOSSIER',
   title: 'Know the machines.',
   sub: 'Every subsystem, every number — the two AGIBOT platforms HRS deploys, documented the way engineers read them.',
   stats: [
@@ -219,9 +219,11 @@ export const FEEDS = [
     poster: '/videos/robots-v2/factory-poster.webp',
   },
   {
-    label: 'Guided tours',
-    video: '/videos/robots-v2/gallery.mp4',
-    poster: '/videos/robots-v2/gallery-poster.webp',
+    label: 'X2 field trials — HRS footage',
+    videos: [
+      { src: '/videos/robots-v3/x2-field.mp4', poster: '/videos/robots-v3/x2-field-poster.webp' },
+      { src: '/videos/robots-v3/x2-getting-up.mp4', poster: '/videos/robots-v3/x2-getting-up-poster.webp' },
+    ],
   },
   {
     label: 'Front of house',

@@ -27,7 +27,7 @@ export default async function sitemap() {
       url: `${siteUrl}/robots`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.85,
+      priority: 0.9,
     },
     {
       url: `${siteUrl}/contact`,

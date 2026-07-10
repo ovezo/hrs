@@ -23,8 +23,10 @@ function GroupPanel({ group, active }) {
       <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-amber-600">
         {group.code} — {group.name}
       </p>
-      <p className="mt-3 max-w-lg text-base leading-relaxed text-gray-500 md:text-lg">{group.desc}</p>
-      <div className="mt-5 max-w-lg">
+      <p className="mt-2 max-w-lg text-sm leading-snug text-gray-500 line-clamp-2 md:mt-3 md:text-lg md:leading-relaxed md:line-clamp-none">
+        {group.desc}
+      </p>
+      <div className="mt-3 max-w-lg md:mt-5">
         {group.specs.map((spec) => (
           <SpecRow key={spec.label} spec={spec} active={active} />
         ))}
@@ -83,7 +85,7 @@ export default function UnitDossier({ dossier, index, background = 'bg-white' })
       className={`relative h-[300vh] md:h-[360vh] ${background}`}
     >
       <div className="sticky top-0 flex h-screen flex-col overflow-hidden pt-20 pb-6 md:pt-24">
-        <div className="mx-auto grid h-full w-full max-w-[1440px] grid-rows-[40%_60%] gap-3 px-6 md:px-16 lg:grid-rows-none lg:grid-cols-[42%_58%] lg:gap-12">
+        <div className="mx-auto grid h-full w-full max-w-[1440px] grid-rows-[30%_70%] gap-3 px-6 md:px-16 lg:grid-rows-none lg:grid-cols-[42%_58%] lg:gap-12">
 
           {/* Unit image with ruler and phase-synced detail thumbnail */}
           <div className="relative">
@@ -133,8 +135,8 @@ export default function UnitDossier({ dossier, index, background = 'bg-white' })
 
           {/* Dossier panels scrub past while the unit stays pinned */}
           <div className="relative flex min-h-0 flex-col">
-            <SectionHeader index={index} code={`UNIT ${dossier.unit}`} title={dossier.name} sub={dossier.role} />
-            <div className="relative mt-2 min-h-0 flex-1">
+            <SectionHeader index={index} code={`UNIT ${dossier.unit}`} title={dossier.name} sub={dossier.role} compact />
+            <div className="relative mt-2 min-h-0 flex-1 overflow-hidden">
               {dossier.groups.map((group, i) => {
                 const s = START + i * SLOT;
                 const inP = seg(p, s, s + 0.07);
@@ -144,7 +146,7 @@ export default function UnitDossier({ dossier, index, background = 'bg-white' })
                 return (
                   <div
                     key={group.code}
-                    className="absolute inset-0 flex flex-col justify-center"
+                    className="absolute inset-0 flex flex-col justify-start pt-2 lg:justify-center lg:pt-0"
                     style={{ opacity, pointerEvents: opacity > 0.5 ? 'auto' : 'none' }}
                   >
                     <div className="will-change-transform" style={{ transform: `translateY(${y}px)` }}>
@@ -156,13 +158,13 @@ export default function UnitDossier({ dossier, index, background = 'bg-white' })
             </div>
             <div className="flex items-end justify-between gap-6 pt-2">
               {dossier.variant ? (
-                <p className="max-w-md font-mono text-[10px] uppercase tracking-[0.14em] text-gray-400">
+                <p className="hidden max-w-md font-mono text-[10px] uppercase tracking-[0.14em] text-gray-400 md:block">
                   {dossier.variant}
                 </p>
               ) : (
                 <span />
               )}
-              <p className="whitespace-nowrap font-mono text-sm font-medium tabular-nums text-gray-400">
+              <p className="ml-auto whitespace-nowrap font-mono text-xs font-medium tabular-nums text-gray-400 md:text-sm">
                 SYS 0{active + 1} / 0{dossier.groups.length}
               </p>
             </div>

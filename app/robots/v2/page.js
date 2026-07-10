@@ -8,7 +8,7 @@ import SpecSheet from '@/components/robots/v2/SpecSheet';
 import CompareCTA from '@/components/robots/CompareCTA';
 
 // Concept variant kept for comparison against /robots. Not indexed and not in
-// the sitemap until one version is chosen.
+// the sitemap.
 export const metadata = {
   title: 'Our Robots — Concept V2 | HRS',
   description:

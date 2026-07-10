@@ -12,10 +12,10 @@ export default function FieldFeeds() {
     <section id="feeds" className="relative bg-gray-50 py-24 scroll-mt-24 md:py-32">
       <div className="mx-auto max-w-[1440px] px-6 md:px-16">
         <SectionHeader
-          index="03"
+          index="01"
           code="FIELD FEEDS"
           title="On station."
-          sub="You've met the units — now watch the work. Task loops from AGIBOT deployments, framed the way an operator sees them."
+          sub="The fleet at work — task loops from AGIBOT deployments, plus our own X2 field trials, framed the way an operator sees them."
         />
         <div className="mt-12 grid gap-4 sm:grid-cols-2">
           {FEEDS.map((feed, i) => (
@@ -24,7 +24,29 @@ export default function FieldFeeds() {
                 <Ticks />
               </div>
               <div className="relative aspect-video">
-                {reduced ? (
+                {feed.videos ? (
+                  /* Two portrait clips share one monitor cell */
+                  <div className="grid h-full grid-cols-2">
+                    {feed.videos.map((clip) =>
+                      reduced ? (
+                        <div key={clip.src} className="relative overflow-hidden">
+                          <Image src={clip.poster} alt={feed.label} fill sizes="25vw" className="object-cover object-[50%_60%]" />
+                        </div>
+                      ) : (
+                        <video
+                          key={clip.src}
+                          src={clip.src}
+                          poster={clip.poster}
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          className="h-full w-full object-cover object-[50%_60%]"
+                        />
+                      )
+                    )}
+                  </div>
+                ) : reduced ? (
                   <Image src={feed.poster} alt={feed.label} fill sizes="(min-width: 640px) 50vw, 100vw" className="object-cover" />
                 ) : (
                   <video

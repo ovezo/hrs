@@ -7,14 +7,7 @@ import { usePathname } from 'next/navigation';
 import { FlagChip } from '@/components/UnionJack';
 
 const navLinks = [
-  {
-    label: 'Robots',
-    items: [
-      { label: 'Version 1', href: '/robots', note: 'Cinematic showcase' },
-      { label: 'Version 2', href: '/robots-v2', note: 'Editorial + film' },
-      { label: 'Version 3', href: '/robots-v3', note: 'Fleet dossier' },
-    ],
-  },
+  { label: 'Robots', href: '/robots' },
   { label: 'Solutions', id: 'solutions' },
   { label: 'About us', id: 'about' },
   { label: 'Demos', id: 'demos' },

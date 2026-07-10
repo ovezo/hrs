@@ -11,7 +11,7 @@ export default function V3CTA() {
         <div className="relative mx-auto max-w-3xl bg-white p-10 text-center ring-1 ring-gray-200 md:p-14">
           <Ticks />
           <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-amber-600">
-            07 // CONTACT
+            CONTACT
           </p>
           <h2 className="mt-4 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
             Run the numbers on your task.
@@ -25,7 +25,7 @@ export default function V3CTA() {
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
             <a
-              href={`mailto:${contactEmail}`}
+              href={`/contact`}
               className="inline-flex items-center justify-center rounded-full bg-gray-900 px-8 py-4 text-sm font-semibold text-white transition-colors hover:bg-gray-700"
             >
               Book a Demo

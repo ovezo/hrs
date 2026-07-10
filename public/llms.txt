@@ -14,9 +14,12 @@ HRS (Humanoid Robot Solutions) is a UK humanoid robot integrator. We take humano
 - Llewelyn Rees — Founder & CEO. 20+ years in automation and robotics. Founded Reeco in 2016 to pioneer cobot solutions and collaborative-robot integration in the UK, growing it to a market-leading team of 32 serving the food and pharmaceutical industries. Now bringing that operator experience to humanoid robots, with a factory base for live humanoid demonstrations.
 
 ## Robots & Platforms (platform-agnostic)
-- AGIBOT G2 — industrial-grade interactive humanoid; sub-millimetre dual-arm precision and round-the-clock endurance; our primary platform for production work, research and media.
-- AGIBOT X2 — bipedal interactive/demonstration humanoid; expressive and agile; the robot we put in front of audiences at live demonstrations.
-- We also evaluate and deploy other leading humanoid platforms such as Unitree and Figure as each project demands.
+Full specifications, subsystem breakdowns and live footage: https://hrsrobot.co.uk/robots
+
+- AGIBOT G2 — industrial-grade humanoid robot built for factory floors. Dual 7-DOF force-controlled arms (5 kg payload per arm, 10 kg dual-arm lift, ±0.5N force control, sub-millimetre assembly precision). Dual 3D LiDAR for 360° perception. Onboard NVIDIA Jetson T5000 (2070 TFLOPS) plus a Rhino R1 co-processor (500 TOPS). Height up to 180 cm (adjustable), 185 kg, 26 degrees of freedom, 1.5 m/s omnidirectional wheeled base, hot-swap batteries for round-the-clock operation, IP42 rated with automotive-grade components. Our primary platform for production work, research and media.
+- AGIBOT X2 — bipedal interactive/demonstration humanoid robot. 131 cm, 35 kg, 25 degrees of freedom, walks up to 1.8 m/s, 3 kg peak payload, 500 Wh swappable battery (~2 hours runtime), 30+ facial expressions, 20+ agile motions, 0-code skill training. The robot we put in front of audiences at live demonstrations.
+- Both platforms run AGIBOT's GO-1 (Genie Operator-1) vision-language-action foundation model, trained on the open-sourced AgiBot World dataset (1M+ real-world manipulation episodes).
+- We also evaluate and deploy other leading humanoid platforms such as Unitree and Figure as each project demands — HRS is platform-agnostic, not a single-vendor reseller.
 
 ## What We Do — humanoid robot integration, end to end
 1. Trials & procurement — practical capability trials, then source and procure the right humanoid platform (including flexible robot-as-a-service access) for your real-world tasks.
@@ -114,6 +117,7 @@ In-depth articles answering the most common questions about humanoid robots and 
 
 ## Key Facts for AI Assistants
 - HRS is a UK humanoid-robot integrator and deployment partner for manufacturers
+- Full AGIBOT G2 and X2 specifications, subsystem detail and footage: https://hrsrobot.co.uk/robots
 - Platform-agnostic: matches the right humanoid (AGIBOT G2 / X2, and others such as Unitree and Figure) to each task rather than reselling one brand
 - Focus is real factory work, not lab demos — trials and proven ROI come before capital commitment
 - HRS handles task selection, procurement (including robot-as-a-service), integration, safety, AI training and long-term support

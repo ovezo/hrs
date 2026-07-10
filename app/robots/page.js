@@ -1,34 +1,77 @@
 import { getBaseUrl } from '@/lib/config';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import RobotIntro from '@/components/robots/RobotIntro';
-import FeatureScrub from '@/components/robots/FeatureScrub';
-import RotationShift from '@/components/robots/RotationShift';
-import Anatomy from '@/components/robots/Anatomy';
-import Handover from '@/components/robots/Handover';
-import CompareCTA from '@/components/robots/CompareCTA';
+import V3Chrome from '@/components/robots/v3/V3Chrome';
+import V3Hero from '@/components/robots/v3/V3Hero';
+import UnitDossier from '@/components/robots/v3/UnitDossier';
+import FieldFeeds from '@/components/robots/v3/FieldFeeds';
+import SystemsMatrix from '@/components/robots/v3/SystemsMatrix';
+import TelemetryCompare from '@/components/robots/v3/TelemetryCompare';
+import PlatformTimeline from '@/components/robots/v3/PlatformTimeline';
+import V3CTA from '@/components/robots/v3/V3CTA';
+import { G2_DOSSIER, X2_DOSSIER } from '@/components/robots/v3/v3Data';
 import { G2, X2 } from '@/components/robots/robotsData';
 
 export const metadata = {
-  title: 'Our Robots: AGIBOT G2 & X2 Humanoids | HRS',
+  title: 'AGIBOT G2 & X2 Humanoid Robot Specifications | HRS',
   description:
-    'Meet the HRS humanoid fleet — AGIBOT G2, the industrial dual-arm humanoid for factory work, and AGIBOT X2, the bipedal demonstration humanoid. Deployed in the UK.',
+    'Full specifications for AGIBOT G2 and X2 — the industrial and interactive humanoid robots HRS deploys across UK manufacturing. Degrees of freedom, payload, speed, battery, compute and live footage.',
+  keywords: [
+    'AGIBOT G2',
+    'AGIBOT X2',
+    'humanoid robot specifications',
+    'industrial humanoid robot',
+    'bipedal humanoid robot',
+    'humanoid robots UK',
+    'humanoid robot integrator',
+    'physical AI',
+    'embodied AI',
+    'vision-language-action models',
+  ],
   alternates: { canonical: '/robots' },
   openGraph: {
     type: 'website',
-    title: 'Our Robots: AGIBOT G2 & X2 Humanoids | HRS',
+    title: 'AGIBOT G2 & X2 Humanoid Robot Specifications | HRS',
     description:
-      'AGIBOT G2 for industrial work, AGIBOT X2 for live demonstration — the humanoid platforms HRS deploys across the UK.',
+      'AGIBOT G2 for industrial work, AGIBOT X2 for live demonstration — full specs, subsystems and footage for the humanoid platforms HRS deploys across the UK.',
     url: '/robots',
     siteName: 'HRS — Humanoid Robot Solutions',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Our Robots: AGIBOT G2 & X2 Humanoids | HRS',
-    description: 'AGIBOT G2 for industrial work, AGIBOT X2 for live demonstration.',
+    title: 'AGIBOT G2 & X2 Humanoid Robot Specifications | HRS',
+    description: 'Full specs for AGIBOT G2 (industrial) and X2 (interactive demonstration).',
   },
 };
+
+// Technical specs surfaced as Product.additionalProperty — each one is also
+// shown verbatim in the on-page dossier/telemetry panels below, so schema
+// stays matched to visible content.
+const G2_PROPERTIES = [
+  { name: 'Height', value: '180', unitText: 'CMT' },
+  { name: 'Weight', value: '185', unitText: 'KGM' },
+  { name: 'Degrees of freedom', value: '26' },
+  { name: 'Arm payload', value: '5 kg per arm (10 kg dual-arm lift)' },
+  { name: 'Force control precision', value: '±0.5 N' },
+  { name: 'Top speed', value: '1.5', unitText: 'm/s' },
+  { name: 'Battery runtime', value: '4 hours per hot-swap' },
+  { name: 'Protection rating', value: 'IP42' },
+];
+
+const X2_PROPERTIES = [
+  { name: 'Height', value: '131', unitText: 'CMT' },
+  { name: 'Weight', value: '35', unitText: 'KGM' },
+  { name: 'Degrees of freedom', value: '25' },
+  { name: 'Peak payload', value: '3', unitText: 'KGM' },
+  { name: 'Top walking speed', value: '1.8', unitText: 'm/s' },
+  { name: 'Battery capacity', value: '500', unitText: 'Wh' },
+  { name: 'Battery runtime', value: '~2 hours' },
+  { name: 'Facial expressions', value: '30+' },
+];
+
+const toAdditionalProperty = (properties) =>
+  properties.map((p) => ({ '@type': 'PropertyValue', ...p }));
 
 export default function RobotsPage() {
   const siteUrl = getBaseUrl();
@@ -68,8 +111,10 @@ export default function RobotsPage() {
               '@id': `${siteUrl}/robots#agibot-g2`,
               name: G2.name,
               brand: { '@type': 'Brand', name: G2.brand },
+              category: 'Industrial humanoid robot',
               description: G2.blurb,
               image: `${siteUrl}${G2.images.hero}`,
+              additionalProperty: toAdditionalProperty(G2_PROPERTIES),
             },
           },
           {
@@ -80,8 +125,10 @@ export default function RobotsPage() {
               '@id': `${siteUrl}/robots#agibot-x2`,
               name: X2.name,
               brand: { '@type': 'Brand', name: X2.brand },
+              category: 'Interactive demonstration humanoid robot',
               description: X2.blurb,
               image: `${siteUrl}${X2.images.hero}`,
+              additionalProperty: toAdditionalProperty(X2_PROPERTIES),
             },
           },
         ],
@@ -96,18 +143,16 @@ export default function RobotsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navbar showFlag />
+      <V3Chrome />
       <main>
-        <RobotIntro robot={G2} />
-        <FeatureScrub
-          robot={G2}
-          image={G2.images.left}
-          imageAlt="AGIBOT G2 humanoid robot with both arms extended forward"
-        />
-        <RotationShift robot={G2} />
-        <Anatomy robot={G2} />
-        <Handover from={G2} to={X2} />
-        <FeatureScrub robot={X2} image={X2.images.hero} imageAlt={X2.heroAlt} />
-        <CompareCTA />
+        <V3Hero />
+        <FieldFeeds />
+        <UnitDossier dossier={G2_DOSSIER} index="02" />
+        <UnitDossier dossier={X2_DOSSIER} index="03" background="bg-gray-50" />
+        <SystemsMatrix />
+        <TelemetryCompare />
+        <PlatformTimeline />
+        <V3CTA />
       </main>
       <Footer />
     </>
