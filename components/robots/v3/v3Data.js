@@ -30,8 +30,8 @@ export const G2_DOSSIER = {
       code: 'SYS 01',
       name: 'Manipulation',
       desc: 'Dual force-controlled arms rated for real assembly work — delicate enough for cabling, strong enough for totes.',
-      detailImg: '/images/robots-v2/detail-hand.webp',
-      detailAlt: 'Close-up of the AGIBOT G2 dexterous hand',
+      detailImg: '/images/robots-v3/g2-detail-manipulation.webp',
+      detailAlt: 'Close-up of the AGIBOT G2 7-DOF force-control arm joints and dexterous hand',
       specs: [
         { label: 'Arm DOF', value: 7, unit: '× 2' },
         { label: 'Payload per arm', value: 5, unit: 'kg' },
@@ -44,8 +44,8 @@ export const G2_DOSSIER = {
       code: 'SYS 02',
       name: 'Perception',
       desc: 'Full-surround sensing tuned for busy floors — G2 tracks people, plant and parts all the way around itself.',
-      detailImg: '/images/robots-v2/detail-face.webp',
-      detailAlt: 'AGIBOT G2 head with sensor array and display face',
+      detailImg: '/images/robots-v3/g2-detail-perception.webp',
+      detailAlt: 'AGIBOT G2 head and shoulder camera with 360° LiDAR sensing cone',
       specs: [
         { label: 'LiDAR', text: 'Dual 3D · 360°' },
         { label: 'Cameras', text: 'RGB-D + stereo array' },
@@ -57,8 +57,8 @@ export const G2_DOSSIER = {
       code: 'SYS 03',
       name: 'Compute',
       desc: 'Datacentre-class inference carried onboard, with a dedicated co-processor for the housekeeping.',
-      detailImg: '/images/robots-v2/detail-arms.webp',
-      detailAlt: 'AGIBOT G2 arm joints and torso detail',
+      detailImg: '/images/robots-v3/g2-detail-compute.webp',
+      detailAlt: 'AGIBOT G2 wrist joint under beyond-visual-range teleoperation control',
       specs: [
         { label: 'Primary', text: 'NVIDIA Jetson T5000' },
         { label: 'AI throughput', value: 2070, unit: 'TFLOPS' },
@@ -71,8 +71,8 @@ export const G2_DOSSIER = {
       code: 'SYS 04',
       name: 'Mobility & power',
       desc: 'Omnidirectional, height-adaptive and never off shift — batteries swap hot so the line keeps moving.',
-      detailImg: '/images/robots-v2/detail-chassis.webp',
-      detailAlt: 'AGIBOT G2 omnidirectional wheeled chassis',
+      detailImg: '/images/robots-v3/g2-detail-mobility.webp',
+      detailAlt: 'AGIBOT G2 omnidirectional wheeled base with a hot-swap battery being removed',
       specs: [
         { label: 'Top speed', value: 1.5, unit: 'm/s', decimals: 1 },
         { label: 'Drive', text: '4-wheel steer · omni' },
@@ -103,8 +103,8 @@ export const X2_DOSSIER = {
       code: 'SYS 01',
       name: 'Form & structure',
       desc: 'A half-scale bipedal frame that reads as friendly, with the joint count of a much bigger machine.',
-      detailImg: '/images/robots-v2/x2-blocks.webp',
-      detailAlt: 'AGIBOT X2 handling stacked blocks',
+      detailImg: '/images/robots-v3/x2-detail-structure.webp',
+      detailAlt: 'Close-up of the AGIBOT X2 head and shoulder joint construction',
       specs: [
         { label: 'Height', value: 131, unit: 'cm' },
         { label: 'Mass', value: 35, unit: 'kg' },
@@ -119,8 +119,8 @@ export const X2_DOSSIER = {
       code: 'SYS 02',
       name: 'Locomotion',
       desc: 'Genuinely bipedal — a humanoid gait with a repertoire that ranges from careful walking to full dance routines.',
-      detailImg: '/images/robots-v2/x2-run.webp',
-      detailAlt: 'AGIBOT X2 running',
+      detailImg: '/images/robots-v3/x2-detail-locomotion.webp',
+      detailAlt: 'AGIBOT X2 hand and wrist extended outdoors during a field trial',
       specs: [
         { label: 'Top walk speed', value: 1.8, unit: 'm/s', decimals: 1 },
         { label: 'Typical pace', text: '≤ 0.8 m/s' },
@@ -133,8 +133,8 @@ export const X2_DOSSIER = {
       code: 'SYS 03',
       name: 'Interaction',
       desc: 'Cameras, microphones, touch and light — X2 is built to hold attention and hold a conversation.',
-      detailImg: '/images/robots-v2/x2-neck.webp',
-      detailAlt: 'AGIBOT X2 neck articulation',
+      detailImg: '/images/robots-v3/x2-detail-interaction.webp',
+      detailAlt: 'Close-up of the AGIBOT X2 expressive display face and camera array',
       specs: [
         { label: 'Camera', text: 'Interactive RGB' },
         { label: 'Audio', text: 'Mic array + wireless mic' },
@@ -147,8 +147,8 @@ export const X2_DOSSIER = {
       code: 'SYS 04',
       name: 'Power & compute',
       desc: 'A swappable 500 Wh pack and twin RK3588s keep a session running for around two hours between charges.',
-      detailImg: '/images/robots-v2/x2-waist.webp',
-      detailAlt: 'AGIBOT X2 waist articulation',
+      detailImg: '/images/robots-v3/x2-detail-power.webp',
+      detailAlt: 'Close-up of the AGIBOT X2 chest camera array and status light',
       specs: [
         { label: 'Battery', value: 500, unit: 'Wh' },
         { label: 'Runtime', text: '≈ 2 h @ 0.5 m/s' },
@@ -219,21 +219,21 @@ export const FEEDS = [
     poster: '/videos/robots-v2/factory-poster.webp',
   },
   {
-    label: 'X2 field trials — HRS footage',
+    label: 'X2 field trials',
     videos: [
       { src: '/videos/robots-v3/x2-field.mp4', poster: '/videos/robots-v3/x2-field-poster.webp' },
       { src: '/videos/robots-v3/x2-getting-up.mp4', poster: '/videos/robots-v3/x2-getting-up-poster.webp' },
     ],
   },
   {
+    label: 'Learning from a person',
+    video: '/videos/robots-v3/x2-learning-from-person.mp4',
+    poster: '/videos/robots-v3/x2-learning-from-person-poster.webp',
+  },
+  {
     label: 'Front of house',
     video: '/videos/robots-v2/concierge.mp4',
     poster: '/videos/robots-v2/concierge-poster.webp',
-  },
-  {
-    label: 'Workplace safety',
-    video: '/videos/robots-v2/office.mp4',
-    poster: '/videos/robots-v2/office-poster.webp',
   },
 ];
 
