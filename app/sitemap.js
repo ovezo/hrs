@@ -30,6 +30,12 @@ export default async function sitemap() {
       priority: 0.9,
     },
     {
+      url: `${siteUrl}/products`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/contact`,
       lastModified: now,
       changeFrequency: 'yearly',

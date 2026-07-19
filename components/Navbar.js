@@ -8,10 +8,9 @@ import { FlagChip } from '@/components/UnionJack';
 
 const navLinks = [
   { label: 'Robots', href: '/robots' },
-  { label: 'Solutions', id: 'solutions' },
+  { label: 'Products', href: '/products' },
   { label: 'About us', id: 'about' },
   { label: 'Demos', id: 'demos' },
-  { label: 'How it works', id: 'how-it-works' },
   { label: 'Learn', href: '/learn' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -28,7 +27,7 @@ export default function Navbar({ showFlag = false }) {
   // <Link> navigate home normally. (It used to always preventDefault, so on
   // /contact, /learn, etc. clicking the logo did nothing but scroll.)
   const handleLogoClick = (e) => {
-    if (onHome) {
+    if (isHome) {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -38,7 +37,7 @@ export default function Navbar({ showFlag = false }) {
   // Section links target home-page anchors. On home we smooth-scroll to the
   // section; on any other route we let the <Link> navigate to /#id instead.
   const scrollTo = (e, id) => {
-    if (onHome) {
+    if (isHome) {
       e.preventDefault();
       document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     }

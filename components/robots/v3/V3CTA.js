@@ -31,10 +31,11 @@ export default function V3CTA() {
               Book a Demo
             </a>
             <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-full border border-gray-300 px-8 py-4 text-sm font-semibold text-gray-900 transition-colors hover:border-gray-400 hover:bg-gray-100"
+              href="/products"
+              className="group inline-flex items-center justify-center gap-2 rounded-full border border-gray-300 px-8 py-4 text-sm font-semibold text-gray-900 transition-colors hover:border-gray-400 hover:bg-gray-100"
             >
-              Get in Touch
+              See Other Robots
+              <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">→</span>
             </Link>
           </div>
         </div>

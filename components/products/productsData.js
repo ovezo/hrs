@@ -1,0 +1,323 @@
+// Catalogue content for /products — the full AGIBOT range HRS supplies.
+// Spec figures come from AGIBOT's EU distributor listing (July 2026) checked
+// against agibot.com / store.agibot.com. No pricing on-page by policy:
+// pricing is on application via /contact. Shared with the page's JSON-LD.
+
+export const FAMILIES = [
+  {
+    id: 'humanoids',
+    index: '01',
+    code: 'HUMANOID PLATFORMS',
+    title: 'Humanoids, from desk to line.',
+    sub: 'Six humanoid platforms spanning research, front-of-house interaction and industrial deployment.',
+    background: 'bg-gray-50',
+    products: [
+      {
+        slug: 'agibot-x2',
+        name: 'AGIBOT X2',
+        category: 'Interactive humanoid robot',
+        tagline: 'Compact bipedal humanoid for demonstration, education and development.',
+        image: '/images/x2-hero.webp',
+        alt: 'AGIBOT X2 compact humanoid robot standing, front three-quarter view',
+        specs: [
+          { label: 'Height / weight', value: '131 cm · 35 kg' },
+          { label: 'Degrees of freedom', value: '25' },
+          { label: 'Top walking speed', value: '1.8 m/s' },
+          { label: 'Expressions', value: '30+ facial' },
+        ],
+        note: 'Full dossier on the robots page.',
+        noteHref: '/robots',
+      },
+      {
+        slug: 'agibot-x2-ultra',
+        name: 'AGIBOT X2 Ultra',
+        category: 'Interactive humanoid robot',
+        tagline: 'The X2 platform with upgraded joints, 7-DOF arms and more onboard compute.',
+        image: '/images/products/x2-ultra.png',
+        alt: 'AGIBOT X2 Ultra humanoid robot posing with both arms raised',
+        specs: [
+          { label: 'Degrees of freedom', value: '30' },
+          { label: 'Arms', value: '7-DOF × 2' },
+          { label: 'Compute', value: 'Jetson Orin NX · 157 TOPS' },
+        ],
+        note: 'X2 joint developer kit also available.',
+      },
+      {
+        slug: 'agibot-a2-lite',
+        name: 'AGIBOT A2 Lite',
+        category: 'Full-size humanoid robot',
+        tagline: 'Full-size bipedal humanoid for research and motion development.',
+        image: '/images/products/a2-lite.webp',
+        alt: 'AGIBOT A2 Lite full-size humanoid robot, front view',
+        specs: [
+          { label: 'Height / weight', value: '1.69 m · 63 kg' },
+          { label: 'Degrees of freedom', value: '23 whole-body' },
+          { label: 'Battery', value: '≈700 Wh, swappable' },
+          { label: 'Compute', value: '16-core x86' },
+        ],
+      },
+      {
+        slug: 'agibot-a2-ultra',
+        name: 'AGIBOT A2 Ultra',
+        category: 'Full-size humanoid robot',
+        tagline: 'Perception-complete A2 with dexterous hands for reception and exhibition work.',
+        image: '/images/products/a2-ultra.webp',
+        alt: 'AGIBOT A2 Ultra full-size humanoid robot standing upright, front view',
+        specs: [
+          { label: 'Height / weight', value: '1.69 m · 69 kg' },
+          { label: 'Degrees of freedom', value: '40 incl. 6-DOF hands' },
+          { label: 'Perception', value: 'LiDAR + 2 RGB-D + fisheye' },
+          { label: 'Compute', value: 'x86 + NVIDIA Orin' },
+        ],
+        note: 'Ships with autonomous reception and explanation skill package.',
+      },
+      {
+        slug: 'agibot-a3',
+        name: 'AGIBOT A3',
+        category: 'High-agility interactive humanoid robot',
+        tagline: 'High-agility humanoid built for expressive, audience-facing environments.',
+        image: '/images/products/a3.png',
+        alt: 'AGIBOT A3 humanoid robot captured mid-motion in a dynamic crouching pose',
+        specs: [
+          { label: 'Height / weight', value: '1.73 m · 55 kg' },
+          { label: 'Endurance', value: 'Up to 10 h · 10 s battery swap' },
+          { label: 'Interaction', value: '8-mic array · screen · UWB' },
+          { label: 'Arms', value: '7-DOF × 2' },
+        ],
+        note: 'Also available as A3 Ultra.',
+      },
+      {
+        slug: 'agibot-g2',
+        name: 'AGIBOT G2',
+        category: 'Industrial humanoid robot',
+        tagline: 'The industrial-grade humanoid already working on factory floors.',
+        image: '/images/g2-hero.webp',
+        alt: 'AGIBOT G2 industrial humanoid robot on an omnidirectional base, raising one hand',
+        specs: [
+          { label: 'Degrees of freedom', value: '26 active (body)' },
+          { label: 'Arm payload', value: '5 kg per arm' },
+          { label: 'Endurance', value: '4+ h · hot-swap batteries' },
+          { label: 'Compute', value: 'Jetson T5000 · 2070 TFLOPS' },
+        ],
+        note: 'Body-only or full packaging solution (VR teleoperation, OmniPicker, air case).',
+        noteHref: '/robots',
+      },
+    ],
+  },
+  {
+    id: 'quadrupeds',
+    index: '02',
+    code: 'QUADRUPED PLATFORMS',
+    title: 'The Lingxi D1 line.',
+    sub: 'From a 15.5 kg development platform to a 50 kg-payload industrial carrier — one quadruped family, six builds.',
+    background: 'bg-white',
+    products: [
+      {
+        slug: 'agibot-d1-pro',
+        name: 'D1 Pro',
+        category: 'Quadruped robot',
+        tagline: 'All-round quadruped for demonstrations and light mobile robotics.',
+        image: '/images/products/d1-pro.webp',
+        alt: 'AGIBOT D1 Pro quadruped robot, three-quarter view',
+        specs: [
+          { label: 'Weight', value: '15.5 kg' },
+          { label: 'Top speed', value: '3.5 m/s' },
+          { label: 'Rated load', value: '5 kg' },
+          { label: 'Protection', value: 'IP54' },
+        ],
+      },
+      {
+        slug: 'agibot-d1-edu',
+        name: 'D1 EDU',
+        category: 'Quadruped robot',
+        tagline: 'The D1 platform opened up for secondary development and teaching.',
+        image: '/images/products/d1-edu.webp',
+        alt: 'AGIBOT D1 EDU quadruped robot, side view',
+        specs: [
+          { label: 'Secondary development', value: 'Supported (SDK)' },
+          { label: 'Top speed', value: '3.5 m/s' },
+          { label: 'Rated load', value: '5 kg' },
+          { label: 'Interfaces', value: 'Ethernet · USB · UART · SBUS' },
+        ],
+        note: 'Education system with LiDAR, camera and 156 TOPS module available.',
+      },
+      {
+        slug: 'agibot-d1-ultra',
+        name: 'D1 Ultra',
+        category: 'Quadruped robot',
+        tagline: 'Faster D1 with target tracking and a screen-equipped controller.',
+        image: '/images/products/d1-ultra.webp',
+        alt: 'AGIBOT D1 Ultra quadruped robot, three-quarter view',
+        specs: [
+          { label: 'Weight', value: '16 kg' },
+          { label: 'Top speed', value: '3.7 m/s' },
+          { label: 'Target tracking', value: 'Supported' },
+          { label: 'Protection', value: 'IP54' },
+        ],
+      },
+      {
+        slug: 'agibot-d1-ultra-w',
+        name: 'D1 Ultra-W',
+        category: 'Wheeled quadruped robot',
+        tagline: 'Wheel-footed D1 Ultra — double the payload, 9 km of range.',
+        image: '/images/products/d1-ultra-w.webp',
+        alt: 'AGIBOT D1 Ultra-W wheeled quadruped robot on a light sculpted studio set',
+        cover: true,
+        specs: [
+          { label: 'Weight', value: '20 kg' },
+          { label: 'Rated load', value: '10 kg' },
+          { label: 'Max range', value: '9 km' },
+          { label: 'Top speed', value: '3.7 m/s' },
+        ],
+      },
+      {
+        slug: 'agibot-d1-max',
+        name: 'D1 Max',
+        category: 'Industrial wheel-legged quadruped robot',
+        tagline: 'IP67 wheel-legged platform for outdoor patrol and transport.',
+        image: '/images/products/d1-max.webp',
+        alt: 'AGIBOT D1 Max wheel-legged quadruped robot standing in rain, side profile',
+        cover: true,
+        specs: [
+          { label: 'Rated payload', value: '25–30 kg' },
+          { label: 'Top speed', value: '8 m/s' },
+          { label: 'Obstacle / ditch', value: '80 cm' },
+          { label: 'Protection', value: 'IP67 · −20 to 55 °C' },
+        ],
+        note: 'Dual 192-channel LiDAR, GNSS RTK and ultrasonic sensing on board.',
+      },
+      {
+        slug: 'agibot-d1-maxpro',
+        name: 'D1 MaxPro',
+        category: 'Heavy-payload industrial quadruped robot',
+        tagline: 'The heavy carrier — 50 kg rated payload over stairs and 45° slopes.',
+        image: '/images/products/d1-maxpro.webp',
+        alt: 'AGIBOT D1 MaxPro quadruped robot carrying strapped cargo up a rocky slope',
+        cover: true,
+        specs: [
+          { label: 'Rated payload', value: '50 kg' },
+          { label: 'Stair climbing', value: '30 cm continuous' },
+          { label: 'Max slope', value: '45°' },
+          { label: 'Protection', value: 'IP67 · −20 to 55 °C' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'end-effectors',
+    index: '03',
+    code: 'END-EFFECTORS & KITS',
+    title: 'Hands, grippers and developer kits.',
+    sub: 'Interchangeable end-effectors on a standard wrist interface, plus the teleoperation hardware to drive them.',
+    background: 'bg-gray-50',
+    products: [
+      {
+        slug: 'agibot-omnihand-2025',
+        name: 'OmniHand 2025',
+        category: 'Dexterous robot hand',
+        tagline: 'Compact high-DOF hand for human-like gesture and grasp.',
+        image: '/images/products/omnihand-2025.webp',
+        alt: 'AGIBOT OmniHand 2025 five-finger dexterous robot hand, palm view',
+        specs: [
+          { label: 'Degrees of freedom', value: '16 (10 active)' },
+          { label: 'Weight', value: '≤500 g' },
+          { label: 'Load', value: '1 kg typ. · 2 kg max' },
+          { label: 'Comms', value: 'CANFD / RS485' },
+        ],
+        note: 'Desktop demo base available.',
+      },
+      {
+        slug: 'agibot-omnihand-2025-tactile',
+        name: 'OmniHand 2025 (Tactile)',
+        category: 'Dexterous robot hand',
+        tagline: 'The OmniHand 2025 with fingertip tactile sensing for contact-aware grasps.',
+        image: '/images/products/omnihand-tactile.webp',
+        alt: 'AGIBOT OmniHand 2025 tactile version dexterous hand, angled view',
+        specs: [
+          { label: 'Degrees of freedom', value: '16 (10 active)' },
+          { label: 'Weight', value: '≤550 g' },
+          { label: 'Sensing', value: 'Fingertip tactile' },
+        ],
+      },
+      {
+        slug: 'agibot-omnihand-pro-2025',
+        name: 'OmniHand Pro 2025',
+        category: 'Dexterous robot hand',
+        tagline: 'The flagship hand — multi-modal tactile sensing with slip detection.',
+        image: '/images/products/omnihand-pro.webp',
+        alt: 'AGIBOT OmniHand Pro 2025 dexterous robot hand, upright palm view',
+        specs: [
+          { label: 'Degrees of freedom', value: '19 (12 active)' },
+          { label: 'Weight', value: '≈750 g' },
+          { label: 'Tactile resolution', value: '0.1 N · slip detection' },
+          { label: 'Hook grip', value: '30 kg passive' },
+        ],
+        note: 'Desktop demo base available.',
+      },
+      {
+        slug: 'agibot-omnipicker',
+        name: 'OmniPicker',
+        category: 'Adaptive gripper',
+        tagline: 'Lightweight adaptive gripper for pick-and-place on G2 and arm platforms.',
+        image: '/images/products/omnipicker.png',
+        alt: 'AGIBOT OmniPicker adaptive gripper, side view',
+        specs: [
+          { label: 'Type', value: 'Adaptive two-jaw gripper' },
+          { label: 'Mount', value: 'Standard AGIBOT wrist interface' },
+        ],
+      },
+      {
+        slug: 'agibot-g2-teleoperation-kit',
+        name: 'G2 Teleoperation Kit',
+        category: 'VR teleoperation kit',
+        tagline: 'VR headset and handles with the remote-operation software package for G2.',
+        image: '/images/products/g2-acc-teleoperation.png',
+        alt: 'AGIBOT G2 teleoperation kit',
+        specs: [
+          { label: 'Processor', value: 'Snapdragon XR2 Gen 2' },
+          { label: 'Display', value: '2160×2160 × 2 · 90 Hz' },
+          { label: 'Optics', value: 'Pancake · 105° FOV' },
+          { label: 'Connectivity', value: 'Wi-Fi 7 · Bluetooth 5.3' },
+        ],
+      },
+      {
+        slug: 'agibot-x2-joint-kit',
+        name: 'X2 Joint Kit',
+        category: 'Developer joint kit',
+        tagline: 'The X2 joint modules as a stand-alone kit for actuator development.',
+        image: '/images/products/x2-joint-kit.png',
+        alt: 'AGIBOT X2 joint kit',
+        specs: [
+          { label: 'Platform', value: 'AGIBOT X2 joint modules' },
+          { label: 'Use', value: 'Research & development' },
+        ],
+      },
+    ],
+  },
+];
+
+// Flat list of every catalogue product for JSON-LD.
+export const ALL_PRODUCTS = FAMILIES.flatMap((f) =>
+  f.products.map((p) => ({ ...p, familyCode: f.code }))
+);
+
+// Visible FAQ — rendered on the page AND mirrored 1:1 into FAQPage JSON-LD
+// (house rule: schema must match visible content, no phantom FAQ).
+export const FAQS = [
+  {
+    q: 'How do I get pricing for AGIBOT robots in the UK?',
+    a: 'Pricing is on application. Every build is quoted to its configuration — platform, end-effectors, software and support — so tell us about your task via the contact page and we’ll come back with a quote for the right setup.',
+  },
+  {
+    q: 'Which AGIBOT robot fits my application?',
+    a: 'As a rule of thumb: G2 for industrial work on the factory floor, X2 for demonstrations, education and development, A2 and A3 for front-of-house interaction, the D1 quadrupeds for patrol, inspection and carrying, and the OmniHand range for dexterous end-of-arm work. We help you match the platform to the task before you commit.',
+  },
+  {
+    q: 'Does HRS supply and support AGIBOT products across the UK?',
+    a: 'Yes. HRS supplies, integrates and supports the AGIBOT range UK-wide — from a single research unit to a deployed fleet — including training, spares and long-term support.',
+  },
+  {
+    q: 'Can I see the robots working before I buy?',
+    a: 'Yes. We run live demonstrations on real tasks, and the robots page has full dossiers and field footage for the G2 and X2. Book a demo through the contact page and evaluate the platform on your own workload first.',
+  },
+];

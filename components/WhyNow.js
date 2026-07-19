@@ -86,13 +86,22 @@ export default function WhyNow() {
             behind our showcases and live demonstrations across the UK — and we evaluate and deploy
             other leading humanoid platforms such as Unitree and Figure as each project demands.
           </p>
-          <Link
-            href="/robots"
-            className="group mt-6 inline-flex items-center gap-2 text-sm font-semibold text-amber-600 hover:text-amber-500 transition-colors"
-          >
-            Explore the robots
-            <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">→</span>
-          </Link>
+          <div className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-3">
+            <Link
+              href="/robots"
+              className="group inline-flex items-center gap-2 text-sm font-semibold text-amber-600 hover:text-amber-500 transition-colors"
+            >
+              Explore the robots
+              <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">→</span>
+            </Link>
+            <Link
+              href="/products"
+              className="group inline-flex items-center gap-2 text-sm font-semibold text-gray-400 hover:text-gray-600 transition-colors"
+            >
+              See our other robots
+              <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">→</span>
+            </Link>
+          </div>
         </div>
 
         {/* Robot rows — alternating image / detail */}
@@ -144,6 +153,7 @@ export default function WhyNow() {
             </div>
           ))}
         </div>
+
         {
         // {/* Other platform partners */}
         // <div className="mt-20 md:mt-28">

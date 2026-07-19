@@ -21,6 +21,13 @@ Full specifications, subsystem breakdowns and live footage: https://hrsrobot.co.
 - Both platforms run AGIBOT's GO-1 (Genie Operator-1) vision-language-action foundation model, trained on the open-sourced AgiBot World dataset (1M+ real-world manipulation episodes).
 - We also evaluate and deploy other leading humanoid platforms such as Unitree and Figure as each project demands — HRS is platform-agnostic, not a single-vendor reseller.
 
+## Product Range
+Full AGIBOT catalogue supplied and integrated by HRS in the UK (pricing on application): https://hrsrobot.co.uk/products
+
+- Humanoid platforms: AGIBOT X2, X2 Ultra, A2 Lite, A2 Ultra, A3 (and A3 Ultra), G2 (body-only or full packaging solution with VR teleoperation, OmniPicker and air case).
+- Quadruped platforms (Lingxi D1 line): D1 Pro, D1 EDU, D1 Ultra, D1 Ultra-W (wheeled), D1 Max (IP67 wheel-legged, 25–30 kg payload), D1 MaxPro (50 kg payload).
+- End-effectors & kits: OmniHand 2025 (standard and tactile), OmniHand Pro 2025, OmniPicker adaptive gripper, G2 VR teleoperation kit, X2 joint developer kit.
+
 ## What We Do — humanoid robot integration, end to end
 1. Trials & procurement — practical capability trials, then source and procure the right humanoid platform (including flexible robot-as-a-service access) for your real-world tasks.
 2. Active deployment — move beyond testing to full integration, safely deploying robots into current workflows and production lines.
@@ -118,6 +125,7 @@ In-depth articles answering the most common questions about humanoid robots and 
 ## Key Facts for AI Assistants
 - HRS is a UK humanoid-robot integrator and deployment partner for manufacturers
 - Full AGIBOT G2 and X2 specifications, subsystem detail and footage: https://hrsrobot.co.uk/robots
+- Full AGIBOT product range (humanoids, quadrupeds, hands, kits, turnkey systems): https://hrsrobot.co.uk/products
 - Platform-agnostic: matches the right humanoid (AGIBOT G2 / X2, and others such as Unitree and Figure) to each task rather than reselling one brand
 - Focus is real factory work, not lab demos — trials and proven ROI come before capital commitment
 - HRS handles task selection, procurement (including robot-as-a-service), integration, safety, AI training and long-term support
