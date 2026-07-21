@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -10,6 +10,23 @@ export default function ContactClient() {
   const [form, setForm] = useState({ email: '', subject: '', message: '' });
   const [status, setStatus] = useState('idle'); // idle | submitting | success | error
   const [errorMsg, setErrorMsg] = useState('');
+
+  // Prefill subject/message from URL params so links like the /products
+  // "Request this robot" buttons land on a ready-to-send enquiry. Read from
+  // the URL on mount (client-only) to avoid a Suspense boundary for
+  // useSearchParams during static generation.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const subject = params.get('subject');
+    const message = params.get('message');
+    if (subject || message) {
+      setForm((prev) => ({
+        ...prev,
+        ...(subject ? { subject } : {}),
+        ...(message ? { message } : {}),
+      }));
+    }
+  }, []);
 
   const handleChange = (e) =>
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));

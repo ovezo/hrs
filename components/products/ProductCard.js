@@ -2,6 +2,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Ticks } from '../robots/v3/ui';
 
+/** Deep-link to the contact form with the enquiry pre-filled for this product. */
+function requestHref(name) {
+  const subject = `Product enquiry: ${name}`;
+  const message = `I'd like more information about the ${name} — availability, pricing and configuration options.`;
+  return `/contact?subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`;
+}
+
 /** One catalogue tile. Transparent studio renders sit on white (contain);
  *  opaque scene shots fill the frame (cover). Cards without an image drop
  *  the media area and lead with the spec sheet instead. */
@@ -43,17 +50,14 @@ export default function ProductCard({ product }) {
             </div>
           ))}
         </dl>
-        {note ? (
-          <p className="mt-3 text-xs leading-relaxed text-gray-400">
-            {noteHref ? (
-              <Link href={noteHref} className="underline decoration-gray-300 underline-offset-2 hover:text-gray-600">
-                {note}
-              </Link>
-            ) : (
-              note
-            )}
-          </p>
-        ) : null}
+        
+        <Link
+          href={requestHref(name)}
+          className="group mt-5 ml-auto inline-flex items-center gap-2 self-start text-sm font-semibold text-amber-600 transition-colors hover:text-amber-500"
+        >
+          Request this product
+          <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">→</span>
+        </Link>
       </div>
     </article>
   );

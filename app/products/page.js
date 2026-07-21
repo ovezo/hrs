@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { getBaseUrl } from '@/lib/config';
 import Navbar from '@/components/Navbar';
@@ -46,21 +47,35 @@ export const metadata = {
 function ProductsHero() {
   return (
     <section className="relative bg-white pb-16 pt-32 md:pb-24 md:pt-40">
-      <div className="mx-auto max-w-[1440px] px-6 md:px-16">
-        <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-amber-600">
-          AGIBOT PLATFORM PARTNER
-        </p>
-        <h1 className="mt-3 max-w-3xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-          The full AGIBOT range.
-        </h1>
-        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-gray-500">
-          Every platform below is available through HRS in the UK — supplied, integrated and
-          supported. Pricing is on application:{' '}
-          <Link href="/contact" className="text-gray-900 underline decoration-amber-500 underline-offset-4 hover:decoration-amber-600">
-            tell us about your task
-          </Link>{' '}
-          and we&apos;ll quote the right configuration.
-        </p>
+      <div className="mx-auto grid max-w-[1440px] grid-cols-1 items-start gap-10 px-6 md:grid-cols-[1fr_auto] md:gap-16 md:px-16">
+        <div>
+          <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-amber-600">
+            AGIBOT PLATFORM PARTNER
+          </p>
+          <h1 className="mt-3 max-w-3xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            The full AGIBOT range.
+          </h1>
+          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-gray-500">
+            Every platform below is available through HRS in the UK — supplied, integrated and
+            supported. Pricing is on application:{' '}
+            <Link href="/contact" className="text-gray-900 underline decoration-amber-500 underline-offset-4 hover:decoration-amber-600">
+              tell us about your task
+            </Link>{' '}
+            and we&apos;ll quote the right configuration.
+          </p>
+        </div>
+        <div className="flex flex-col items-start gap-2 md:items-end">
+          <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-gray-400">
+            Official partner
+          </span>
+          <Image
+            src="/images/products/agibot-logo.png"
+            alt="AGIBOT"
+            width={243}
+            height={58}
+            priority
+          />
+        </div>
       </div>
     </section>
   );
