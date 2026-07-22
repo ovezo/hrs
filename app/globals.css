@@ -11,3 +11,37 @@
 html {
   scroll-behavior: smooth;
 }
+
+/*
+ * /videos mosaic. The row unit is exactly half a column width, so the tile
+ * spans in videosData.js (2×2 landscape, 1×3 portrait, 3×3 feature) keep a
+ * consistent crop at every viewport size instead of drifting the way fixed
+ * row heights do. --pad is the page gutter (px-6 → 3rem, md:px-16 → 8rem) and
+ * 1440px is the max-w-[1440px] container cap.
+ */
+.video-mosaic {
+  --cols: 2;
+  --gap: 0.75rem;
+  --pad: 3rem;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  grid-auto-flow: row dense;
+  gap: var(--gap);
+  grid-auto-rows: calc(
+    (min(100vw, 1440px) - var(--pad) - (var(--cols) - 1) * var(--gap)) / var(--cols) / 2
+  );
+}
+
+@media (min-width: 768px) {
+  .video-mosaic {
+    --cols: 3;
+    --gap: 1rem;
+    --pad: 8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .video-mosaic {
+    --cols: 4;
+  }
+}

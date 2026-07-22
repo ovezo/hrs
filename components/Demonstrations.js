@@ -63,12 +63,18 @@ export default function Demonstrations() {
             </ul>
 
             {/* CTA */}
-            <div className="mt-10">
+            <div className="mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <a
                 href={`/contact`}
                 className="inline-flex items-center justify-center bg-black text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-gray-900 transition-colors"
               >
                 Book a Demo
+              </a>
+              <a
+                href="/videos"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-semibold text-gray-900 ring-1 ring-gray-300 hover:bg-white transition-colors"
+              >
+                Watch the robots
               </a>
             </div>
           </div>

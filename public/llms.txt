@@ -44,6 +44,12 @@ Full AGIBOT catalogue supplied and integrated by HRS in the UK (pricing on appli
 ## Live Demonstrations
 Hands-on humanoid demonstrations in live UK environments — see, interact with and evaluate humanoid AI on your own site before you commit. Showcases run on AGIBOT robots, featuring the interactive X2, across hospitality, defence, electronics, automotive, manufacturing and pharmaceuticals.
 
+## Videos
+Footage of HRS humanoid robots in motion: https://hrsrobot.co.uk/videos (channel: https://www.youtube.com/@HRSrobot)
+- "Generative AI Teaches a Humanoid Robot to Move Like a Human | AGIBOT X2" — human movement is captured on video, processed by generative AI into motion commands, and reproduced by the AGIBOT X2 without hand-coded programming. An example of motion transfer and embodied AI.
+- "Humanoid Robot Walks Like a Human" (Short) — the AGIBOT X2 demonstrating smooth, human-like bipedal walking.
+- "Humanoid Robot Gets Up Like a Human" (Short) — the AGIBOT X2 recovering to standing from a face-down position using whole-body control.
+
 ## First Use Cases
 - Line-side material movement between stations
 - Machine tending around existing CNC / processing cells
