@@ -63,6 +63,7 @@ function Tile({ video, index, onOpen }) {
   const [preview, setPreview] = useState(false);
   const [previewVisible, setPreviewVisible] = useState(false);
   const frameRef = useRef(null);
+  const revealing = useRef(false);
   const timers = useRef([]);
 
   const clearTimers = () => {
@@ -79,11 +80,20 @@ function Tile({ video, index, onOpen }) {
 
   const stopPreview = () => {
     clearTimers();
+    revealing.current = false;
     setPreview(false);
     setPreviewVisible(false);
   };
 
   useEffect(() => clearTimers, []);
+
+  // YouTube throws up a control cluster for a moment when a player starts, so
+  // reveal a beat after playback rather than on the first frame.
+  const revealSoon = () => {
+    if (revealing.current) return;
+    revealing.current = true;
+    timers.current.push(setTimeout(() => setPreviewVisible(true), 1200));
+  };
 
   // The embed fires `load` long before it paints a frame, so fading in on load
   // shows a black rectangle over the poster. Instead, open the IFrame API
@@ -98,7 +108,7 @@ function Tile({ video, index, onOpen }) {
       try {
         const data = typeof event.data === 'string' ? JSON.parse(event.data) : event.data;
         const state = data?.info?.playerState ?? (data?.event === 'onStateChange' ? data.info : null);
-        if (state === 1) setPreviewVisible(true);
+        if (state === 1) revealSoon();
       } catch {
         // Non-JSON chatter from the player — nothing to do.
       }
@@ -145,51 +155,63 @@ function Tile({ video, index, onOpen }) {
                   JSON.stringify({ event: 'listening' }),
                   PREVIEW_ORIGIN
                 );
-                timers.current.push(setTimeout(() => setPreviewVisible(true), 2000));
+                timers.current.push(setTimeout(revealSoon, 2000));
               }}
-              className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-0 ${
-                video.kind === 'short' ? 'aspect-9/16 h-auto w-full' : 'aspect-video h-full w-auto'
+              // Landscape players are overscanned and bottom-anchored so
+              // YouTube's own title/channel bar — which returns on every loop —
+              // stays cropped off above the tile.
+              className={`absolute left-1/2 -translate-x-1/2 border-0 ${
+                video.kind === 'short'
+                  ? 'aspect-9/16 top-1/2 h-auto w-full -translate-y-1/2'
+                  : 'aspect-video bottom-0 h-[124%] w-auto'
               }`}
             />
           </span>
         ) : null}
 
-        {/* Legibility wash — deeper at the bottom where the caption sits. The
-            chrome below sits on z-10 so it stays legible over a live preview. */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/85 via-black/25 to-black/5 transition-opacity duration-300 group-hover:from-black/90" />
+        {/* Tile chrome. Sits above the player, and steps back to 40% once the
+            preview is actually rolling so the footage carries the tile. */}
+        <div
+          className={`pointer-events-none absolute inset-0 z-10 transition-opacity duration-700 ${
+            previewVisible ? 'opacity-40' : 'opacity-100'
+          }`}
+        >
+          {/* Legibility wash — deeper at the bottom where the caption sits. */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/5 transition-opacity duration-300 group-hover:from-black/90" />
 
-        {/* Format badge */}
-        <span className="absolute left-3 top-3 z-10 inline-flex items-center gap-1.5 bg-black/55 px-2.5 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur-sm">
-          <span className="h-1.5 w-1.5 bg-amber-500" />
-          {video.kind === 'short' ? 'Short' : 'Video'}
-          {formatDuration(video.duration) ? (
-            <span className="font-sans tracking-normal text-white/70">
-              {formatDuration(video.duration)}
-            </span>
-          ) : null}
-        </span>
+          {/* Format badge */}
+          <span className="absolute left-3 top-3 inline-flex items-center gap-1.5 bg-black/55 px-2.5 py-1 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-white backdrop-blur-sm">
+            <span className="h-1.5 w-1.5 bg-amber-500" />
+            {video.kind === 'short' ? 'Short' : 'Video'}
+            {formatDuration(video.duration) ? (
+              <span className="font-sans tracking-normal text-white/70">
+                {formatDuration(video.duration)}
+              </span>
+            ) : null}
+          </span>
 
-        {/* Play affordance */}
-        <span className="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white ring-1 ring-white/40 backdrop-blur-sm transition-all duration-300 group-hover:bg-amber-500 group-hover:ring-amber-500">
-          <PlayGlyph className="ml-0.5 h-3.5 w-3.5" />
-        </span>
+          {/* Play affordance */}
+          <span className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white ring-1 ring-white/40 backdrop-blur-sm transition-all duration-300 group-hover:bg-amber-500 group-hover:ring-amber-500">
+            <PlayGlyph className="ml-0.5 h-3.5 w-3.5" />
+          </span>
 
-        {/* Caption */}
-        <div className="absolute inset-x-0 bottom-0 z-10 p-4 md:p-5">
-          <h3
-            className={`font-bold leading-snug text-white ${
-              isFeature ? 'text-lg md:text-2xl' : 'text-sm md:text-base'
-            }`}
-          >
-            {video.title}
-          </h3>
-          <p
-            className={`mt-1.5 leading-relaxed text-white/70 ${
-              isFeature ? 'line-clamp-2 text-sm md:text-base' : 'line-clamp-2 text-xs md:text-sm'
-            }`}
-          >
-            {video.blurb}
-          </p>
+          {/* Caption */}
+          <div className="absolute inset-x-0 bottom-0 p-4 md:p-5">
+            <h3
+              className={`font-bold leading-snug text-white ${
+                isFeature ? 'text-lg md:text-2xl' : 'text-sm md:text-base'
+              }`}
+            >
+              {video.title}
+            </h3>
+            <p
+              className={`mt-1.5 leading-relaxed text-white/70 ${
+                isFeature ? 'line-clamp-2 text-sm md:text-base' : 'line-clamp-2 text-xs md:text-sm'
+              }`}
+            >
+              {video.blurb}
+            </p>
+          </div>
         </div>
       </button>
     </li>
