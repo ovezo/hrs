@@ -53,6 +53,12 @@ export default async function sitemap() {
       changeFrequency: 'weekly',
       priority: 0.9,
     },
+    {
+      url: `${siteUrl}/careers`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
     ...articles.map((article) => ({
       url: `${siteUrl}/learn/${article.slug}`,
       lastModified: new Date(article.dateModified || article.datePublished),

@@ -12,6 +12,7 @@ const navLinks = [
   { label: 'About', id: 'about' },
   { label: 'Videos', href: '/videos' },
   { label: 'Learn', href: '/learn' },
+  { label: "We're Hiring", href: '/careers' },
   { label: 'Contact', href: '/contact' },
 ];
 
