@@ -1,60 +1,91 @@
-import Image from 'next/image';
 import { getContactEmail } from '@/lib/config';
 import { FlagChip } from '@/components/UnionJack';
 
 export default function HeroSection() {
   const contactEmail = getContactEmail();
   return (
-    <section aria-label="Hero" className="relative min-h-screen overflow-hidden">
-
-      {/* Background */}
-      <Image
-        src="/images/hero-background.png"
-        alt=""
-        fill
-        sizes="100vw"
-        className="object-cover object-center"
-        priority
-        aria-hidden="true"
-      />
+    <section aria-label="Hero" className="relative min-h-screen overflow-hidden bg-gray-200">
 
       {/*
-        ── Content wrapper ──────────────────────────────────────────
-        Robot is positioned INSIDE this wrapper so `right-0` equals
-        the content container's right edge (max-w-[1440px]), not the
-        raw viewport. This satisfies "should not pass the hero-text
-        container's right side."
-        ─────────────────────────────────────────────────────────────
+        ── Background video ────────────────────────────────────────────
+        Autoplaying, muted + playsInline so mobile Safari/Chrome allow it
+        without a tap. The poster frame paints first (and stays put for
+        `prefers-reduced-motion`, where the video itself is hidden).
+
+        sm+ : sized to 118% of the hero and pinned to the RIGHT edge, so the
+              frame overhangs to the LEFT — off-screen, under the wash — and
+              the right-hand side of the shot, the side left clear, is always
+              fully in view instead of being centre-cropped. Anchoring alone
+              isn't enough: the clip is 16:9, so on a 16:9 window it wouldn't
+              shift at all.
+        <sm : plain full-width cover, since there's no side column.
+        ─────────────────────────────────────────────────────────────────
       */}
-      <div className="relative min-h-screen max-w-[1440px] mx-auto">
-
-        {/*
-          ── Robot ───────────────────────────────────────────────────
-          Positioned bottom-right on sm+; top-aligned and centred-ish
-          on mobile. Heights tuned so the robot reads ~74% of the hero.
-          ─────────────────────────────────────────────────────────────
-        */}
+      <div className="absolute inset-0" aria-hidden="true">
         <div
+          className="absolute inset-0 bg-cover bg-right"
+          style={{ backgroundImage: "url('/videos/posters/hero-banner.jpg')" }}
+        />
+        <video
           className="
-            absolute pointer-events-none select-none
-            top-[65%] right-0 left-0 -bottom-30
-            sm:top-[10%] sm:left-[40%] sm:right-0 sm:bottom-0
-            lg:top-[8%] lg:left-[42%]
+            absolute inset-0 h-full w-full object-cover object-center
+            sm:inset-auto sm:top-0 sm:right-0 sm:left-auto sm:h-full
+            sm:w-[118%] sm:max-w-none
+            motion-reduce:hidden
           "
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          poster="/videos/posters/hero-banner.jpg"
+          tabIndex={-1}
         >
-          <Image
-            src="/images/hero-robot.png"
-            alt="HRS humanoid robot standing in position, branded with HRS logo on chest"
-            fill
-            sizes="(min-width: 640px) 60vw, 85vw"
-            className="object-contain object-bottom-right"
-            priority
-          />
-        </div>
+          <source src="/videos/hrs_banner_video.mp4" type="video/mp4" />
+        </video>
+      </div>
 
-        {/* ── Hero text ── */}
-        <div className="relative z-10 flex sm:items-center min-h-screen px-6 md:px-16">
-          <div className="w-full sm:max-w-[480px] lg:max-w-[720px] pt-[30%] sm:pt-20 sm:pb-30 md:pb-36 lg:pb-44">
+      {/*
+        ── Overlays ────────────────────────────────────────────────────
+        A light wash (not a dark scrim) so the hero still reads as part of
+        the white site chrome and the navbar's dark links stay legible.
+          · sm+   → horizontal: solid-ish white behind the copy on the
+                    left, clearing to full video on the right.
+          · <sm   → vertical: the copy sits over the whole frame, so the
+                    wash has to cover the whole frame.
+          · both  → soft fade under the navbar and into the white section
+                    that follows.
+        ─────────────────────────────────────────────────────────────────
+      */}
+      <div
+        className="absolute inset-0 z-[1] hidden sm:block pointer-events-none"
+        aria-hidden="true"
+        style={{
+          background:
+            'linear-gradient(90deg, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.94) 28%, rgba(255,255,255,0.80) 44%, rgba(255,255,255,0.42) 62%, rgba(255,255,255,0.10) 82%, rgba(255,255,255,0) 100%)',
+        }}
+      />
+      <div
+        className="absolute inset-0 z-[1] sm:hidden pointer-events-none"
+        aria-hidden="true"
+        style={{
+          background:
+            'linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.78) 40%, rgba(255,255,255,0.86) 100%)',
+        }}
+      />
+      <div
+        className="absolute inset-0 z-[1] pointer-events-none"
+        aria-hidden="true"
+        style={{
+          background:
+            'linear-gradient(180deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 18%), linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 20%)',
+        }}
+      />
+
+      {/* ── Content ── */}
+      <div className="relative z-10 min-h-screen max-w-[1440px] mx-auto">
+        <div className="flex items-center min-h-screen px-6 md:px-16">
+          <div className="w-full sm:max-w-130 lg:max-w-180 pt-24 sm:pt-20 pb-16 sm:pb-30 md:pb-36 lg:pb-44">
             {/* Eyebrow: restrained "British" signal — a small Union Jack chip + label. */}
             <div className="mb-4 inline-flex items-center gap-2.5">
               <FlagChip />
@@ -65,7 +96,7 @@ export default function HeroSection() {
             <h1 className="text-[44px] leading-[1.1] sm:text-[56px] lg:text-[90px] lg:leading-[1.05] font-bold tracking-tight text-gray-900">
               Humanoid<br />Robot Solutions
             </h1>
-            <p className="mt-4 text-lg md:text-xl text-gray-500 leading-relaxed">
+            <p className="mt-4 text-lg md:text-xl text-gray-600 leading-relaxed">
               HRS (Humanoid Robot Solutions) is a UK humanoid robot integrator. We take
               humanoid robots from demonstration to deployment across manufacturing,
               warehousing and logistics — proven on your floor before you commit, then
@@ -87,7 +118,6 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-
       </div>
 
     </section>
