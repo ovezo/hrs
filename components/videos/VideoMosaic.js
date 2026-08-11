@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { track } from '@/components/analytics/track';
 import Image from 'next/image';
 import {
   CHANNEL_NAME,
@@ -399,10 +400,19 @@ export default function VideoMosaic({ tiles }) {
   const [openIndex, setOpenIndex] = useState(null);
   const triggerRef = useRef(null);
 
-  const open = useCallback((index) => {
-    triggerRef.current = document.activeElement;
-    setOpenIndex(index);
-  }, []);
+  const open = useCallback(
+    (index) => {
+      triggerRef.current = document.activeElement;
+      setOpenIndex(index);
+      // Session replay can't see inside the YouTube iframe, so this event is
+      // the only signal that a video was actually opened.
+      track('video_open', {
+        video_title: tiles[index]?.title || 'unknown',
+        video_kind: tiles[index]?.kind || 'video',
+      });
+    },
+    [tiles],
+  );
 
   const close = useCallback(() => {
     setOpenIndex(null);

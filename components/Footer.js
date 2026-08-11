@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import { FlagChip } from '@/components/UnionJack';
+import CookieSettingsLink from '@/components/analytics/CookieSettingsLink';
+
+const linkClass = 'text-xs text-gray-400 hover:text-gray-600 transition-colors';
 
 export default function Footer() {
   return (
@@ -9,12 +12,14 @@ export default function Footer() {
           <span className="text-xs text-gray-400">© 2026 HRS — Humanoid Robot Solutions UK</span>
           <FlagChip className="h-3.5 w-7" />
         </div>
-        <a
-          href="mailto:info@hrsrobot.co.uk"
-          className="text-xs text-gray-400 hover:text-gray-600 transition-colors"
-        >
-          info@hrsrobot.co.uk
-        </a>
+        <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+          <Link href="/privacy" className={linkClass}>Privacy</Link>
+          <Link href="/cookies" className={linkClass}>Cookies</Link>
+          <CookieSettingsLink className={linkClass} />
+          <a href="mailto:info@hrsrobot.co.uk" className={linkClass}>
+            info@hrsrobot.co.uk
+          </a>
+        </div>
       </div>
     </footer>
   );
