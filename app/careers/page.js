@@ -11,7 +11,7 @@ const APPLY_MAILTO = `mailto:${APPLY_EMAIL}?subject=${encodeURIComponent(APPLY_S
 export const metadata = {
   title: 'Careers — Robotics & AI Engineer (Humanoid Robotics) | HRS',
   description:
-    'We’re hiring a Robotics & AI Engineer at HRS in Newtown, Mid Wales. Build humanoid robots with ROS2, NVIDIA Isaac Sim, computer vision and AI. Full-time, £30,000–£65,000+, relocation support.',
+    'We’re hiring a Robotics & AI Engineer at HRS in Newtown, Mid Wales — humanoid robots with ROS2, Isaac Sim, computer vision and AI. £30,000–£65,000+.',
   keywords: [
     'robotics engineer job UK',
     'AI engineer job Wales',

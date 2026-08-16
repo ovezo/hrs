@@ -15,9 +15,13 @@ const contactEmail = getContactEmail();
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'HRS — Humanoid Robot Solutions | Intelligent Robots for Real-World Work',
+  // Title leads with the target query ("humanoid robots UK") rather than the
+  // brand, but keeps the exact brand string "Humanoid Robot Solutions" — that
+  // phrase is the company name and is what the site already ranks for, so it
+  // has to survive any retitling.
+  title: 'Humanoid Robots UK | HRS — Humanoid Robot Solutions',
   description:
-    'HRS helps UK manufacturers deploy humanoid robots — the right task, real factory trials, proven ROI, plus full integration and long-term support. Book a demo.',
+    'HRS is a UK humanoid robot integrator, deploying humanoid robots across manufacturing, warehousing and logistics — proven on your floor, then fully integrated.',
   applicationName: 'HRS — Humanoid Robot Solutions',
   keywords: [
     'humanoid robots UK',
@@ -115,10 +119,26 @@ const jsonLd = {
       founder: [
         { '@type': 'Person', name: 'Llewelyn Rees', jobTitle: 'Founder & CEO' },
       ],
+      // Address and phone are repeated site-wide (not only on /contact) so every
+      // page reinforces the same located entity. Values are identical to the
+      // /contact node, which shares this @id, and to what /contact renders on
+      // screen — a located, consistent NAP is what the Google Business Profile
+      // work leans on.
+      legalName: 'Humanoid Robot Solutions Ltd',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Unit 45, Mochdre Industrial Estate',
+        addressLocality: 'Newtown',
+        addressRegion: 'Powys',
+        postalCode: 'SY16 4LE',
+        addressCountry: 'GB',
+      },
+      telephone: ['+441686621138', '+447852355187'],
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'sales',
         email: contactEmail,
+        telephone: '+441686621138',
         areaServed: 'GB',
         availableLanguage: 'English',
       },
@@ -136,9 +156,9 @@ const jsonLd = {
       '@type': 'WebPage',
       '@id': `${siteUrl}/#webpage`,
       url: siteUrl,
-      name: 'HRS — Humanoid Robot Solutions | Intelligent Robots for Real-World Work',
+      name: 'Humanoid Robots UK | HRS — Humanoid Robot Solutions',
       description:
-        'HRS helps UK manufacturers deploy humanoid robots — the right task, real factory trials, proven ROI, plus full integration and long-term support.',
+        'HRS is a UK humanoid robot integrator, deploying humanoid robots across manufacturing, warehousing and logistics — proven on your floor, then fully integrated.',
       isPartOf: { '@id': `${siteUrl}/#website` },
       about: { '@id': `${siteUrl}/#organization` },
       primaryImageOfPage: { '@id': `${siteUrl}/#logo` },

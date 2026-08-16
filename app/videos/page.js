@@ -15,9 +15,9 @@ import {
 } from '@/components/videos/videosData';
 
 export const metadata = {
-  title: 'Humanoid Robot Videos — HRS on YouTube | Humanoid Robot Solutions',
+  title: 'Humanoid Robot Videos — Demos in Motion | HRS',
   description:
-    'Watch HRS humanoid robots in motion: generative AI motion transfer onto the AGIBOT X2, human-like walking, whole-body recovery and more. Videos and Shorts from the HRS channel.',
+    'Watch humanoid robots in motion: generative AI motion transfer onto the AGIBOT X2, human-like walking and whole-body recovery — videos and Shorts from HRS.',
   keywords: [
     'humanoid robot video',
     'humanoid robot demonstration video',
