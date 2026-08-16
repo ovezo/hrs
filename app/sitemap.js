@@ -59,6 +59,18 @@ export default async function sitemap() {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: `${siteUrl}/privacy`,
+      lastModified: now,
+      changeFrequency: 'yearly',
+      priority: 0.2,
+    },
+    {
+      url: `${siteUrl}/cookies`,
+      lastModified: now,
+      changeFrequency: 'yearly',
+      priority: 0.2,
+    },
     ...articles.map((article) => ({
       url: `${siteUrl}/learn/${article.slug}`,
       lastModified: new Date(article.dateModified || article.datePublished),

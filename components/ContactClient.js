@@ -1,8 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { track } from '@/components/analytics/track';
 
 const CONTACT_EMAIL = 'info@hrsrobot.co.uk';
 
@@ -10,6 +11,9 @@ export default function ContactClient() {
   const [form, setForm] = useState({ email: '', subject: '', message: '' });
   const [status, setStatus] = useState('idle'); // idle | submitting | success | error
   const [errorMsg, setErrorMsg] = useState('');
+  // Whether the enquiry arrived pre-filled from a /products or /robots CTA —
+  // reported with the submit event so we can see if that funnel converts.
+  const prefilled = useRef(false);
 
   // Prefill subject/message from URL params so links like the /products
   // "Request this robot" buttons land on a ready-to-send enquiry. Read from
@@ -20,6 +24,7 @@ export default function ContactClient() {
     const subject = params.get('subject');
     const message = params.get('message');
     if (subject || message) {
+      prefilled.current = true;
       setForm((prev) => ({
         ...prev,
         ...(subject ? { subject } : {}),
@@ -56,6 +61,9 @@ export default function ContactClient() {
       const data = await res.json().catch(() => ({}));
       if (res.ok && data.success) {
         setStatus('success');
+        track('contact_form_submit', {
+          prefilled: prefilled.current ? 'yes' : 'no',
+        });
         setForm({ email: '', subject: '', message: '' });
       } else {
         setStatus('error');

@@ -1,5 +1,8 @@
 import { Inter } from 'next/font/google';
-import { getBaseUrl, getContactEmail } from '@/lib/config';
+import { getBaseUrl, getClarityId, getContactEmail, getGaId } from '@/lib/config';
+import Analytics from '@/components/analytics/Analytics';
+import ConsentBanner from '@/components/analytics/ConsentBanner';
+import ConversionTracking from '@/components/analytics/ConversionTracking';
 import './globals.css';
 
 const inter = Inter({
@@ -144,16 +147,41 @@ const jsonLd = {
   ],
 };
 
+// Google Consent Mode v2 defaults. This has to be the first thing that touches
+// dataLayer — before gtag.js is ever fetched — so the denied state is already
+// queued when a tag initialises. It makes no network request of its own; the
+// tags themselves are still withheld until consent (see Analytics.js).
+const consentDefaults = `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+  ad_storage: 'denied',
+  ad_user_data: 'denied',
+  ad_personalization: 'denied',
+  analytics_storage: 'denied',
+  wait_for_update: 500
+});`;
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} h-full`}>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: consentDefaults }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-sans antialiased min-h-full">{children}</body>
+      <body className="font-sans antialiased min-h-full">
+        {children}
+        <Analytics
+          gaId={getGaId()}
+          clarityId={getClarityId()}
+          productionHost={new URL(siteUrl).hostname}
+        />
+        <ConversionTracking />
+        <ConsentBanner />
+      </body>
     </html>
   );
 }
