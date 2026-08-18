@@ -1,9 +1,15 @@
 import { getContactEmail } from '@/lib/config';
 
+/*
+ * Padding is symmetric (py-24 md:py-36). There used to be a `pb-8!` override
+ * here because this section ended with its own inline copyright strip, which
+ * filled the bottom. That strip now lives in the real <Footer />, so without
+ * the reset the CTA buttons would sit 32px off the gray/white boundary.
+ */
 export default function VisionCTA() {
   const contactEmail = getContactEmail();
   return (
-    <section id="contact" aria-label="Vision and Contact" className="bg-white py-24 pb-8! md:py-36">
+    <section id="contact" aria-label="Vision and Contact" className="bg-gray-50 py-24 md:py-36">
       <div className="max-w-[1440px] mx-auto px-6 md:px-16">
         <div className="max-w-4xl mx-auto text-center">
 
@@ -35,12 +41,6 @@ export default function VisionCTA() {
             </a>
           </div>
 
-        </div>
-
-        {/* Bottom footer strip */}
-        <div className="mt-24 pt-8 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-          <span>© {new Date().getFullYear()} HRS — Humanoid Robot Solutions UK</span>
-          <span>Humanoid robot deployment for UK industry</span>
         </div>
 
       </div>

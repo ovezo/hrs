@@ -8,28 +8,34 @@ import FamilySection from '@/components/products/FamilySection';
 import { FAMILIES, ALL_PRODUCTS, FAQS } from '@/components/products/productsData';
 
 export const metadata = {
-  title: 'AGIBOT Product Range — Humanoids, Quadrupeds & End-Effectors | HRS',
+  // "AGIBOT" led the title here, but UK buyers search the category, not the
+  // platform brand — so the category + UK now lead and AGIBOT stays on as the
+  // qualifier that still catches brand searches.
+  title: 'Humanoid Robots UK — Full Product Range | HRS',
   description:
-    'The full AGIBOT product range supplied and integrated by HRS in the UK: X2, A2, A3 and G2 humanoid robots, the Lingxi D1 quadruped line, OmniHand dexterous hands, grippers and teleoperation kits.',
+    'Humanoid robots, quadrupeds, dexterous hands and teleoperation kits supplied and integrated across the UK by HRS — the full AGIBOT range, X2 to G2.',
   keywords: [
-    'AGIBOT products',
-    'AGIBOT robots UK',
+    'humanoid robots UK',
     'humanoid robot range',
+    'humanoid robot supplier UK',
+    'buy humanoid robot UK',
+    'humanoid robot integrator',
+    'robot dog UK',
+    'quadruped robot UK',
+    'dexterous robot hand',
+    'AGIBOT robots UK',
+    'AGIBOT UK supplier',
+    'AGIBOT X2',
     'AGIBOT A2',
     'AGIBOT A3',
-    'AGIBOT X2',
     'AGIBOT G2',
     'AGIBOT D1 quadruped',
-    'robot dog UK',
     'OmniHand dexterous hand',
-    'humanoid robot integrator',
-    'AGIBOT UK supplier',
-    'buy humanoid robot UK',
   ],
   alternates: { canonical: '/products' },
   openGraph: {
     type: 'website',
-    title: 'AGIBOT Product Range | HRS',
+    title: 'Humanoid Robots UK — Full Product Range | HRS',
     description:
       'Humanoid robots, quadrupeds, dexterous hands and teleoperation kits — the full AGIBOT range supplied and integrated by HRS in the UK.',
     url: '/products',
@@ -38,7 +44,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AGIBOT Product Range | HRS',
+    title: 'Humanoid Robots UK — Full Product Range | HRS',
     description:
       'Humanoids, quadrupeds, dexterous hands and teleoperation kits — supplied and integrated in the UK by HRS.',
   },
@@ -53,7 +59,7 @@ function ProductsHero() {
             AGIBOT PLATFORM PARTNER
           </p>
           <h1 className="mt-3 max-w-3xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            The full AGIBOT range.
+            The full AGIBOT range, supplied in the UK.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-gray-500">
             Every platform below is available through HRS in the UK — supplied, integrated and

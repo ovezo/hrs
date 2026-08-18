@@ -13,17 +13,20 @@ import { G2_DOSSIER, X2_DOSSIER } from '@/components/robots/v3/v3Data';
 import { G2, X2 } from '@/components/robots/robotsData';
 
 export const metadata = {
-  title: 'AGIBOT G2 & X2 Humanoid Robot Specifications | HRS',
+  // Category + UK lead; the model numbers stay on so brand/spec searches
+  // ("AGIBOT G2 specs") still match. See the same change on /products.
+  title: 'Humanoid Robot Specifications UK — AGIBOT G2 & X2 | HRS',
   description:
-    'Full specifications for AGIBOT G2 and X2 — the industrial and interactive humanoid robots HRS deploys across UK manufacturing. Degrees of freedom, payload, speed, battery, compute and live footage.',
+    'Full specifications for the humanoid robots HRS deploys across UK manufacturing — AGIBOT G2 and X2: degrees of freedom, payload, speed, battery and compute.',
   keywords: [
-    'AGIBOT G2',
-    'AGIBOT X2',
+    'humanoid robots UK',
     'humanoid robot specifications',
     'industrial humanoid robot',
     'bipedal humanoid robot',
-    'humanoid robots UK',
     'humanoid robot integrator',
+    'humanoid robot payload',
+    'AGIBOT G2',
+    'AGIBOT X2',
     'physical AI',
     'embodied AI',
     'vision-language-action models',
@@ -31,7 +34,7 @@ export const metadata = {
   alternates: { canonical: '/robots' },
   openGraph: {
     type: 'website',
-    title: 'AGIBOT G2 & X2 Humanoid Robot Specifications | HRS',
+    title: 'Humanoid Robot Specifications UK — AGIBOT G2 & X2 | HRS',
     description:
       'AGIBOT G2 for industrial work, AGIBOT X2 for live demonstration — full specs, subsystems and footage for the humanoid platforms HRS deploys across the UK.',
     url: '/robots',
@@ -40,7 +43,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AGIBOT G2 & X2 Humanoid Robot Specifications | HRS',
+    title: 'Humanoid Robot Specifications UK — AGIBOT G2 & X2 | HRS',
     description: 'Full specs for AGIBOT G2 (industrial) and X2 (interactive demonstration).',
   },
 };
