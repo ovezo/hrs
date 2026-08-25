@@ -46,6 +46,7 @@ export default async function LearnHub() {
         inLanguage: 'en-GB',
         mainEntity: {
           '@type': 'ItemList',
+          numberOfItems: articles.length,
           itemListElement: articles.map((article, i) => ({
             '@type': 'ListItem',
             position: i + 1,

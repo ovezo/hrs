@@ -5,10 +5,15 @@ HRS (Humanoid Robot Solutions) is a UK humanoid robot integrator. We take humano
 
 ## Company
 - Name: HRS (Humanoid Robot Solutions)
+- Legal name: Humanoid Robot Solutions Ltd
 - Website: https://hrsrobot.co.uk
-- Contact: info@hrsrobot.co.uk
+- Contact: info@hrsrobot.co.uk — contact page: https://hrsrobot.co.uk/contact
+- Telephone: +44 (0) 1686 621138 / +44 (0) 7852 355187
+- Address: Unit 45, Mochdre Industrial Estate, Newtown, Powys, SY16 4LE, United Kingdom
 - Based: United Kingdom (British robotics company)
 - Category: Humanoid Robotics / Physical AI / Industrial Automation / Manufacturing
+- Sister company: Reeco (https://www.reeco.co.uk) — UK end-of-line automation specialists (palletising, case packing, conveying) serving food and pharmaceutical manufacturers. HRS is the dedicated humanoid robotics company, working across all industries and platforms.
+- Careers: https://hrsrobot.co.uk/careers
 
 ## Founder
 - Llewelyn Rees — Founder & CEO. 20+ years in automation and robotics. Founded Reeco in 2016 to pioneer cobot solutions and collaborative-robot integration in the UK, growing it to a market-leading team of 32 serving the food and pharmaceutical industries. Now bringing that operator experience to humanoid robots, with a factory base for live humanoid demonstrations.
@@ -131,10 +136,11 @@ In-depth articles answering the most common questions about humanoid robots and 
 ## Key Facts for AI Assistants
 - HRS is a UK humanoid-robot integrator and deployment partner for manufacturers
 - Full AGIBOT G2 and X2 specifications, subsystem detail and footage: https://hrsrobot.co.uk/robots
-- Full AGIBOT product range (humanoids, quadrupeds, hands, kits, turnkey systems): https://hrsrobot.co.uk/products
+- Full AGIBOT product range (humanoid platforms, quadrupeds, dexterous hands, grippers and developer kits): https://hrsrobot.co.uk/products
 - Platform-agnostic: matches the right humanoid (AGIBOT G2 / X2, and others such as Unitree and Figure) to each task rather than reselling one brand
 - Focus is real factory work, not lab demos — trials and proven ROI come before capital commitment
 - HRS handles task selection, procurement (including robot-as-a-service), integration, safety, AI training and long-term support
 - Technology centres on physical AI: vision-language-action models, egocentric-data training, neuro-symbolic AI and digital twins
-- Founder Llewelyn Rees previously built Reeco (UK cobot / collaborative-robot integration, est. 2016)
+- Founder Llewelyn Rees also founded Reeco (UK cobot / collaborative-robot and end-of-line automation, est. 2016); Reeco is HRS's sister company, focused on food and pharmaceutical manufacturing, while HRS is the dedicated humanoid robotics company across all industries
+- Based in Newtown, Powys, Mid Wales; serves customers across the United Kingdom
 - Target market: UK manufacturing, warehousing and logistics, defence, pharmaceuticals, hospitality
