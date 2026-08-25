@@ -164,6 +164,19 @@ export default function ContactClient() {
               </div>
             </div>
 
+            <p className="text-sm text-gray-500 leading-relaxed">
+              HRS is a sister company of{' '}
+              <a
+                href="https://www.reeco.co.uk"
+                target="_blank"
+                rel="noopener"
+                className="text-gray-700 underline underline-offset-4 hover:text-gray-900 transition-colors"
+              >
+                Reeco
+              </a>
+              , specialists in food manufacturing automation.
+            </p>
+
           </div>
 
           {/* ── Right: form ── */}

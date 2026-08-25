@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google';
+import { Analytics as VercelAnalytics } from '@vercel/analytics/next';
 import { getBaseUrl, getClarityId, getContactEmail, getGaId } from '@/lib/config';
 import Analytics from '@/components/analytics/Analytics';
 import ConsentBanner from '@/components/analytics/ConsentBanner';
@@ -194,6 +195,20 @@ export default function RootLayout({ children }) {
       </head>
       <body className="font-sans antialiased min-h-full">
         {children}
+        {/*
+          Vercel Web Analytics — deliberately NOT behind the cookie banner.
+          It sets no cookies and writes nothing to the device: a visitor is a
+          hash of the incoming request that resets every day, so there is
+          nothing stored or accessed on their terminal equipment for PECR
+          consent to apply to. Running it ungated is the whole point — it
+          gives a complete traffic baseline, where GA4 and Clarity only ever
+          see the subset who accepted. Lawful basis is legitimate interests,
+          documented on /privacy and /cookies.
+
+          No ID or env var needed: the endpoint is bound to the Vercel project.
+          Off Vercel (local dev) it logs to the console instead of sending.
+        */}
+        <VercelAnalytics />
         <Analytics
           gaId={getGaId()}
           clarityId={getClarityId()}

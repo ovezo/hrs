@@ -7,8 +7,10 @@ import CookieSettingsLink from '@/components/analytics/CookieSettingsLink';
  *   · that the cookie table below matches what the live tags actually set
  *     (check in DevTools → Application → Cookies after accepting)
  *   · the company registration number for the privacy page
- * The technical description here is accurate to the code as written: nothing
- * loads until consent, and the /videos embeds use youtube-nocookie.com.
+ * The technical description here is accurate to the code as written: no
+ * cookie-setting tag loads until consent, Vercel Web Analytics runs ungated
+ * because it stores nothing on the device, and the /videos embeds use
+ * youtube-nocookie.com.
  */
 
 export const metadata = {
@@ -29,7 +31,7 @@ export const metadata = {
 
 export default function CookiesPage() {
   return (
-    <LegalLayout title="Cookie policy" breadcrumb="Cookies" updated="8 August 2026">
+    <LegalLayout title="Cookie policy" breadcrumb="Cookies" updated="25 August 2026">
       <p>
         This page explains the cookies and similar technologies used on hrsrobot.co.uk, who
         sets them, and how to change your mind at any time.
@@ -38,9 +40,14 @@ export default function CookiesPage() {
       <h2>The short version</h2>
       <p>
         We set <strong>no analytics cookies unless you agree to them</strong>. Until you accept,
-        no analytics scripts are loaded at all — not in a limited mode, not at all. If you
-        decline, the site works exactly as it does otherwise; we simply learn nothing about
-        your visit.
+        the tools that rely on cookies are not loaded at all — not in a limited mode, not at
+        all. If you decline, the site works exactly as it does otherwise.
+      </p>
+      <p>
+        We do keep a simple count of page views for everyone, using a tool that sets no cookies
+        and stores nothing on your device — so there is nothing there to ask permission for.
+        It cannot identify you or follow you to another website; see{' '}
+        <a href="#cookieless">analytics that doesn&apos;t use cookies</a> below.
       </p>
       <p>
         The one thing we store either way is your choice itself, so we don&apos;t ask again on
@@ -59,8 +66,9 @@ export default function CookiesPage() {
 
       <h2>What gets set if you accept</h2>
       <p>
-        Accepting enables two analytics tools. Neither is used for advertising, and we do not
-        run ad tags of any kind — advertising storage stays switched off permanently.
+        Accepting enables the two cookie-based analytics tools below. Neither is used for
+        advertising, and we do not run ad tags of any kind — advertising storage stays
+        switched off permanently.
       </p>
 
       <h3>Google Analytics 4</h3>
@@ -121,6 +129,31 @@ export default function CookiesPage() {
           </tr>
         </tbody>
       </table>
+
+      <h2 id="cookieless">Analytics that doesn&apos;t use cookies</h2>
+      <p>
+        Separately from the two tools above, we use <strong>Vercel Web Analytics</strong> to
+        count page views. It runs for every visitor, whatever you choose in the banner, because
+        it uses no cookies and writes nothing to your browser — so it falls outside the rules
+        that govern cookies, and there is nothing for consent to attach to. It appears in no row
+        of the table above because it sets nothing.
+      </p>
+      <p>
+        Rather than storing an identifier on your device, our host counts a visitor as a hash
+        derived from the incoming request. That hash lasts one day and is then reset, so the
+        same person cannot be recognised the next day, and cannot be followed to any other
+        website. What is recorded with each page view is the page address, the referring site,
+        an approximate location from your IP address (country, region, city — the IP address
+        itself is not stored), and your device type, operating system and browser. No profile is
+        built and none of it is used for advertising. Provided by Vercel Inc., who also host
+        this site.
+      </p>
+      <p>
+        We rely on legitimate interests for this — knowing which pages people actually read is
+        how we decide what to write next — and you can object at any time by emailing{' '}
+        <a href="mailto:info@hrsrobot.co.uk">info@hrsrobot.co.uk</a>. Any browser extension that
+        blocks trackers will also stop it.
+      </p>
 
       <h2>Videos</h2>
       <p>

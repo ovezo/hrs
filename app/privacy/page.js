@@ -28,7 +28,7 @@ export const metadata = {
 
 export default function PrivacyPage() {
   return (
-    <LegalLayout title="Privacy policy" breadcrumb="Privacy" updated="8 August 2026">
+    <LegalLayout title="Privacy policy" breadcrumb="Privacy" updated="25 August 2026">
       <p>
         This policy explains what personal data Humanoid Robot Solutions Ltd collects through
         hrsrobot.co.uk, why, and what you can do about it.
@@ -75,13 +75,23 @@ export default function PrivacyPage() {
         If — and only if — you accept analytics cookies, we use Google Analytics 4 and
         Microsoft Clarity to understand how the site is used. The lawful basis is your
         consent, which you can withdraw at any time from the{' '}
-        <Link href="/cookies">cookie policy</Link> page. If you decline, no analytics scripts
-        are loaded and nothing about your visit is recorded.
+        <Link href="/cookies">cookie policy</Link> page. If you decline, neither is loaded.
       </p>
       <p>
         Clarity produces anonymised session replays. These reconstruct page layout, clicks and
         scrolling — they are not video of your screen, and form inputs are masked, so we
         cannot see anything you type.
+      </p>
+      <p>
+        Regardless of that choice, we count page views with Vercel Web Analytics. It sets no
+        cookies and stores nothing on your device, so it needs no consent under the cookie
+        rules; the lawful basis is legitimate interests in knowing which pages are read, which
+        we balance against your privacy by using a tool that cannot identify you. A visitor is
+        counted as a hash of the incoming request that is reset every day, so you cannot be
+        recognised tomorrow or on any other website. Each page view records the page address,
+        the referring site, an approximate location derived from your IP address without
+        storing the IP address itself, and your device, operating system and browser. You can
+        object at any time — see <Link href="/cookies">cookie policy</Link> for details.
       </p>
 
       <h3>Server logs</h3>
@@ -94,7 +104,7 @@ export default function PrivacyPage() {
       <h2>Who your data is shared with</h2>
       <p>We do not sell personal data. It is shared only with the providers that run the site:</p>
       <ul>
-        <li>Vercel Inc. — website hosting</li>
+        <li>Vercel Inc. — website hosting and cookieless visit counting</li>
         <li>Web3Forms — contact form delivery</li>
         <li>Google Ireland Limited — Google Analytics, only with your consent</li>
         <li>Microsoft Ireland Operations Limited — Clarity, only with your consent</li>
@@ -111,7 +121,9 @@ export default function PrivacyPage() {
       <ul>
         <li>Enquiries: up to 24 months after our last contact, so we can pick up the thread.</li>
         <li>Job applications: up to 12 months after the recruitment round closes.</li>
-        <li>Analytics data: retained by Google and Microsoft under their own schedules.</li>
+        <li>
+          Analytics data: retained by Google, Microsoft and Vercel under their own schedules.
+        </li>
       </ul>
 
       <h2>Your rights</h2>

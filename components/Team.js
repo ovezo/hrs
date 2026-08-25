@@ -53,8 +53,16 @@ export default function Team() {
             </div>
 
             <p className="text-base text-gray-600 leading-relaxed">
-              With over twenty years in automation and robotics, Lel founded Reeco in 2016 to
-              pioneer cobot solutions and collaborative-robot integration across the UK. What began as a vision to transform
+              With over twenty years in automation and robotics, Lel founded{' '}
+              <a
+                href="https://www.reeco.co.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-gray-900 underline decoration-gray-300 underline-offset-2 hover:decoration-gray-900"
+              >
+                Reeco
+              </a>{' '}
+              in 2016 to pioneer cobot solutions and collaborative-robot integration across the UK. What began as a vision to transform
               manufacturing has grown into a market-leading company of thirty-two people, serving the
               food and pharmaceutical industries.
             </p>
